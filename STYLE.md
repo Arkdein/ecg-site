@@ -19,7 +19,6 @@ One page. Every contributor reads it once before drafting.
 ## Dates
 
 - On the page: **31 Oct 2026** (day, short month, year). No ordinals ("31st").
-- In the Opportunities Sheet: **2026-10-31**.
 - Closing dates in headings: **[Closes 31 Oct 2026] Title**.
 
 ## Buttons and links

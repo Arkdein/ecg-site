@@ -14,22 +14,9 @@ You don't need to install anything. Everything happens in your web browser.
 
 The site updates about a minute after a change is published.
 
-## Updating Current Opportunities
+## Posting current opportunities
 
-Don't edit the website. Edit the **Current Opportunities Google Sheet** instead (link in the Content Register). Add one row per item:
-
-| Column | What to type | Example |
-|---|---|---|
-| Title | Name of the opportunity | Research internship |
-| Organiser | Who runs it | A\*STAR |
-| Category | One word, from the list the team agrees | Internship |
-| For | Levels it's open to | JC1, JC2 |
-| Added | Today's date | 2026-10-08 |
-| Closes | Closing date, or blank if rolling | 2026-10-31 |
-| Link | Full web address starting https:// | https://… |
-| Details | One or two sentences | Who should apply and why |
-
-Dates must be written **YYYY-MM-DD**. The website hides an item automatically the day after it closes, and shows the newest items first. Delete old rows from the Sheet once a term to keep it tidy.
+Internships, programmes, talks and jobs with closing dates are posted in the **ECG Google Classroom**, not on the website. The Current Opportunities page only explains where to find them and how to apply.
 
 ## Markdown in one minute
 

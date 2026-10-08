@@ -1,6 +1,6 @@
 ---
 title: For Parents
-nav_order: 12
+nav_order: 11
 owner: Counsellor
 last_reviewed: Oct 2026
 description: How to talk with your child about university and careers, at each stage.
@@ -29,7 +29,7 @@ TODO: what the school does at this stage.
 <details class="ecg-level" markdown="1">
 <summary>Secondary 3 and 4 — Exploration</summary>
 
-- Encourage them to try things out: CCAs, the [Student Internship Programme](internships.md), the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience).
+- Encourage them to try things out: CCAs, the [Student Internship Programme](opportunities.md#the-rvhs-student-internship-programme), the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience).
 - Talk about people you know in different jobs, and what their work is really like.
 
 TODO: what the school does at this stage.

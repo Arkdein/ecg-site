@@ -14,11 +14,11 @@ The Education and Career Guidance website for River Valley High School, built wi
 
 | File | What it is |
 |---|---|
-| `index.md` … `for-parents.md` | The 14 launch pages (council plan, 1 Oct 2026) |
-| `_config.yml` | Site settings: address, draft switch, Opportunities Sheet link |
-| `_includes/` | Draft banner, page owner footer, "What next?" block |
-| `assets/js/opportunities.js` | Reads the Current Opportunities Google Sheet |
-| `templates/` | Page templates and the Opportunities Sheet template (not published) |
+| `index.md` … `for-parents.md` | The launch pages (council plan, 1 Oct 2026, as revised) |
+| `_config.yml` | Site settings: address, draft switch, crest |
+| `_includes/` | Draft banner, sidebar crest and title, page owner and motto footer, "What next?" block |
+| `_sass/` | School colours (`custom/setup.scss`), colour scheme, custom styles |
+| `templates/` | Page templates (not published) |
 
 ## Publishing rule
 

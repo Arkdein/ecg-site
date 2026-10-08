@@ -15,10 +15,6 @@ baseurl: "/ecg-site"                       # ← EDIT (set at setup)
 # search engines not to list the site. Set to false at go-live.
 draft: true                                # ← EDIT at go-live
 
-# Current Opportunities list. Paste the Google Sheet's
-# "Publish to web → CSV" link between the quotes.
-opportunities_csv_url: ""                  # ← EDIT
-
 # Design (Just the Docs theme, loaded by GitHub)
 remote_theme: just-the-docs/just-the-docs@v0.12.0
 plugins:

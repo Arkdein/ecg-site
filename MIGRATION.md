@@ -8,7 +8,7 @@ Source: sites.google.com/moe.edu.sg/ecgrvhs (26 pages, read 8 Oct 2026). Links a
 |---|---|---|
 | Welcome | Home | Tagline and intro kept |
 | About ECG@RVHS | My ECG Journey; Get Help | Vision and A/E/P framework → Journey; team list → roles in Who to ask (names and personal emails left out) |
-| Announcements (Padlet) | Current Opportunities | Padlet retired, as the council recommended |
+| Announcements (Padlet) | — | Padlet retired; current openings are posted in the ECG Google Classroom |
 | RVHS ECG Chatbot | — | Not carried over; awaiting the team's decision on the Concierge |
 | Flagship Programmes | Programmes | Programme links kept; 2026 dates moved to "last year" notes |
 | Horizon Programme | Programmes | Full description kept; 2026–27 application dates marked as past |
@@ -24,8 +24,8 @@ Source: sites.google.com/moe.edu.sg/ecgrvhs (26 pages, read 8 Oct 2026). Links a
 | Government / University / Private scholarships | Scholarships | Merged into one by-sector table plus university links; student photos and names not carried over |
 | University Financial Aid | Financial Aid | Kept; specific figures replaced with links |
 | Tools & Resources | Scholarships | Comparison tools kept; insurer calculators dropped |
-| Internships & Post-A-Level Jobs | Internships guide; opportunities-starter.csv | Guidance → guide; four current listings → starter rows for the Opportunities Sheet |
-| FAQs for Internships | Internships guide | Steps, sample email and FAQs kept; named staff replaced with roles |
+| Internships & Post-A-Level Jobs | Current Opportunities | Guidance kept on the page; live listings now go in the ECG Google Classroom (the four listings on the old site — SID internship closing 31 Oct 2026, NUS ABFER temp staff closing 1 Dec 2026, IMH programme 2–4 Dec 2026, Allen & Gledhill attachee — should be posted there) |
+| FAQs for Internships | Current Opportunities | Steps, sample email and FAQs kept; named staff replaced with roles |
 | ECG Tools / MySkillsFuture | My ECG Journey | Kept as "Your tools" |
 | For Parents | For Parents | Reorganised by stage; OECD Dream Jobs link (moved) replaced with OECD's 2025 report; emerging-careers list dropped (undated) |
 | Get in touch with us | Get Help | Booking link and question form kept |

@@ -57,7 +57,7 @@ The **RVHS ECG Framework** has three stages:
 <details class="ecg-level" markdown="1">
 <summary>Secondary 4 — Exploration</summary>
 
-- **This year's programmes:** [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience) and fireside chats; [Student Internship Programme](internships.md)
+- **This year's programmes:** [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience) and fireside chats; [Student Internship Programme](opportunities.md#the-rvhs-student-internship-programme)
 - **One question to reflect on (RVX):** TODO
 - **One tool to try:** TODO
 </details>
@@ -68,7 +68,7 @@ The **RVHS ECG Framework** has three stages:
 <details class="ecg-level" markdown="1">
 <summary>JC1 — Exploration</summary>
 
-- **This year's programmes:** [Gap Exploration Month](programmes.md#jc1-gap-exploration-month) (January), [HECGS Day](programmes.md#jc1--jc2-hecgs-day), [Horizon Programme](programmes.md#horizon-programme) (apply in July), [Student Internship Programme](internships.md)
+- **This year's programmes:** [Gap Exploration Month](programmes.md#jc1-gap-exploration-month) (January), [HECGS Day](programmes.md#jc1--jc2-hecgs-day), [Horizon Programme](programmes.md#horizon-programme) (apply in July), [Student Internship Programme](opportunities.md#the-rvhs-student-internship-programme)
 - **One question to reflect on (RVX):** TODO
 - **One tool to try:** the [weighted decision table](singapore-universities.md#deciding-between-options-a-weighted-table)
 </details>
