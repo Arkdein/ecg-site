@@ -28,7 +28,8 @@ plugins:
 relative_links:
   enabled: true
 
-color_scheme: light
+color_scheme: rvhs
+crest: "/assets/images/rvhs-crest.png"   # school crest shown in the sidebar (use approved by the school: TODO)
 search_enabled: true
 heading_anchors: true
 back_to_top: true

@@ -1,0 +1,13 @@
+{%- comment -%}
+  Sidebar brand lockup: crest + "ECG@RVHS" + school name.
+  The crest file is set by `crest:` in _config.yml; if the file is missing,
+  only the text shows.
+{%- endcomment -%}
+{%- assign crest_file = site.static_files | where: "path", site.crest | first -%}
+<span class="ecg-brand">
+  {%- if crest_file %}<img class="ecg-crest" src="{{ site.crest | relative_url }}" alt="River Valley High School crest">{% endif -%}
+  <span class="ecg-wordmark">
+    <span class="ecg-wordmark-main">{{ site.title }}</span>
+    <span class="ecg-wordmark-sub" lang="en">River Valley High School · <span lang="zh-Hans">立化中学</span></span>
+  </span>
+</span>

@@ -1,0 +1,79 @@
+// ─────────────────────────────────────────────────────────────
+//  ECG@RVHS custom styles. Colours come from _sass/color_schemes/rvhs.scss.
+//  Keep this file short; check Home, Singapore Universities and
+//  Opportunities at phone width after any change.
+// ─────────────────────────────────────────────────────────────
+
+// Type: 16px minimum on phones (theme default is 14px), friendlier headings
+html { font-size: 1rem !important; }
+body { line-height: 1.65; }
+h1, h2, h3, h4, .site-title, .btn {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.main-content h1 { font-weight: 800; letter-spacing: -0.01em; }
+.main-content h2 { font-weight: 700; }
+.main-content h4 { text-transform: none; font-size: 1rem !important; }
+
+// Thin red school accent along the top of the page, and under every page title
+.side-bar, .main-header { box-shadow: inset 0 4px 0 $rvhs-red; }
+.main-content h1::after {
+  content: ""; display: block; width: 48px; height: 4px;
+  margin-top: 0.5rem; border-radius: 2px; background: $rvhs-red;
+}
+
+// Brand lockup in the sidebar header (see _includes/title.html)
+.site-header { min-height: 4.5rem; }
+@media (min-width: 50rem) { .site-header { height: 4.5rem; max-height: 4.5rem; } }
+.ecg-brand { display: flex; align-items: center; gap: 0.6rem; }
+.ecg-crest { height: 2.4rem; width: auto; flex: none; }
+.ecg-wordmark { display: flex; flex-direction: column; line-height: 1.15; }
+.ecg-wordmark-main { font-weight: 800; font-size: 1.15rem; color: $rvhs-navy; }
+.ecg-wordmark-sub { font-size: 0.75rem; font-weight: 500; color: #4a5568; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+
+// Sidebar: red bar marks the current page
+.nav-list .nav-list-item > .nav-list-link.active { color: $rvhs-navy; box-shadow: inset 4px 0 0 $rvhs-red; }
+
+// Links: clearly underlined in body text; strong focus ring
+.main-content a:not(.btn) { text-decoration: underline; text-decoration-color: currentColor; text-underline-offset: 2px; }
+:focus-visible { outline: 3px solid $rvhs-blue !important; outline-offset: 2px; }
+
+// Buttons: bigger tap targets
+.btn { font-size: 1rem !important; padding: 0.55rem 1.1rem; border-radius: 6px; }
+.btn-primary { background-image: none; background-color: $rvhs-navy; }
+.btn-primary:hover { background-color: $rvhs-blue; }
+.ecg-start-here { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0 1.5rem; }
+.ecg-start-here .btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; }
+@media (max-width: 31.25rem) { .ecg-start-here .btn { width: 100%; } }
+
+// Tables, collapsible rows, cards
+th { background: $rvhs-tint; color: $rvhs-navy; }
+details.ecg-level { border: 1px solid $border-color; border-left: 4px solid $rvhs-navy; border-radius: 6px; padding: 0.6rem 1rem; margin: 0.6rem 0; background: #fff; }
+details.ecg-level summary { font-weight: 600; color: $rvhs-navy; cursor: pointer; }
+details.ecg-level[open] summary { margin-bottom: 0.5rem; }
+.ecg-what-next { border: 1px solid $border-color; border-top: 4px solid $rvhs-navy; border-radius: 6px; padding: 1rem 1.25rem; margin: 2rem 0 1rem; background: $rvhs-tint; }
+.ecg-what-next h2 { margin-top: 0; font-size: 1.1rem !important; }
+.ecg-what-next dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1rem; margin: 0; }
+.ecg-what-next dt { font-weight: 700; color: $rvhs-navy; }
+.ecg-what-next dd { margin: 0; }
+
+// TODO placeholders: neutral, so they don't look like "Important" boxes
+.ecg-todo { background: #f6f7f9; border: 1px dashed #8a94a6; border-radius: 4px; color: #3c4656; padding: 0.4rem 0.8rem; font-size: 0.875rem; }
+
+// Draft banner and page meta
+.ecg-draft-banner { background: #fff4d6; color: #5c4400; border-bottom: 1px solid #e8cf8a; padding: 0.5rem 1rem; font-size: 0.875rem; text-align: center; }
+.ecg-page-meta { font-size: 0.8rem; color: #4a5568; margin-top: 0.5rem; }
+
+// Footer band with the school motto
+.ecg-footer { background: $rvhs-navy; color: #fff; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; border-top: 4px solid $rvhs-red; }
+.ecg-footer p { margin: 0.2rem 0; color: #fff; }
+.ecg-footer .ecg-motto { font-weight: 700; font-size: 1rem; }
+.ecg-footer a { color: #fff !important; }
+
+// Current Opportunities list
+#ecg-opps-controls { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1rem 0; }
+#ecg-opps-controls select, #ecg-opps-controls input { font: inherit; padding: 0.3rem 0.5rem; border: 1px solid #8a94a6; border-radius: 4px; }
+.ecg-opp { border-bottom: 1px solid $border-color; padding: 0.75rem 0; }
+.ecg-opp h3 { margin: 0 0 0.25rem; font-size: 1rem !important; }
+.ecg-opp .ecg-opp-meta { font-size: 0.85rem; color: #4a5568; margin: 0 0 0.25rem; }
+.ecg-closes { font-weight: 700; color: $rvhs-red-dark; }
+.ecg-closes.ecg-soon { background: #fdecee; padding: 0 0.25rem; border-radius: 3px; }

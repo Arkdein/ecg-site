@@ -1,0 +1,30 @@
+// ─────────────────────────────────────────────────────────────
+//  RVHS colour scheme — the ONLY place the school colours are set.
+//  Loaded after the theme's light scheme (color_scheme: rvhs in _config.yml).
+//  Every text colour below meets WCAG AA (4.5:1) on its background.
+// ─────────────────────────────────────────────────────────────
+
+// School colours (sampled from the crest)
+$rvhs-navy: #082040;      // 16.3:1 on white
+$rvhs-red: #d80020;       // accents only (thin bars); 5.3:1 on white
+$rvhs-red-dark: #b0001a;  // red text, e.g. "Important" titles; 7.3:1
+$rvhs-blue: #0b4a8f;      // links; 8.8:1 on white
+$rvhs-tint: #f3f5f9;      // sidebar and table headers
+$rvhs-ink: #1f2933;       // body text; 14.8:1
+
+// Theme variables
+$body-heading-color: $rvhs-navy;
+$body-text-color: $rvhs-ink;
+$link-color: $rvhs-blue;
+$nav-child-link-color: $rvhs-ink;
+$sidebar-color: $rvhs-tint;
+$btn-primary-color: $rvhs-navy;
+$border-color: #d9dfea;
+$feedback-color: #e4e9f2;
+
+// Callout title colours, darkened so they meet AA on white
+// (the theme's default yellow was only 2:1)
+$blue-300: $rvhs-blue;
+$red-300: $rvhs-red-dark;
+$yellow-300: #7a4f00;
+$green-300: #1e6b34;

@@ -1,27 +1,11 @@
 {%- if site.draft -%}
 <meta name="robots" content="noindex, nofollow">
-{%- endif -%}
-<style>
-  .ecg-draft-banner {
-    background: #fff4d6; color: #5c4400; border-bottom: 1px solid #e8cf8a;
-    padding: .5rem 1rem; font-size: .875rem; text-align: center;
-  }
-  .ecg-page-meta { font-size: .8rem; color: #5c5962; margin-top: .5rem; }
-  .ecg-what-next { border: 1px solid #e6e1e8; border-radius: 6px; padding: 1rem 1.25rem; margin: 2rem 0 1rem; }
-  .ecg-what-next h2 { margin-top: 0; font-size: 1.1rem !important; }
-  .ecg-what-next dl { display: grid; grid-template-columns: max-content 1fr; gap: .4rem 1rem; margin: 0; }
-  .ecg-what-next dt { font-weight: 600; }
-  .ecg-what-next dd { margin: 0; }
-  .ecg-start-here { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 1.5rem; }
-  details.ecg-level { border: 1px solid #e6e1e8; border-radius: 6px; padding: .6rem 1rem; margin: .6rem 0; }
-  details.ecg-level summary { font-weight: 600; cursor: pointer; }
-  details.ecg-level[open] summary { margin-bottom: .5rem; }
-  .ecg-todo { background: #fdf0f0; border-left: 4px solid #c0392b; padding: .4rem .8rem; font-size: .875rem; }
-  #ecg-opps-controls { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin: 1rem 0; }
-  #ecg-opps-controls select, #ecg-opps-controls input { font: inherit; padding: .3rem .5rem; border: 1px solid #ccc; border-radius: 4px; }
-  .ecg-opp { border-bottom: 1px solid #e6e1e8; padding: .75rem 0; }
-  .ecg-opp h3 { margin: 0 0 .25rem; font-size: 1rem !important; }
-  .ecg-opp .ecg-opp-meta { font-size: .85rem; color: #5c5962; margin: 0 0 .25rem; }
-  .ecg-closes { font-weight: 700; color: #8a1c1c; }
-  .ecg-closes.ecg-soon { background: #fdf0f0; padding: 0 .25rem; border-radius: 3px; }
-</style>
+{%- else -%}
+<style>.ecg-todo { display: none; }</style>
+{%- endif %}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+<meta name="theme-color" content="#082040">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap">
