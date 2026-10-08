@@ -168,7 +168,8 @@
     var uid = "uas" + (++uidN);
     root.innerHTML = "";
 
-    root.appendChild(el("p", { className: "ecg-uas-scope", text: "For students who sat the A-Levels in 2025 or later. Nothing you enter is saved or sent anywhere." }));
+    root.appendChild(el("p", { className: "ecg-uas-scope", text: "For students who sat the A-Levels in 2025 or later." }));
+    root.appendChild(el("p", { className: "ecg-uas-scope", text: "Nothing you enter is saved or sent anywhere." }));
 
     var form = el("form", { className: "ecg-uas-form", novalidate: "novalidate" });
     form.addEventListener("submit", function (e) { e.preventDefault(); });
