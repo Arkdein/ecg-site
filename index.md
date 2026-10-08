@@ -2,15 +2,17 @@
 title: Home
 nav_order: 1
 owner: Editor
-last_reviewed: Not yet reviewed
+last_reviewed: Oct 2026
 description: Education and Career Guidance at River Valley High School — where to go for what you need today.
 ---
 
 # ECG@RVHS
 {: .fs-9 }
 
-Where do I go for what I need today?
+**Discover** your purpose · **Explore** possibilities · **Plan** your path
 {: .fs-6 .fw-300 }
+
+At RVHS, Education and Career Guidance (ECG) helps every student understand who they are, explore education and career possibilities, and make informed decisions about their future.
 
 ## Start here
 
@@ -21,19 +23,14 @@ Where do I go for what I need today?
 </div>
 
 {: .important }
-> **Got your A-Level results?** Start with [A-Level Results & Applying](results-and-applying.md): what to do, in what order, and by when.
+> **Getting your A-Level results?** The 2026 results are expected between **19 and 23 Feb 2027** ([MOE exam dates](https://www.moe.gov.sg/national-exams-dates)). Start with [A-Level Results & Applying](results-and-applying.md): what to do, in what order, and by when.
 
-<!-- EDITOR: keep the box above from results day until the university application window closes, then delete it. -->
+<!-- EDITOR: keep the box above from January until the university application window closes (19 Mar 2027), then delete it. -->
 
 ## Right now
 
-[Current Opportunities](opportunities.md){: .btn } &nbsp; Internships, programmes, talks and competitions you can apply for now, with closing dates.
+[Current Opportunities](opportunities.md){: .btn } &nbsp; Internships, programmes, talks and jobs you can apply for now, with closing dates.
 
 ## Need a person?
 
 [Book an ECG session or find who to ask](get-help.md){: .btn }
-
----
-
-TODO: one or two sentences on what ECG at RVHS is, in RVHS's own words (Awareness, Exploration, Planning).
-{: .ecg-todo }

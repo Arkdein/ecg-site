@@ -1,9 +1,9 @@
 ---
 title: United Kingdom
 nav_order: 11
-owner: To be assigned
-last_reviewed: Not yet reviewed
-description: Is the UK system for you, and where is the RVHS UCAS guide?
+owner: UK universities
+last_reviewed: Oct 2026
+description: Is the UK system for you, and how do UCAS applications work?
 ---
 
 # United Kingdom
@@ -11,13 +11,24 @@ description: Is the UK system for you, and where is the RVHS UCAS guide?
 Is the UK system for me, and where is the RVHS UCAS guide?
 {: .fs-6 .fw-300 }
 
-TODO: three or four sentences on how UK degrees differ (single subject from year one, usually three years, UCAS applications).
-{: .ecg-todo }
+UK degrees are recognised worldwide. Most undergraduate degrees take **three years** (four in Scotland), and you study your chosen subject from the first year, so you need to be fairly sure what you want to read. You apply to up to five courses through **UCAS**.
+
+{: .deadline }
+> **2027 entry** ([UCAS dates](https://www.ucas.com/ucas/undergraduate/getting-started/when-apply)):
+> - **15 Oct 2026**, 6pm UK time: Oxford, Cambridge, and most medicine, dentistry and veterinary courses
+> - **13 Jan 2027**, 6pm UK time: equal-consideration deadline for most other courses
+>
+> School internal deadlines are earlier, so your reference can be written in time. See [Who to ask](get-help.md#uk).
 
 ## The UCAS personal statement
 
-From 2026 entry, the personal statement is three questions answered in up to 4,000 characters in total, with at least 350 characters per question. TODO: link to UCAS's own guidance.
-{: .ecg-todo }
+From 2026 entry, the personal statement is **three questions**, with up to **4,000 characters in total** and at least **350 characters per answer**:
+
+1. Why do you want to study this course or subject?
+2. How have your qualifications and studies helped you to prepare for this course or subject?
+3. What else have you done to prepare outside of education, and why are these experiences useful?
+
+[UCAS guide to the new personal statement](https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement-for-2026-entry-onwards)
 
 ## RVHS UCAS guide
 
@@ -29,8 +40,8 @@ TODO: link to the current RVHS UCAS guide.
 UCAS references: see [Who to ask](get-help.md#uk).
 
 {% include what-next.html
-   explore="Browse courses on the UCAS website"
-   do="Read the RVHS UCAS guide"
+   explore="Search courses on [UCAS](https://www.ucas.com/)"
+   do="Draft your answers to the three personal statement questions"
    talk="uk"
    talk_label="Ask about UCAS" %}
 

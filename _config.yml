@@ -67,6 +67,7 @@ exclude:
   - README.md
   - EDITING.md
   - STYLE.md
+  - MIGRATION.md
   - templates/
   - tests/
   - Gemfile
