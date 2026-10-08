@@ -71,3 +71,61 @@ details.ecg-level[open] summary { margin-bottom: 0.5rem; }
 .ecg-footer .ecg-motto { font-weight: 700; font-size: 1rem; }
 .ecg-footer a { color: #fff !important; }
 
+// Weighted table tool (_includes/weighted-table.html + assets/js/weighted-table.js)
+.ecg-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.ecg-wt { border: 1px solid $border-color; border-top: 4px solid $rvhs-navy; border-radius: 6px; padding: 1rem 1.25rem; margin: 1.25rem 0 2rem; background: #fff; }
+@media (max-width: 31.25rem) { .ecg-wt { padding: 0.9rem 0.85rem; } }
+.ecg-wt-privacy { font-size: 0.875rem; color: #4a5568; margin: 0 0 0.5rem; }
+.ecg-wt-step { padding: 1rem 0; border-bottom: 1px solid $border-color; }
+.ecg-wt-step h4 { margin: 0 0 0.25rem !important; color: $rvhs-navy; font-weight: 700; letter-spacing: normal; }
+.ecg-wt-working th[scope="row"] { text-align: left; }
+.ecg-wt-hint { font-size: 0.9375rem; color: #3c4656; margin: 0 0 0.75rem; }
+.ecg-wt-list { list-style: none; padding: 0 !important; margin: 0 0 0.75rem; }
+.ecg-wt-list > li::before { content: none !important; }
+.ecg-wt-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0.5rem 0.75rem; margin: 0 0 0.75rem !important; }
+.ecg-wt-field { display: flex; flex-direction: column; gap: 0.2rem; min-width: 0; }
+.ecg-wt-field label { font-size: 0.875rem; font-weight: 600; color: $rvhs-navy; }
+.ecg-wt-grow { flex: 1 1 14rem; }
+.ecg-wt input[type="text"], .ecg-wt select {
+  font: inherit; font-size: 1rem; color: $rvhs-ink; background: #fff;
+  min-height: 44px; padding: 0.4rem 0.6rem; border: 1px solid #8a94a6; border-radius: 6px; width: 100%;
+}
+.ecg-wt select { cursor: pointer; }
+.ecg-wt-remove {
+  font: inherit; font-size: 0.875rem; min-height: 44px; padding: 0 0.75rem; cursor: pointer;
+  background: none; border: 1px solid $border-color; border-radius: 6px; color: $rvhs-blue;
+}
+.ecg-wt-remove:hover:not(:disabled) { border-color: $rvhs-blue; }
+.ecg-wt button:disabled { opacity: 0.45; cursor: not-allowed; }
+.ecg-wt .btn { min-height: 44px; }
+.ecg-wt-rate { border: 1px solid $border-color; border-left: 4px solid $rvhs-navy; border-radius: 6px; padding: 0.5rem 0.9rem 0.8rem; margin: 0 0 0.75rem; }
+.ecg-wt-rate legend { font-weight: 700; color: $rvhs-navy; padding: 0 0.3rem; }
+.ecg-wt-weight { font-weight: 500; font-size: 0.8125rem; color: #4a5568; margin-left: 0.25rem; }
+.ecg-wt-rate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: 0.6rem 0.75rem; }
+.ecg-wt-optname { overflow-wrap: anywhere; }
+.ecg-wt-totals { list-style: none; padding: 0 !important; margin: 0.5rem 0 1rem; }
+.ecg-wt-totals > li { margin: 0 0 0.85rem !important; }
+.ecg-wt-totals > li::before { content: none !important; }
+.ecg-wt-total-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.6rem; }
+.ecg-wt-total-name { font-weight: 700; color: $rvhs-navy; overflow-wrap: anywhere; }
+.ecg-wt-total-num { margin-left: auto; font-variant-numeric: tabular-nums; color: $rvhs-ink; }
+.ecg-wt-badge { font-size: 0.75rem; font-weight: 700; color: $rvhs-navy; border: 1px solid $rvhs-navy; border-radius: 999px; padding: 0 0.5rem; }
+.ecg-wt-bar { height: 10px; background: $rvhs-tint; border: 1px solid $border-color; border-radius: 999px; margin-top: 0.3rem; overflow: hidden; }
+.ecg-wt-bar span { display: block; height: 100%; background: $rvhs-navy; border-radius: 999px; }
+.ecg-wt-note { background: #f6f7f9; border-left: 4px solid #8a94a6; padding: 0.5rem 0.8rem; font-size: 0.9375rem; margin: 0 0 0.75rem; }
+.ecg-wt-reflect { font-size: 0.9375rem; margin: 0 0 0.75rem; }
+.ecg-wt-working summary { font-weight: 600; color: $rvhs-blue; cursor: pointer; min-height: 44px; display: flex; align-items: center; }
+.ecg-wt-working td, .ecg-wt-working th { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ecg-wt-sum td, .ecg-wt-sum th { font-weight: 700; }
+.ecg-wt-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; padding-top: 1rem; }
+.ecg-wt-actions .btn { margin: 0 !important; }
+@media (max-width: 31.25rem) {
+  .ecg-wt-row .ecg-wt-field:not(.ecg-wt-grow) { flex: 1 1 auto; }
+  .ecg-wt-actions .btn { width: 100%; }
+}
+@media print {
+  .ecg-wt-actions, .ecg-wt-add, .ecg-wt-remove, .ecg-wt-privacy { display: none !important; }
+  .ecg-wt-working { display: block; }
+  .ecg-wt-bar span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+

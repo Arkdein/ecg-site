@@ -98,6 +98,10 @@ If you're torn between courses or universities, try this:
 
 The numbers won't decide for you, but they make the differences between options easier to see.
 
+Try it here. It does the multiplying and adding for you, and you can bring the result to an ECG session.
+
+{% include weighted-table.html %}
+
 {% include what-next.html
    explore="Search courses on the [MOE CourseFinder](https://www.moe.gov.sg/coursefinder)"
    do="Shortlist courses, then check their prerequisites and Indicative Grade Profiles"
