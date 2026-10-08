@@ -87,7 +87,14 @@ Go to the universities' open houses before you decide.
 
 ### Deciding between options: a weighted table
 
-If you're torn between courses or universities, try this:
+If you're torn between courses or universities, a weighted table helps you compare them on what matters to you. List what you care about, give each one a weight for how much it matters, rate each option, and the tool below works out the totals.
+
+The numbers won't decide for you, but they make the differences between options easier to see. You can print the result and bring it to an ECG session.
+
+{% include weighted-table.html %}
+
+<details class="ecg-level" markdown="1">
+<summary>Prefer pen and paper?</summary>
 
 1. In the first column, list what matters to you (e.g. career options, overseas exposure, cost, campus life).
 2. Across the top, list your options.
@@ -95,12 +102,7 @@ If you're torn between courses or universities, try this:
 4. Give each consideration an importance weight from 1 to 5.
 5. Multiply each rating by its weight.
 6. Add up each column and compare.
-
-The numbers won't decide for you, but they make the differences between options easier to see.
-
-Try it here. It does the multiplying and adding for you, and you can bring the result to an ECG session.
-
-{% include weighted-table.html %}
+</details>
 
 {% include what-next.html
    explore="Search courses on the [MOE CourseFinder](https://www.moe.gov.sg/coursefinder)"
