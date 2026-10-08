@@ -24,7 +24,7 @@ I have my results: what do I do, in what order, by when?
 > | What | When | Source |
 > |---|---|---|
 > | 2026 A-Level results released | Tentatively 19–23 Feb 2027 | [MOE](https://www.moe.gov.sg/national-exams-dates) |
-> | NUS applications (A-Level) | 18 Feb – 19 Mar 2027 | [NUS](https://www.nus.edu.sg/oam/admissions/important-dates) |
+> | Application to Singapore universities | By 19 March 2027 (confirmed for NUS and NTU; check the others) | [NUS](https://www.nus.edu.sg/oam/admissions/important-dates) · [NTU](https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates) · [SMU](https://admissions.smu.edu.sg/admissions-requirements/important-dates) · [SUTD](https://www.sutd.edu.sg/admissions/undergraduate/singapore-cambridge-gce-a-level/application-timeline/) · [SIT](https://www.singaporetech.edu.sg/openhouse/application-guide) · [SUSS](https://www.suss.edu.sg/full-time-undergraduate/how-to-apply) |
 > | Most AU applications close | Around 19 Mar 2027 (check each university) | [Singapore Universities](singapore-universities.md) |
 > | Many government scholarships close | Mid-March 2027 (e.g. PSC and MHA: 15 Mar) | [Scholarships](scholarships.md) |
 
