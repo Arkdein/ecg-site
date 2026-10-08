@@ -1,6 +1,6 @@
 ---
 title: Current Opportunities
-nav_order: 8
+nav_order: 4
 owner: Internships
 last_reviewed: Oct 2026
 description: Where to find current internships, programmes and jobs, and how to apply for and learn from an internship.

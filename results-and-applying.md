@@ -1,6 +1,6 @@
 ---
 title: A-Level Results & Applying
-nav_order: 2
+nav_order: 5
 owner: Local universities
 last_reviewed: Oct 2026
 description: You have your A-Level results. What to do, in what order, and by when.

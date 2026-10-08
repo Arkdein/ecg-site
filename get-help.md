@@ -1,6 +1,6 @@
 ---
 title: Get Help
-nav_order: 7
+nav_order: 10
 owner: Counsellor; Editor
 last_reviewed: Oct 2026
 description: Who to ask, how to book an ECG session, and how to get a reference or transcript.
