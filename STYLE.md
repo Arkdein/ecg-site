@@ -40,7 +40,7 @@ One page. Every contributor reads it once before drafting.
 
 ## Design
 
-- **School colours live in one file only:** `_sass/color_schemes/rvhs.scss` (navy #082040, red #D80020). Never type colour codes into pages.
+- **School colours live in one file only:** `_sass/custom/setup.scss` (navy #082040, red #D80020). Never type colour codes into pages.
 - **Red is an accent, not a fill:** thin bars (top of page, under page titles, current page in the sidebar). Large red areas read as warnings, and red also means "Important".
 - **Styles live in** `_sass/custom/custom.scss`. Keep it short and commented; after any change, check Home, Singapore Universities and Current Opportunities at phone width.
 - **No new classes for editors.** The only ones in pages are `.btn`, `.note`, `.important`, `.deadline`, `.tip` and `.ecg-todo`, plus the collapsible-row and row-label snippets in `templates/`.
