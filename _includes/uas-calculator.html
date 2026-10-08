@@ -1,0 +1,14 @@
+{%- comment -%}
+  University Admission Score calculator.
+  Use:  {% include uas-calculator.html %}
+
+  For students who sat the A-Levels in 2025 or later (70-point scale).
+  Nothing is saved or sent anywhere.
+  How it works: assets/js/uas-calculator.js (the rules are listed at the top)
+  How it looks: the "UAS calculator" section of _sass/custom/custom.scss
+  Before changing the calculation, run:  node tests/uas-calculator.test.js
+{%- endcomment -%}
+<div class="ecg-uas">
+  <noscript><p>The calculator needs JavaScript switched on. You can work out your score by hand using the steps above.</p></noscript>
+</div>
+<script src="{{ '/assets/js/uas-calculator.js' | relative_url }}" defer></script>

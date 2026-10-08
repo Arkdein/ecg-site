@@ -36,7 +36,16 @@ From AY2026 admission, your University Admission Score is out of **70 points**. 
 
 A **fourth content subject** (H1 or H2) and/or **H1 Mother Tongue** is counted only if it raises your score; the total is then rescaled to 70. **Project Work** is now graded Pass/Fail and does not add points, but you **must pass** it to be admitted to an autonomous university. H2 Knowledge and Inquiry no longer replaces General Paper.
 
-If you sat the A-Levels in 2024 or earlier, your old 90-point score is scaled proportionately to 70.
+If you sat the A-Levels in 2024 or earlier, your old 90-point score is scaled proportionately to 70. The calculator below doesn't cover this; ask the ECG Counsellor.
+
+### Calculate your score
+
+Enter your grades to see your University Admission Score and how it was worked out. Points per grade: H2 A 20, B 17.5, C 15, D 12.5, E 10, S 5, U 0. H1 subjects score half of that (A 10 down to S 2.5).
+
+{% include uas-calculator.html %}
+
+{: .note }
+> This calculator is a guide. Your official score is the one each university works out from your results when you apply. If a decision depends on a fraction of a point, check with the university or the ECG Counsellor first.
 
 For the official detail, see [MOE's 2025 results release](https://www.moe.gov.sg/news/press-releases/20260227-release-of-the-2025-singapore-cambridge-gce-a-level-examination-results) and the universities' FAQs: [NUS](https://www.nus.edu.sg/oam/docs/default-source/singapore-cambridge-gce-a-level/faqs-on-revised-uas-computation.pdf) · [NTU](https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/a-level/faq-revised-uas-computation-for-au-admission-ay2026.pdf) · [SMU](https://admissions.smu.edu.sg/sites/admissions.smu.edu.sg/files/2024-03/Revised%20UAS%20Computation%20from%20AY2026.pdf).
 

@@ -129,3 +129,37 @@ details.ecg-level[open] summary { margin-bottom: 0.5rem; }
   .ecg-wt-bar span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
+
+// UAS calculator (_includes/uas-calculator.html + assets/js/uas-calculator.js)
+.ecg-uas { border: 1px solid $border-color; border-top: 4px solid $rvhs-navy; border-radius: 6px; padding: 1rem 1.25rem; margin: 1.25rem 0 2rem; background: #fff; }
+@media (max-width: 31.25rem) { .ecg-uas { padding: 0.9rem 0.85rem; } }
+.ecg-uas-scope { font-size: 0.875rem; color: #4a5568; margin: 0 0 0.75rem; }
+.ecg-uas-group { border: 0; padding: 0; margin: 0 0 1rem; min-width: 0; }
+.ecg-uas-group legend { font-family: "Plus Jakarta Sans", system-ui, sans-serif; font-weight: 700; color: $rvhs-navy; padding: 0; margin-bottom: 0.4rem; }
+.ecg-uas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: 0.6rem 0.75rem; }
+.ecg-uas-field { display: flex; flex-direction: column; gap: 0.2rem; min-width: 0; }
+.ecg-uas-field[hidden] { display: none; }
+.ecg-uas-field label { font-size: 0.875rem; font-weight: 600; color: $rvhs-navy; }
+.ecg-uas select {
+  font: inherit; font-size: 1rem; color: $rvhs-ink; background: #fff; cursor: pointer;
+  min-height: 44px; padding: 0.4rem 0.6rem; border: 1px solid #8a94a6; border-radius: 6px; width: 100%;
+}
+.ecg-uas-hint { font-size: 0.875rem; color: #3c4656; margin: 0.5rem 0 0; }
+.ecg-uas .ecg-uas-reset { min-height: 44px; margin: 0 !important; }
+.ecg-uas-result { border-top: 1px solid $border-color; margin-top: 1rem; padding-top: 1rem; }
+.ecg-uas-waiting { color: #3c4656; margin: 0; }
+.ecg-uas-score { display: flex; flex-direction: column; gap: 0.1rem; margin: 0 0 0.75rem; }
+.ecg-uas-score-label { font-size: 0.875rem; font-weight: 600; color: $rvhs-navy; }
+.ecg-uas-score-num { font-size: 1.25rem; color: $rvhs-ink; font-variant-numeric: tabular-nums; }
+.ecg-uas-score-num strong { font-family: "Plus Jakarta Sans", system-ui, sans-serif; font-size: 2.25rem; font-weight: 800; color: $rvhs-navy; line-height: 1.1; }
+.ecg-uas-working td, .ecg-uas-working th { font-variant-numeric: tabular-nums; }
+.ecg-uas-working td { white-space: nowrap; }
+.ecg-uas-working th[scope="row"] { text-align: left; font-weight: 500; background: none; color: $rvhs-ink; }
+.ecg-uas-dropped th, .ecg-uas-dropped td { color: #5a6474 !important; text-decoration: line-through; }
+.ecg-uas-dropped td:last-child { text-decoration: none; }
+.ecg-uas-sum th, .ecg-uas-sum td { font-weight: 700 !important; }
+.ecg-uas-explain { margin: 0.75rem 0 0.5rem; }
+.ecg-uas-small { font-size: 0.8125rem; color: #4a5568; margin: 0; }
+@media print { .ecg-uas-reset { display: none !important; } }
+.ecg-uas .table-wrapper { overflow-x: auto; }
+@media (max-width: 31.25rem) { .ecg-uas-working { font-size: 0.9375rem; } .ecg-uas-working th, .ecg-uas-working td { padding: 0.4rem 0.4rem !important; } }
