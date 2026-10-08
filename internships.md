@@ -1,6 +1,6 @@
 ---
 title: Internships guide
-nav_order: 13
+nav_order: 11
 owner: Internships
 last_reviewed: Oct 2026
 description: How to find, apply for and learn from an internship.

@@ -1,6 +1,6 @@
 ---
 title: My ECG Journey
-nav_order: 8
+nav_order: 9
 owner: Sec 4 / Horizon; JC ECG programmes
 last_reviewed: Oct 2026
 description: What happens in ECG at each level, Sec 1 to JC2, and what to do this year.

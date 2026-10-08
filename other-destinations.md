@@ -1,6 +1,7 @@
 ---
 title: Other Destinations
-nav_order: 15
+parent: Overseas Universities
+nav_order: 4
 nav_exclude: true
 search_exclude: true
 owner: To be assigned

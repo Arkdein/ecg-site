@@ -1,6 +1,6 @@
 ---
 title: Scholarships
-nav_order: 4
+nav_order: 5
 owner: Scholarships
 last_reviewed: Oct 2026
 description: What kinds of scholarships exist, and what you are prepared to commit to.

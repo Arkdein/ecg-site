@@ -1,6 +1,7 @@
 ---
 title: United States
-nav_order: 12
+parent: Overseas Universities
+nav_order: 3
 owner: US universities
 last_reviewed: Oct 2026
 description: How a US application is different, and where to find the RVHS guide.

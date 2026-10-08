@@ -1,6 +1,7 @@
 ---
 title: China
-nav_order: 10
+parent: Overseas Universities
+nav_order: 1
 owner: Chinese universities
 last_reviewed: Oct 2026
 description: Studying at a university in mainland China — routes, language, scholarships and documents.

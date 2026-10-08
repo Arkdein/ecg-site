@@ -1,6 +1,7 @@
 ---
 title: United Kingdom
-nav_order: 11
+parent: Overseas Universities
+nav_order: 2
 owner: UK universities
 last_reviewed: Oct 2026
 description: Is the UK system for you, and how do UCAS applications work?

@@ -1,6 +1,6 @@
 ---
 title: Current Opportunities
-nav_order: 7
+nav_order: 8
 owner: Internships
 last_reviewed: Updated from the team's Google Sheet
 description: Internships, programmes, talks and competitions you can apply for now, with closing dates.
