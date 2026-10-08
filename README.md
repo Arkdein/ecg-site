@@ -16,7 +16,8 @@ The Education and Career Guidance website for River Valley High School, built wi
 |---|---|
 | `index.md` … `for-parents.md` | The launch pages (council plan, 1 Oct 2026, as revised) |
 | `_config.yml` | Site settings: address, draft switch, crest |
-| `_includes/` | Draft banner, sidebar crest and title, page owner and motto footer, "What next?" block |
+| `_includes/` | Draft banner, sidebar crest and title, page owner and motto footer, "What next?" block, weighted table tool |
+| `assets/js/` | Script for the weighted table tool on Singapore Universities (answers stay in the student's browser) |
 | `_sass/` | School colours (`custom/setup.scss`), colour scheme, custom styles |
 | `templates/` | Page templates (not published) |
 

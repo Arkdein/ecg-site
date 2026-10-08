@@ -1,0 +1,19 @@
+{%- comment -%}
+  Interactive weighted decision table.
+  Use:  {% include weighted-table.html %}
+
+  Optional settings (separate items with | ):
+    considerations="Career options|Overseas exposure|Cost|Campus life"
+        the starting list students see (they can change it)
+    options="NUS Business|SMU Business"
+        starting option names (default: two blank options)
+
+  Students' answers are kept only in their own browser, so they are
+  still there if the page is reloaded. Nothing is sent anywhere.
+  How it works: assets/js/weighted-table.js
+  How it looks: the "Weighted table tool" section of _sass/custom/custom.scss
+{%- endcomment -%}
+<div class="ecg-wt" data-considerations="{{ include.considerations | default: 'Career options|Overseas exposure|Cost|Campus life' | escape }}" data-options="{{ include.options | escape }}">
+  <noscript><p>The interactive table needs JavaScript switched on. You can still follow the steps above on paper or in a spreadsheet.</p></noscript>
+</div>
+<script src="{{ '/assets/js/weighted-table.js' | relative_url }}" defer></script>
