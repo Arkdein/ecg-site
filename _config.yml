@@ -8,7 +8,7 @@ title: ECG@RVHS
 description: Education and Career Guidance at River Valley High School
 
 # Web address. Filled in when the repository is created.
-url: "https://USERNAME.github.io"          # ← EDIT (set at setup)
+url: "https://arkdein.github.io"          # ← EDIT (set at setup)
 baseurl: "/ecg-site"                       # ← EDIT (set at setup)
 
 # While true: shows a "draft" banner on every page and tells
@@ -42,7 +42,7 @@ aux_links_new_tab: false
 # "Edit this page" link at the bottom of every page
 gh_edit_link: true
 gh_edit_link_text: "Suggest a change to this page"
-gh_edit_repository: "https://github.com/USERNAME/ecg-site"   # ← EDIT (set at setup)
+gh_edit_repository: "https://github.com/Arkdein/ecg-site"   # ← EDIT (set at setup)
 gh_edit_branch: "main"
 gh_edit_view_mode: "edit"
 
