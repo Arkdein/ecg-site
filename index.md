@@ -29,7 +29,9 @@ At RVHS, Education and Career Guidance (ECG) helps every student understand who 
 
 ## Right now
 
-[Current Opportunities](opportunities.md){: .btn } &nbsp; Where to find internships, programmes and jobs you can apply for now, and how to apply.
+[Current Opportunities](opportunities.md){: .btn }
+
+Where to find internships, programmes and jobs you can apply for now, and how to apply.
 
 ## Need a person?
 
