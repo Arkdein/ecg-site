@@ -35,7 +35,7 @@ Source: sites.google.com/moe.edu.sg/ecgrvhs (26 pages, read 8 Oct 2026). Links a
 - University Admission Score: maximum 70 from AY2026 (old page still described the 90-point scheme for the Class of 2024).
 - NTU prospectus link was broken → ntu.edu.sg/undergraduate/prospectus
 - SUTD prospectus pointed to SMU's 2024 PDF → SUTD brochures page
-- SMU prospectus 2024 → 2026 edition
+- SMU prospectus 2024 → SMU A-Level admissions page (links the current prospectus)
 - SIT handbook (2023) and IGP (2021 path) → Learner's Guide and current IGP
 - SUSS brochures page was broken → full-time programmes brochure
 - University of the Arts Singapore: clarified it is not an AU; apply via LASALLE or NAFA
