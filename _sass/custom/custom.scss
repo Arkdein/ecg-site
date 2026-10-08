@@ -24,11 +24,11 @@ h1, h2, h3, h4, .site-title, .btn {
 // Brand lockup in the sidebar header (see _includes/title.html)
 .site-header { min-height: 4.5rem; }
 @media (min-width: 50rem) { .site-header { height: 4.5rem; max-height: 4.5rem; } }
-.ecg-brand { display: flex; align-items: center; gap: 0.6rem; }
-.ecg-crest { height: 2.4rem; width: auto; flex: none; }
+.ecg-brand { display: flex; align-items: center; gap: 0.5rem; }
+.ecg-crest { height: 2.2rem; width: auto; flex: none; }
 .ecg-wordmark { display: flex; flex-direction: column; line-height: 1.15; }
 .ecg-wordmark-main { font-weight: 800; font-size: 1.15rem; color: $rvhs-navy; }
-.ecg-wordmark-sub { font-size: 0.75rem; font-weight: 500; color: #4a5568; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.ecg-wordmark-sub { white-space: nowrap; font-size: 0.7rem; font-weight: 500; color: #4a5568; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
 
 // Sidebar: red bar marks the current page
 .nav-list .nav-list-item > .nav-list-link.active { color: $rvhs-navy; box-shadow: inset 4px 0 0 $rvhs-red; }
