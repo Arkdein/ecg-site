@@ -1,0 +1,14 @@
+{%- comment -%}
+  "What next?" block for decision pages only.
+  Use:  {% include what-next.html explore="..." do="..." talk="row-id" talk_label="..." %}
+  "talk" is the id of a row in the Who to ask table on Get Help,
+  so a staff change is one edit there, not one edit per page.
+{%- endcomment -%}
+<div class="ecg-what-next">
+  <h2 id="what-next">What next?</h2>
+  <dl>
+    {%- if include.explore %}<dt>Explore</dt><dd>{{ include.explore | markdownify | remove: '<p>' | remove: '</p>' }}</dd>{% endif %}
+    {%- if include.do %}<dt>Do</dt><dd>{{ include.do | markdownify | remove: '<p>' | remove: '</p>' }}</dd>{% endif %}
+    {%- if include.talk %}<dt>Talk</dt><dd><a href="{{ '/get-help' | relative_url }}#{{ include.talk }}">{{ include.talk_label | default: "Who to ask" }}</a></dd>{% endif %}
+  </dl>
+</div>

@@ -1,0 +1,73 @@
+# ─────────────────────────────────────────────────────────────
+#  ECG@RVHS website — site settings
+#  Most people never need to touch this file.
+#  Lines marked  # ← EDIT  are the ones the editor may change.
+# ─────────────────────────────────────────────────────────────
+
+title: ECG@RVHS
+description: Education and Career Guidance at River Valley High School
+
+# Web address. Filled in when the repository is created.
+url: "https://USERNAME.github.io"          # ← EDIT (set at setup)
+baseurl: "/ecg-site"                       # ← EDIT (set at setup)
+
+# While true: shows a "draft" banner on every page and tells
+# search engines not to list the site. Set to false at go-live.
+draft: true                                # ← EDIT at go-live
+
+# Current Opportunities list. Paste the Google Sheet's
+# "Publish to web → CSV" link between the quotes.
+opportunities_csv_url: ""                  # ← EDIT
+
+# Design (Just the Docs theme, loaded by GitHub)
+remote_theme: just-the-docs/just-the-docs@v0.12.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+aux_links:
+  "Book an ECG appointment":
+    - "/ecg-site/get-help.html#book-a-session"   # ← EDIT if the repository name changes
+aux_links_new_tab: false
+
+# "Edit this page" link at the bottom of every page
+gh_edit_link: true
+gh_edit_link_text: "Suggest a change to this page"
+gh_edit_repository: "https://github.com/USERNAME/ecg-site"   # ← EDIT (set at setup)
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"
+
+
+callouts_level: quiet
+callouts:
+  note:
+    title: Note
+    color: blue
+  important:
+    title: Important
+    color: red
+  deadline:
+    title: Deadline
+    color: yellow
+  tip:
+    title: Tip
+    color: green
+
+# Files that stay in the repository but are not published
+exclude:
+  - README.md
+  - EDITING.md
+  - STYLE.md
+  - templates/
+  - tests/
+  - Gemfile
+  - Gemfile.lock
