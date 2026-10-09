@@ -25,6 +25,7 @@ One page. Every contributor reads it once before drafting.
 
 - Button verbs: **Book**, **Apply**, **Read**, **Watch**, **Download**. One verb per button.
 - Link text says where it goes: "[SMU admissions](…)", never "click here".
+  - Exception (team decision, 9 Oct 2026): on Programmes, each programme's site button reads **Click here for details**. Give it an `aria-label` naming the programme so screen readers can tell the buttons apart, e.g. `{: .btn .btn-primary aria-label="Click here for details: HECGS Day site" }`.
 - PDFs: say so in the link — "Briefing slides (PDF)".
 
 ## People and privacy

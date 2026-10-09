@@ -34,8 +34,12 @@ Your type describes what you naturally prefer, not what you're able to do, and t
 
 **On the day you don't have your workshop**, you explore careers and try the profiling tools in the World of Work section of [MySkillsFuture for Students](https://www.myskillsfuture.gov.sg/content/student/en/myskillsfuture-for-students.html). On the last day, you have time to record what you learnt in your ECG e-portfolio.
 
+<div class="ecg-start-here" markdown="1">
+[Click here for details](https://sites.google.com/moe.edu.sg/sec4ecgexperience/home){: .btn .btn-primary aria-label="Click here for details: Sec 4 ECG Experience site" }
+</div>
+
 {: .deadline }
-> **2027:** TODO dates (the 2026 programme ran on 18–19 May). [Sec 4 ECG Experience site](https://sites.google.com/moe.edu.sg/sec4ecgexperience)
+> **2027:** TODO dates (the 2026 programme ran on 18–19 May).
 
 ## JC1 Gap Exploration Month
 
@@ -50,11 +54,15 @@ In January, before JC lessons begin, JC1 IP students spend a month learning outs
 
 The aim is to try things out, notice what you learn about yourself, and start JC1 with a clearer sense of direction. Record your reflections in your ECG e-portfolio: they're useful later for personal statements and interviews.
 
+<div class="ecg-start-here" markdown="1">
+[Click here for details](https://sites.google.com/moe.edu.sg/gap2026/home){: .btn .btn-primary aria-label="Click here for details: Gap Exploration Month site" }
+</div>
+
 TODO: what students hand in or present at the end of the month, if anything.
 {: .ecg-todo }
 
 {: .deadline }
-> **January 2027:** TODO dates and briefing. The 2026 programme site: [JC1 Gap Exploration Month](https://sites.google.com/moe.edu.sg/gap-2025/home). This page must be complete before JC1s start in January.
+> **January 2027:** TODO dates and briefing. This page must be complete before JC1s start in January.
 
 ## JC1 & JC2 HECGS Day
 
@@ -74,8 +82,12 @@ TODO: what students hand in or present at the end of the month, if anything.
 - Ask speakers about what the course or job is really like, not only what the brochure says.
 - Afterwards, write a few lines in your ECG e-portfolio about what surprised you and what you want to look into next.
 
+<div class="ecg-start-here" markdown="1">
+[Click here for details](https://sites.google.com/moe.edu.sg/rvhs-hecgs-day/event-day){: .btn .btn-primary aria-label="Click here for details: HECGS Day site" }
+</div>
+
 {: .deadline }
-> **2027:** TODO date (the 2026 event was on 29 Apr). [HECGS Day site](https://sites.google.com/moe.edu.sg/rvhs-hecgs-day/event-day)
+> **2027:** TODO date (the 2026 event was on 29 Apr).
 
 ## Horizon Programme
 
