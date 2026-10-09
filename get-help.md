@@ -15,6 +15,8 @@ Who do I ask, and how do I get a reference or transcript?
 ![The ECG team, eight people dressed in red, standing together in the school garden by the pond](assets/images/photos/get-help-ecg-team-2025.jpg)
 *The ECG team, 2025*
 
+<!-- EDITOR: placeholder (Jan 2025 team photo). Replace with a current team photo, same 3:2 crop, and update the caption. -->
+
 ## Book a session
 {: #book-a-session }
 
