@@ -22,7 +22,7 @@ description: 在孩子成长的各个阶段，如何与孩子谈升学和职业�
 注：本页是英文页面“For Parents”的中文版。页面中的链接大多通往英文网页。
 {: .fs-3 }
 
-很多青少年对未来还没有明确的计划，这很正常。您与孩子的交谈，比有现成的答案更重要。像“你将来想做什么？”这样的问题，可能会让孩子感到压力；不妨问问他们喜欢什么、对什么感到好奇、想过怎样的生活，这样往往能开启更多的话题和可能性。（延伸阅读：[如何问对问题](https://study.uq.edu.au/stories/questions-ask-teenager-about-future)，昆士兰大学）
+很多青少年对未来还没有明确的计划，这很正常。与孩子交谈更为重要，有现成的答案并非关键。像“你将来想做什么？”这样的问题，可能会让孩子感到压力；不妨问问他们喜欢什么、对什么感到好奇、想过怎样的生活，这样往往能开启更多的话题。（延伸阅读：[如何问对问题](https://study.uq.edu.au/stories/questions-ask-teenager-about-future)，昆士兰大学）
 
 ## 各阶段的重点
 
@@ -30,7 +30,7 @@ description: 在孩子成长的各个阶段，如何与孩子谈升学和职业�
 <summary>中一、中二——自我认识阶段</summary>
 
 - 问问孩子在校内外喜欢做什么、擅长什么。
-- 留意孩子的长处，并具体地说出来。
+- 留意孩子的长处，也让他们意识到自己的优势。
 - 和孩子一起在[MySkillsFuture for Students](https://www.myskillsfuture.gov.sg/content/student/en/myskillsfuture-for-students.html)平台上探索。
 
 **学校的安排：**中一学生在混合式学习课（RvX）中，借助MySkillsFuture的自我评估，建立一份关于自己的电子档案。中二的“Day X”活动让学生在选择中三科目前夕，亲身体验不同职业的相关活动。不妨请孩子给您看看他们的电子档案。[了解各年级的详情](my-ecg-journey.md#secondary)
@@ -48,7 +48,7 @@ description: 在孩子成长的各个阶段，如何与孩子谈升学和职业�
 <details class="ecg-level" markdown="1">
 <summary>初院一年级（JC1）——探索阶段</summary>
 
-- 问问孩子从[间隔探索月（Gap Exploration Month）](programmes.md#jc1-gap-exploration-month)和[高等教育、职业辅导与奖学金日（HECGS Day）](programmes.md#jc1--jc2-hecgs-day)中学到了什么。
+- 问问孩子从[Gap Exploration Month](programmes.md#jc1-gap-exploration-month)和[HECGS Day](programmes.md#jc1--jc2-hecgs-day)中学到了什么。
 - 陪孩子一起参加大学开放日。
 - 及早讨论升学费用：参阅[奖学金](scholarships.md)和[经济援助](financial-aid.md)页面。
 - **大学家长晨会：**每年七月，我们与家长教师协会合作，邀请本地各大学的招生处讲解大学的录取方式，并在小型大学展上解答家长的问题。请留意学校发出的邀请。
