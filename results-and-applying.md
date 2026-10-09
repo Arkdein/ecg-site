@@ -127,7 +127,7 @@ A personal statement shows your interest in the subject, why you're suited to it
 <summary>Asking for a recommendation</summary>
 
 - Ask someone who knows you well, such as a teacher who supervised your project.
-- Ask politely and early: four to six weeks before the deadline, and earlier still for school internal deadlines.
+- Ask politely and early: at least four to six weeks before the deadline.
 - Give them your deadline, the format required, and a short bullet list of your achievements, subjects and activities.
 - Never list someone as a referee without asking first. Thank them, and tell them the outcome.
 

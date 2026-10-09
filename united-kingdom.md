@@ -19,7 +19,7 @@ UK degrees are recognised worldwide. Most undergraduate degrees take **three yea
 > - **15 Oct 2026**, 6pm UK time: Oxford, Cambridge, and most medicine, dentistry and veterinary courses
 > - **13 Jan 2027**, 6pm UK time: equal-consideration deadline for most other courses
 >
-> School internal deadlines are earlier, so your reference can be written in time. See [Who to ask](get-help.md#uk).
+> Ask for your school reference at least four to six weeks before your UCAS deadline, so it can be written in time. See [Who to ask](get-help.md#uk).
 
 ## The UCAS personal statement
 

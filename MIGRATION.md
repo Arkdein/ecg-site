@@ -45,4 +45,4 @@ Source: sites.google.com/moe.edu.sg/ecgrvhs (26 pages, read 8 Oct 2026). Links a
 
 ## Needs the team
 
-See the red TODO boxes on each page. The main ones: staff names (yes/no), internal deadlines, 2027 programme dates, HSK and China route details, RVHS UCAS and US guides, level-by-level programmes and RVX prompts, and the stage assigned to each level.
+See the red TODO boxes on each page. The main ones: staff names (yes/no), 2027 programme dates, HSK and China route details, RVHS UCAS and US guides, level-by-level programmes and RVX prompts, and the stage assigned to each level.
