@@ -34,6 +34,14 @@ In the Sheet, on the **Entry** tab:
 
 Don't add, move or rename columns, and don't type in the **Public** tab: it fills itself from Entry and is what the website reads. Each term, delete rows that have closed (the website reads the first 200 rows).
 
+## The Chinese version of For Parents
+
+For Parents has a Chinese version (`for-parents-zh.md`), reached by the **中文** button at the top right of the page. It is a line-by-line translation. If you change For Parents, make the same change on the Chinese page, or ask the page owner to, so the two don't drift apart.
+
+## "Was this page helpful?"
+
+The Yes / No buttons at the bottom of every page open a short Google Form. Answers go to the Google Sheet **ECG@RVHS website feedback (responses)**. The page owner checks it once a month. The buttons are switched on by `feedback_form_prefill` in `_config.yml`.
+
 ## Markdown in one minute
 
 | You type | You get |

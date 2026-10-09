@@ -1,0 +1,12 @@
+{%- comment -%}
+  Language switch, shown at the top right of a page that has a translation.
+  Set in the page's front matter, e.g. on for-parents.md:
+    translation: /for-parents-zh.html
+    translation_label: 中文
+    translation_lang: zh-Hans
+  then add an include line for lang-switch.html under the front matter
+  (copy the one at the top of for-parents.md).
+{%- endcomment -%}
+{%- if page.translation -%}
+<p class="ecg-lang-switch"><a class="btn" href="{{ page.translation | relative_url }}" lang="{{ page.translation_lang }}" hreflang="{{ page.translation_lang }}">{{ page.translation_label }}</a></p>
+{%- endif -%}

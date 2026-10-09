@@ -4,7 +4,12 @@ nav_order: 11
 owner: Counsellor
 last_reviewed: Oct 2026
 description: How to talk with your child about university and careers, at each stage.
+translation: /for-parents-zh.html   # Chinese version of this page
+translation_label: 中文
+translation_lang: zh-Hans
 ---
+
+{% include lang-switch.html %}
 
 # For Parents
 

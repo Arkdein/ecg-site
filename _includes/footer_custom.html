@@ -1,3 +1,27 @@
+{%- comment -%}
+  "Was this page helpful?" buttons. They appear only once
+  feedback_form_prefill is set in _config.yml.
+{%- endcomment -%}
+{%- if site.feedback_form_prefill and site.feedback_form_prefill != "" -%}
+{%- assign fb_page = page.title | default: page.url | url_encode -%}
+{%- assign fb_yes = site.feedback_form_prefill | replace: "PAGE_NAME", fb_page -%}
+{%- assign fb_no = fb_yes | replace: "=Yes", "=No" -%}
+{%- if page.lang == "zh-Hans" -%}
+<div class="ecg-feedback" role="group" aria-labelledby="ecg-feedback-q" lang="zh-Hans">
+  <span class="ecg-feedback-q" id="ecg-feedback-q">这一页对您有帮助吗？</span>
+  <a class="btn" href="{{ fb_yes }}" target="_blank" rel="noopener">有帮助</a>
+  <a class="btn" href="{{ fb_no }}" target="_blank" rel="noopener">没有帮助</a>
+  <span class="ecg-feedback-note">将在新窗口打开一份简短的英文问卷（Google Form）。</span>
+</div>
+{%- else -%}
+<div class="ecg-feedback" role="group" aria-labelledby="ecg-feedback-q">
+  <span class="ecg-feedback-q" id="ecg-feedback-q">Was this page helpful?</span>
+  <a class="btn" href="{{ fb_yes }}" target="_blank" rel="noopener">Yes</a>
+  <a class="btn" href="{{ fb_no }}" target="_blank" rel="noopener">No</a>
+  <span class="ecg-feedback-note">Opens a short Google Form in a new tab.</span>
+</div>
+{%- endif -%}
+{%- endif -%}
 {%- if page.owner -%}
 <p class="ecg-page-meta">
   Owner: ECG ({{ page.owner }})
