@@ -131,7 +131,7 @@ A personal statement shows your interest in the subject, why you're suited to it
 - Give them your deadline, the format required, and a short bullet list of your achievements, subjects and activities.
 - Never list someone as a referee without asking first. Thank them, and tell them the outcome.
 
-School documents and references: see [Who to ask](get-help.md#transcripts).
+Who can write your recommendation letter: see [Who to ask](get-help.md#recommendation-letters). Transcripts and testimonials: see [Who to ask](get-help.md#transcripts).
 </details>
 
 <details class="ecg-level" markdown="1">

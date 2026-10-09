@@ -106,7 +106,7 @@ Anyone who emigrated from mainland China, Hong Kong, Macao or Taiwan must also s
 
 ## Documents from school
 
-Recommendation letters and transcripts: see [Who to ask](get-help.md#china).
+Recommendation letters: see [Who to ask](get-help.md#recommendation-letters). Transcripts: see [Who to ask](get-help.md#transcripts).
 
 {% include what-next.html
    explore="Read two or three universities' international admissions pages"

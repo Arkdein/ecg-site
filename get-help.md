@@ -48,15 +48,16 @@ This table is the single source of "who handles what". Other pages link to its r
 | <span id="scholarships"></span>Scholarships and financial aid | Choosing and applying for scholarships; financial worries | Scholarships teachers; Senior Head (Talent Development, Scholarships & ECG) | TODO |
 | <span id="uk"></span>United Kingdom | UCAS applications and references | UK universities teacher | TODO (before 15 Oct for Oxbridge and medicine) |
 | <span id="us"></span>United States | Common App, counselor letter, school report | Subject Head (ECG) | TODO |
-| <span id="china"></span>China | Applications, recommendation letters | Chinese universities teacher | TODO |
+| <span id="china"></span>China | Applications | Chinese universities teacher | TODO |
 | <span id="internships"></span>Internships | Internship queries and approvals | Senior Head (Talent Development, Scholarships & ECG) | — |
 | <span id="programmes"></span>Programmes | Horizon Programme, Sec 4 ECG Experience | Horizon & Sec 4 ECG teacher | — |
-| <span id="transcripts"></span>Any | Transcripts | TODO | TODO |
-| <span id="testimonials"></span>Any | School Graduation Certificate (SGC) testimonial: asking for a correction; certified true copies for overseas applications | General Office (corrections are checked by the SGC coordinators) | Ask for corrections within 3 weeks of the SGC's issue date |
+| <span id="transcripts"></span>Any | Transcripts | Your Civics Tutor | TODO |
+| <span id="testimonials"></span>Any | School Graduation Certificate (SGC) testimonial: asking for a correction; certified true copies for overseas applications | Your Civics Tutor (corrections are checked by the SGC coordinators) | Ask for corrections within 3 weeks of the SGC's issue date |
+| <span id="recommendation-letters"></span>Any | Recommendation letters | Your Civics Tutor, a CCA teacher-in-charge, or a subject tutor who teaches a subject related to the course you're applying for | TODO |
 
 Contact any of us through the [question form](https://docs.google.com/forms/d/e/1FAIpQLSeOE8cXBpMHC2tbjBdEsutPvv78ClxrqpQtn8lb81KaPvbzGQ/viewform).
 
-TODO: decide whether to add staff names next to roles (the old site listed names and personal emails; the council recommends roles plus the form and booking link). Fill in internal deadlines and the transcripts contact (the testimonial row comes from the 2025 results-day briefing; check it's still current).
+TODO: decide whether to add staff names next to roles (the old site listed names and personal emails; the council recommends roles plus the form and booking link). Fill in internal deadlines, including for transcripts and recommendation letters (the SGC correction deadline comes from the 2025 results-day briefing; check it's still current).
 {: .ecg-todo }
 
 {: .note }
