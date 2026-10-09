@@ -12,6 +12,9 @@ description: Who to ask, how to book an ECG session, and how to get a reference 
 Who do I ask, and how do I get a reference or transcript?
 {: .fs-6 .fw-300 }
 
+![The ECG team, eight people dressed in red, standing together in the school garden by the pond](assets/images/photos/get-help-ecg-team-2025.jpg)
+*The ECG team, 2025*
+
 ## Book a session
 {: #book-a-session }
 

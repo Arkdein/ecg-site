@@ -36,6 +36,10 @@ One page. Every contributor reads it once before drafting.
 
 - Every image has alt text describing what it shows.
 - No text inside images — put it on the page.
+- **Photos only where they show something words can't:** Home, Get Help, and one per programme on Programmes. None on reference pages (Results, Scholarships, destinations).
+- **Format:** landscape, cropped to 3:2 around the people and the activity, 1600 px wide, under 300 KB, saved in `assets/images/photos/` with a descriptive name (`hecgs-day-fair-2025.jpg`).
+- **Caption** on the line under the photo, in italics: what and when, e.g. *HECGS Day fair, April 2025*.
+- **Consent first:** identifiable students only with clearance from the team leader. Record each photo (source, consent, review date) in the Content Register and replace photos when they date.
 
 ## Design
 

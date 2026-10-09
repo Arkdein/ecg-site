@@ -229,3 +229,13 @@ details.ecg-level[open] summary { margin-bottom: 0.5rem; }
   .ecg-opp .ecg-opp-apply { width: 100%; justify-content: center; }
 }
 @media print { .ecg-opp-controls { display: none !important; } }
+
+// Photos: plain Markdown images in page content, with an italic caption
+// on the next line (see STYLE.md "Images"). At most one photo per section.
+// All photos are cropped to 3:2, so they line up across pages.
+.main-content p:has(> img) { margin: 1.25rem 0 1.5rem; }
+.main-content p > img {
+  display: block; width: 100%; height: auto; aspect-ratio: 3 / 2;
+  object-fit: cover; border-radius: 6px; margin: 0 0 0.35rem;
+}
+.main-content p:has(> img) > em { display: block; font-size: 0.875rem; color: #4a5568; }

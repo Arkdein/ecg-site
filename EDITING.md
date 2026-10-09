@@ -44,6 +44,13 @@ Don't add, move or rename columns, and don't type in the **Public** tab: it fill
 | `[SMU website](https://www.smu.edu.sg)` | a link |
 | `[Scholarships](scholarships.md)` | a link to another page on our site |
 
+A photo with a caption is written as (the photo file goes in `assets/images/photos/`; see the style sheet before adding one):
+
+```
+![What the photo shows, for screen readers](assets/images/photos/hecgs-day-fair-2025.jpg)
+*HECGS Day fair, April 2025*
+```
+
 Grey boxes like this are written as:
 
 ```

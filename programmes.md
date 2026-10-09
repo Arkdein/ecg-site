@@ -21,6 +21,9 @@ What are Sec 4 ECG Experience, Gap Exploration Month, HECGS Day and Horizon, and
 
 ## Sec 4 ECG Experience
 
+![A guest and Sec 4 students smiling at the camera over dinner during a fireside chat](assets/images/photos/sec4-fireside-chat-2025.jpg){: loading="lazy"}
+*Fireside chat, Sec 4 ECG Experience, May 2025*
+
 Two days to find out what kinds of work might suit you, and to hear from the people who do them. It runs in May, in the week after mid-year exams.
 
 **MBTI workshop.** You complete the **Myers-Briggs Type Indicator (MBTI)** online beforehand. At the workshop you receive your full profile report and take part in group activities on how your preferences show up in the way you communicate, study and handle stress.
@@ -54,6 +57,9 @@ TODO: what students hand in or present at the end of the month, if anything.
 > **January 2027:** TODO dates and briefing. The 2026 programme site: [JC1 Gap Exploration Month](https://sites.google.com/moe.edu.sg/gap-2025/home). This page must be complete before JC1s start in January.
 
 ## JC1 & JC2 HECGS Day
+
+![Two students laughing with an exhibitor at her booth during the HECGS Day fair](assets/images/photos/hecgs-day-fair-2025.jpg){: loading="lazy"}
+*HECGS Day fair, April 2025*
 
 **Higher Education, Career Guidance and Scholarships (HECGS) Day** is a full school day, usually in April, for the whole JC1 and JC2 cohort. Universities, scholarship providers and other organisations come to RVHS, and some of their speakers are RV alumni.
 

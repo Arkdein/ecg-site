@@ -14,6 +14,9 @@ description: Education and Career Guidance at River Valley High School — where
 
 At RVHS, Education and Career Guidance (ECG) helps every student understand who they are, explore education and career possibilities, and make informed decisions about their future.
 
+![Secondary 4 students laughing as they work together on a large sheet of chart paper](assets/images/photos/home-mbti-workshop-2025.jpg)
+*Sec 4 MBTI workshop, May 2025*
+
 ## Start here
 
 <div class="ecg-start-here" markdown="1">
