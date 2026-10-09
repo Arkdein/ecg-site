@@ -38,9 +38,6 @@ Your type describes what you naturally prefer, not what you're able to do, and t
 [Click here for details](https://sites.google.com/moe.edu.sg/sec4ecgexperience/home){: .btn .btn-primary aria-label="Click here for details: Sec 4 ECG Experience site" }
 </div>
 
-{: .deadline }
-> **2027:** dates to be confirmed. The 2026 programme ran on 18–19 May.
-
 ## JC1 Gap Exploration Month
 
 *Purposeful explorers, confident navigators.*
@@ -57,9 +54,6 @@ The aim is to try things out, notice what you learn about yourself, and start JC
 <div class="ecg-start-here" markdown="1">
 [Click here for details](https://sites.google.com/moe.edu.sg/gap2026/home){: .btn .btn-primary aria-label="Click here for details: Gap Exploration Month site" }
 </div>
-
-{: .deadline }
-> **January 2027:** dates and briefing to be confirmed.
 
 ## JC1 & JC2 HECGS Day
 
@@ -82,9 +76,6 @@ The aim is to try things out, notice what you learn about yourself, and start JC
 <div class="ecg-start-here" markdown="1">
 [Click here for details](https://sites.google.com/moe.edu.sg/rvhs-hecgs-day/event-day){: .btn .btn-primary aria-label="Click here for details: HECGS Day site" }
 </div>
-
-{: .deadline }
-> **2027:** date to be confirmed. The 2026 event was on 29 Apr.
 
 ## Horizon Programme
 
