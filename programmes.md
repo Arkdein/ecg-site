@@ -63,7 +63,7 @@ The aim is to try things out, notice what you learn about yourself, and start JC
 
 ## JC1 & JC2 HECGS Day
 
-![Two students laughing with an exhibitor at her booth during the HECGS Day fair](assets/images/photos/hecgs-day-fair-2025.jpg){: loading="lazy"}
+![Students crowding the school hall during the HECGS Day fair, with the school crest and motto on the wall above](assets/images/photos/hecgs-day-fair-2025.jpg){: loading="lazy"}
 *HECGS Day fair, April 2025*
 
 **Higher Education, Career Guidance and Scholarships (HECGS) Day** is a full school day, usually in April, for the whole JC1 and JC2 cohort. Universities, scholarship providers and other organisations come to RVHS, and some of their speakers are RV alumni.
