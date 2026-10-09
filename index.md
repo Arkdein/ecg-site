@@ -14,9 +14,6 @@ description: Education and Career Guidance at River Valley High School — where
 
 At RVHS, Education and Career Guidance (ECG) helps every student understand who they are, explore education and career possibilities, and make informed decisions about their future.
 
-![Secondary 4 students laughing as they work together on a large sheet of chart paper](assets/images/photos/home-mbti-workshop-2025.jpg)
-*Sec 4 MBTI workshop, May 2025*
-
 ## Start here
 
 <div class="ecg-start-here" markdown="1">
@@ -24,6 +21,9 @@ At RVHS, Education and Career Guidance (ECG) helps every student understand who 
 [I'm a JC student](my-ecg-journey.md#jc){: .btn .btn-primary }
 [I'm a parent](for-parents.md){: .btn .btn-primary }
 </div>
+
+![Secondary 4 students laughing as they work together on a large sheet of chart paper](assets/images/photos/home-mbti-workshop-2025.jpg)
+*Sec 4 MBTI workshop, May 2025*
 
 {: .important }
 > **Getting your A-Level results?** The 2026 results are expected between **19 and 23 Feb 2027** ([MOE exam dates](https://www.moe.gov.sg/national-exams-dates)). Start with [A-Level Results & Applying](results-and-applying.md): what to do, in what order, and by when.
