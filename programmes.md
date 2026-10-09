@@ -14,9 +14,9 @@ What are Sec 4 ECG Experience, Gap Exploration Month, HECGS Day and Horizon, and
 
 | Programme | Who | When |
 |---|---|---|
-| [Sec 4 ECG Experience](#sec-4-ecg-experience) | All Sec 4 | Two days in May, after mid-year exams |
-| [Gap Exploration Month](#jc1-gap-exploration-month) | JC1 IP students | January, before JC lessons |
-| [HECGS Day](#jc1--jc2-hecgs-day) | All JC1 and JC2 | One day, usually April |
+| [Sec 4 ECG Experience](#sec-4-ecg-experience) | All Sec 4 | May (2 days) |
+| [Gap Exploration Month](#jc1-gap-exploration-month) | JC1 IP students | January (1 month) |
+| [HECGS Day](#jc1--jc2-hecgs-day) | All JC1 and JC2 | April (1 day) |
 | [Horizon Programme](#horizon-programme) | JC1, by application | Apply in July |
 
 ## Sec 4 ECG Experience
