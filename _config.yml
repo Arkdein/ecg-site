@@ -33,6 +33,11 @@ color_scheme: rvhs
 crest: "/assets/images/rvhs-crest.png"   # school crest shown in the sidebar (use approved by the school: TODO)
 search_enabled: true
 heading_anchors: true
+
+# "On this page" lists show headings down to ### only, so the
+# small step headings (####) on a page don't crowd the list.
+kramdown:
+  toc_levels: 1..3
 back_to_top: true
 back_to_top_text: "Back to top"
 

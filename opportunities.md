@@ -45,7 +45,7 @@ The school posts the internships it sources through its partners in the [ECG Goo
 
 ### Finding and applying, step by step
 
-{% include steps.html steps="Know yourself|Research|Decide what you need|Make contact|Follow up" label="Five steps to an internship" %}
+{% include steps.html steps="Know yourself|Research|Decide|Make contact|Follow up" label="Five steps to an internship" %}
 
 #### 1. Know yourself
 
