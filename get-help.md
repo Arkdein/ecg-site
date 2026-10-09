@@ -50,7 +50,7 @@ This table is the single source of "who handles what". Other pages link to its r
 | <span id="us"></span>United States | Common App, counselor letter, school report | Subject Head (ECG): Ms Rachel Tan, [tan_mann_kia_rachel@moe.edu.sg](mailto:tan_mann_kia_rachel@moe.edu.sg) |
 | <span id="china"></span>China | Applications and interview practice | Chinese universities teacher: Mr Randall Hoon, [hoon_yao_tong_randall@moe.edu.sg](mailto:hoon_yao_tong_randall@moe.edu.sg) |
 | <span id="internships"></span>Internships | Internship queries and approvals | Senior HOD (Talent Development, Scholarships & ECG): Ms Chitra Jenardhanan, [chitra_jenardhanan@moe.edu.sg](mailto:chitra_jenardhanan@moe.edu.sg)<br>Internships teacher: Mr Sean Tan, [tan_yong_yi@moe.edu.sg](mailto:tan_yong_yi@moe.edu.sg) |
-| <span id="programmes"></span>Programmes | Horizon Programme, Sec 4 ECG Experience | Horizon & Sec 4 ECG teacher: Ms Joni Liamzon, [liamzon_joni_jeb_labio@moe.edu.sg](mailto:liamzon_joni_jeb_labio@moe.edu.sg)<br>Horizon Programme: Ms Rachel Tan, [tan_mann_kia_rachel@moe.edu.sg](mailto:tan_mann_kia_rachel@moe.edu.sg) |
+| <span id="programmes"></span>Programmes | Horizon Programme, Sec 4 ECG Experience | Subject Head (ECG): Ms Rachel Tan, [tan_mann_kia_rachel@moe.edu.sg](mailto:tan_mann_kia_rachel@moe.edu.sg)<br>Horizon & Sec 4 Fireside Chat teacher: Ms Joni Liamzon, [liamzon_joni_jeb_labio@moe.edu.sg](mailto:liamzon_joni_jeb_labio@moe.edu.sg) |
 | <span id="transcripts"></span>Any | Transcripts | Your Civics Tutor |
 | <span id="testimonials"></span>Any | School Graduation Certificate (SGC) testimonial: asking for a correction; certified true copies for overseas applications. Ask for a correction within 3 weeks of the SGC's issue date | Your Civics Tutor (corrections are checked by the SGC coordinators) |
 | <span id="recommendation-letters"></span>Any | Recommendation letters | Your Civics Tutor, a CCA teacher-in-charge, or a subject tutor who teaches a subject related to the course you're applying for |
@@ -59,7 +59,7 @@ Ask at least four to six weeks before the university's deadline, so your teacher
 
 Contact any of us through the [question form](https://docs.google.com/forms/d/e/1FAIpQLSeOE8cXBpMHC2tbjBdEsutPvv78ClxrqpQtn8lb81KaPvbzGQ/viewform).
 
-TODO: names follow the 2025 ECG Committee Deployment (NTU/SUTD/SIT moved to Mr Alex Chan, Oct 2026); check them against the 2026/27 deployment and update. Add the ECG Counsellor's name if the team wants it. Check that the SGC correction window (3 weeks, from the 2025 results-day briefing) is still current.
+TODO: names follow the 2025 ECG Committee Deployment, checked by Randall (Oct 2026); update when the 2026/27 deployment is out. Add the ECG Counsellor's name if the team wants it. Check that the SGC correction window (3 weeks, from the 2025 results-day briefing) is still current.
 {: .ecg-todo }
 
 {: .note }
