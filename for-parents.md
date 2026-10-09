@@ -22,8 +22,7 @@ Many teenagers don't have a clear plan, and that's normal. Your conversations ma
 - Notice and name their strengths.
 - Explore together on [MySkillsFuture for Students](https://www.myskillsfuture.gov.sg/content/student/en/myskillsfuture-for-students.html).
 
-TODO: what the school does at this stage.
-{: .ecg-todo }
+**What the school does:** in Sec 1, students build a digital portfolio about themselves in their blended learning (RvX) lessons, using MySkillsFuture self-assessments. In Sec 2, *Day X* lets them try out activities from different jobs, just before they choose their Sec 3 subjects. Ask your child to show you their portfolio. [More on each level](my-ecg-journey.md#secondary)
 </details>
 
 <details class="ecg-level" markdown="1">
@@ -32,8 +31,7 @@ TODO: what the school does at this stage.
 - Encourage them to try things out: CCAs, the [Student Internship Programme](opportunities.md#the-rvhs-student-internship-programme), the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience).
 - Talk about people you know in different jobs, and what their work is really like.
 
-TODO: what the school does at this stage.
-{: .ecg-todo }
+**What the school does:** in Sec 3, a Networking Skills Workshop teaches students how to introduce themselves and talk to professionals. In Sec 4, the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience) includes an MBTI workshop on personality preferences and small-group fireside chats with guest speakers from different industries. Ask your child what they learnt about themselves, and which speaker they would like to hear more from.
 </details>
 
 <details class="ecg-level" markdown="1">
@@ -42,6 +40,7 @@ TODO: what the school does at this stage.
 - Ask what they're learning from [Gap Exploration Month](programmes.md#jc1-gap-exploration-month) and [HECGS Day](programmes.md#jc1--jc2-hecgs-day).
 - Visit university open houses together.
 - Start talking about cost early: [Scholarships](scholarships.md) and [Financial Aid](financial-aid.md).
+- **Parents' morning with the universities:** each July, with the Parent Teacher Association, we invite the Singapore universities' admissions offices to explain how admissions work and to answer parents' questions at a mini university fair. Look out for the invitation through the school.
 </details>
 
 <details class="ecg-level" markdown="1">

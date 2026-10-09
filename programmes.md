@@ -20,7 +20,18 @@ What are Gap Exploration Month, HECGS Day, Sec 4 ECG Experience and Horizon, and
 
 ## JC1 Gap Exploration Month
 
-TODO: two or three sentences on what JC1s do during Gap Exploration Month and what they produce. (Evergreen — stays the same each year.)
+*Purposeful explorers, confident navigators.*
+
+In January, before JC lessons begin, JC1 students from the Integrated Programme spend a month learning outside the classroom. Each student puts together their own month from four kinds of experience:
+
+- **Internships** with organisations such as schools, preschools, clinics, social service agencies, science centres and start-ups
+- **Entrepreneurship**: testing a small business idea of their own
+- **Values in Action**: community projects, from community gardening to working with migrant workers
+- **Online learning**: a course in something they're curious about, from neurobiology to a new language
+
+The aim is for you to try things out, reflect on what you discover about yourself, and arrive at JC1 with a clearer sense of direction. Record your reflections in your ECG e-portfolio: they're useful later for personal statements and interviews.
+
+TODO: what students hand in or present at the end of the month, if anything.
 {: .ecg-todo }
 
 {: .deadline }
@@ -28,16 +39,29 @@ TODO: two or three sentences on what JC1s do during Gap Exploration Month and wh
 
 ## JC1 & JC2 HECGS Day
 
-TODO: what HECGS Day is and what students do.
-{: .ecg-todo }
+**Higher Education, Career Guidance and Scholarships (HECGS) Day** is a full school day, usually in April, for the whole JC1 and JC2 cohort. Universities, scholarship providers and other organisations come to RVHS, and some of their speakers are RV alumni.
+
+**What happens on the day:**
+- **Opening panel** in the auditorium, on a question about the future of study and work
+- **Talks** by universities and organisations, each with time for questions. JC2s attend more talks than JC1s, because they apply to university the following year.
+- **An ECG lesson** with your class
+- **The ECG Fair** in the hall, where universities and organisations run booths you can visit
+
+**Making the most of it:**
+- Before the day, look through the list of talks and booths, and note two or three questions to ask.
+- Ask speakers about what the course or job is really like, not only what the brochure says.
+- Afterwards, write a few lines in your ECG e-portfolio about what surprised you and what you want to look into next.
 
 {: .deadline }
 > **2027:** TODO date (the 2026 event was on 29 Apr). [HECGS Day site](https://sites.google.com/moe.edu.sg/rvhs-hecgs-day/event-day)
 
 ## Sec 4 ECG Experience
 
-TODO: what the Sec 4 ECG Experience is, including the fireside chats.
-{: .ecg-todo }
+The Sec 4 ECG Experience runs over two days in May, during the week after mid-year exams. It has two parts.
+
+**MBTI workshop.** In a half-day workshop led by trained facilitators, you find out your preferences on the **Myers-Briggs Type Indicator (MBTI)**: where you draw your energy from, how you take in information, how you make decisions and how you like to organise your life. You then look at how your preferences show up in the way you communicate, study, handle stress and think about careers. Your type describes what you naturally prefer, not what you're able to do, so it can't tell you which career to choose. It gives you useful words for understanding yourself and working well with people who differ from you.
+
+**Fireside chats.** You join a small group with a guest speaker from a field you're interested in, and ask them about their work, how they got there and what they wish they had known at your age. Speakers come from a wide range of industries, and students are grouped by the interests they choose beforehand.
 
 {: .deadline }
 > **2027:** TODO dates (the 2026 programme ran on 18–19 May). [Sec 4 ECG Experience site](https://sites.google.com/moe.edu.sg/sec4ecgexperience)

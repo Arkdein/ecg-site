@@ -39,18 +39,52 @@ TODO: add other universities RV students apply to, if any.
 
 ## Chinese-medium or English-medium programmes
 
-TODO: the difference, who each suits, and how RV students' Chinese is an advantage.
-{: .ecg-todo }
+Most undergraduate programmes for international students are **taught in Chinese**. They offer the widest choice of courses, usually cost much less, and ask for proof of Chinese proficiency. Many include some modules taught in English.
+
+A smaller number are **taught in English**, often in business, economics and medicine. They usually cost substantially more (at Fudan for 2025 entry, the English-taught economics programme cost more than three times the Chinese-taught one) and ask for a good General Paper grade instead of Chinese.
+
+**Why RV students have an advantage:** most of you can apply straight into a Chinese-medium programme without a separate language year. Some universities accept your school Chinese results instead of an HSK certificate (see below). And studying in Chinese builds the bilingual, bicultural depth that scholarships such as the SFCCA Scholarship look for.
 
 ## Language requirements: HSK and A-Level Chinese
 
-TODO: what HSK (China's Chinese-proficiency test) is, which levels Chinese-medium programmes usually ask for, and whether A-Level H1/H2 Chinese results are accepted. Link to each university's admissions page.
+**HSK** (汉语水平考试) is China's standard Chinese-proficiency test for non-native speakers. Chinese-medium programmes at top universities usually ask for **HSK 5 or HSK 6** with a minimum score. Certificates are normally valid for two years, so time your test with your application in mind.
+
+Some universities accept Singapore school Chinese results instead of HSK. For 2025 entry, for example:
+
+| University | What it accepted instead of HSK (2025 entry) |
+|---|---|
+| Peking University | Taking H2 Chinese Language and Literature, H2 China Studies in Chinese or H2 Translation. Otherwise, HSK 6. |
+| Fudan University | Higher Chinese at O-Level (A2 or better), H1 Chinese (A), or taking H2 Chinese Language and Literature. Otherwise, HSK 5 (210 or more) or HSK 6 (180 or more). |
+
+These rules can change from year to year. Before deciding whether to sit HSK, check the current brochure on the university's admissions page (links in the table above).
+
+TODO: Tsinghua's language requirement, and the HSK test dates and registration link for Singapore.
 {: .ecg-todo }
 
 ## Review-based vs exam-based admission
 
-TODO: explain the two routes and which universities use which.
+Universities admit international undergraduates in one of two ways, and some use both.
+
+- **Review-based (申请审核):** the university reads your application (A-Level results or forecast grades, Chinese proficiency, recommendation letters, personal statement, sometimes a short video) and interviews a shortlist. Peking University admitted Singapore A-Level students this way for 2025 entry.
+- **Exam-based (笔试):** you sit the university's own written entrance tests, usually followed by an interview.
+
+At **Fudan**, for example, applicants whose A-Level and Chinese results meet the published requirements for their course are exempt from the written tests and are assessed on their application and an online interview.
+
+TODO: which route Tsinghua uses for A-Level students.
 {: .ecg-todo }
+
+<details class="ecg-level" markdown="1">
+<summary>What a Peking University interview can be like</summary>
+
+Interviews are in Chinese and often ask you to discuss an open question, so practise thinking aloud about current issues, culture and ideas. Questions from recent years include:
+
+- 以前书信慢，马车也慢，现在人恨不得24小时都在线上。你如何理解人际关系和时空距离的关系？
+- 有人认为，古典文学只不过是为了应付考试。试讨论。
+- 人类社会发展"文明求同，文化求异"。你同意吗？
+- 有人预言，脑机连接会让人步入半人半机的时代。试讨论。
+
+Ask the [Chinese universities teacher](get-help.md#china) for a practice interview.
+</details>
 
 ## Scholarships
 
@@ -60,8 +94,15 @@ TODO: explain the two routes and which universities use which.
 
 ## Applicants who were formerly Chinese citizens
 
-TODO: the extra residence and citizenship conditions some universities apply. Link to the official rule and ask students to check their own case with the university.
-{: .ecg-todo }
+If you, or one or both of your parents, are or were Chinese citizens, you can apply as an international student only if you meet extra conditions set by China's Ministry of Education. In Peking and Fudan universities' 2025 brochures, these included:
+
+- holding a valid foreign passport or proof of nationality for **at least four years** before applying, and
+- having **actually lived outside China for at least two of those four years**, shown by passport entry and exit stamps (nine months abroad in a year counts as one year).
+
+Anyone who emigrated from mainland China, Hong Kong, Macao or Taiwan must also show that they have given up Chinese nationality. Whether you still hold Chinese nationality is decided by China's immigration authorities, not by the university.
+
+{: .important }
+> If this could apply to you, check your own case with the university's admissions office **before** you apply. Students found to hold Chinese nationality can lose their place, even after enrolling.
 
 ## Documents from school
 

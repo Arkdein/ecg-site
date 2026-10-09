@@ -23,8 +23,17 @@ Most US universities accept the **Common App**, one application sent to many col
 - [Guide for first-year applicants](https://www.commonapp.org/apply/first-year-students)
 - [Video: the application journey](https://youtu.be/rM2x2j03haU)
 
-TODO: one line on application rounds (Early Decision / Early Action / Regular Decision) and typical dates, linking to the Common App's own guidance. Add a note on financial aid for international students.
-{: .ecg-todo }
+**Application rounds.** Many colleges have an early round, with deadlines usually in early or mid-November, and a regular round, usually in early January.
+
+- **Early Decision** is binding. If you're admitted, you must attend and withdraw your other applications. Use it only for a clear first choice, and only once your family has looked at the cost.
+- **Early Action** is early but not binding.
+- **Regular Decision** is the main round.
+
+Each college sets its own deadlines and rules. Check them on the college's website or its Common App page.
+
+**Paying for it.** Financial aid for international students varies a lot. A few colleges meet full financial need for international students, some offer merit scholarships, and many offer little. Many also ask for the **CSS Profile** on top of the Common App. Check each college's international financial aid page early, and try its net price calculator. [EducationUSA: financing your studies](https://educationusa.state.gov/your-5-steps-us-study/finance-your-studies)
+
+**What admissions officers look for.** Your A-Level grades matter, but less than you might expect. Colleges also weigh your essays, your activities (depth in one or two areas counts more than a long list), your teachers' recommendations and, for some colleges, an alumni interview. Start your personal statement early.
 
 ## RVHS US applications guide
 

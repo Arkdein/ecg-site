@@ -19,6 +19,13 @@ Not sure what to study, where to apply, or how to write your personal statement?
 
 [Book an appointment](https://cal.gov.sg/9zgk9xx0kprksz9c6dj0hlo2){: .btn .btn-primary }
 
+## Drop in to the ECG Room
+
+The ECG Room is open on school days. Drop by for a quick chat with the ECG Counsellor or an ECG teacher, or browse on your own. It has local and overseas university prospectuses, scholarship brochures, MBTI reading, and games and activities for exploring your interests.
+
+TODO: where the ECG Room is now (2025 slides say both "beside the Eco-trail" and "opposite the bookshop").
+{: .ecg-todo }
+
 ## Ask a question
 
 For anything else, send us a message and the right teacher will get back to you.
@@ -40,11 +47,12 @@ This table is the single source of "who handles what". Other pages link to its r
 | <span id="china"></span>China | Applications, recommendation letters | Chinese universities teacher | TODO |
 | <span id="internships"></span>Internships | Internship queries and approvals | Senior Head (Talent Development, Scholarships & ECG) | — |
 | <span id="programmes"></span>Programmes | Horizon Programme, Sec 4 ECG Experience | Horizon & Sec 4 ECG teacher | — |
-| <span id="transcripts"></span>Any | Transcripts, testimonials | TODO | TODO |
+| <span id="transcripts"></span>Any | Transcripts | TODO | TODO |
+| <span id="testimonials"></span>Any | School Graduation Certificate (SGC) testimonial: asking for a correction; certified true copies for overseas applications | General Office (corrections are checked by the SGC coordinators) | Ask for corrections within 3 weeks of the SGC's issue date |
 
 Contact any of us through the [question form](https://docs.google.com/forms/d/e/1FAIpQLSeOE8cXBpMHC2tbjBdEsutPvv78ClxrqpQtn8lb81KaPvbzGQ/viewform).
 
-TODO: decide whether to add staff names next to roles (the old site listed names and personal emails; the council recommends roles plus the form and booking link). Fill in internal deadlines and the transcripts contact.
+TODO: decide whether to add staff names next to roles (the old site listed names and personal emails; the council recommends roles plus the form and booking link). Fill in internal deadlines and the transcripts contact (the testimonial row comes from the 2025 results-day briefing; check it's still current).
 {: .ecg-todo }
 
 {: .note }

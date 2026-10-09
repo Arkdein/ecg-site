@@ -52,8 +52,32 @@ For the official detail, see [MOE's 2025 results release](https://www.moe.gov.sg
 {: .note }
 > We always write "University Admission Score" in full on this site, because "UAS" is also short for the University of the Arts Singapore.
 
-TODO: add a worked example with made-up grades (Local universities portfolio).
-{: .ecg-todo }
+<details class="ecg-level" markdown="1">
+<summary>Worked example (made-up grades)</summary>
+
+A student has these results:
+
+| Subject | Grade | Points |
+|---|---|---|
+| H2 subject 1 | A | 20 |
+| H2 subject 2 | B | 17.5 |
+| H2 subject 3 | C | 15 |
+| H1 General Paper | B | 8.75 |
+| H1 fourth subject | A | 10 |
+| H1 Mother Tongue | C | 7.5 |
+| Project Work | Pass | — |
+
+The universities work out the score four ways and use the highest:
+
+| Combination | Raw total | Out of 70 |
+|---|---|---|
+| 3 H2 + GP | 61.25 / 70 | **61.25** |
+| 3 H2 + GP + Mother Tongue | 68.75 / 80 | 60.16 |
+| 3 H2 + GP + fourth subject | 71.25 / 80 | **62.34** ← used |
+| 3 H2 + GP + fourth subject + Mother Tongue | 78.75 / 90 | 61.25 |
+
+Here the H1 A in the fourth subject raises the score, and the Mother Tongue C would lower it, so it's left out. Try the same grades in the calculator above.
+</details>
 
 ## 2. Read Indicative Grade Profiles (IGPs) correctly
 
@@ -131,7 +155,16 @@ Scholarship deadlines fall in the same weeks as university applications. See [Sc
 
 ## 7. Talk to ECG
 
-TODO: when results-day consultations run in 2027 and how to book them.
+**On results day**, the ECG team gives a short Higher Education and Scholarships briefing, and ECG counselling booths are set up in the hall. Come with your questions: which courses to shortlist, whether to apply for a course above your grades, and which scholarships to consider.
+
+**After results day**, we can:
+- advise on choosing courses and universities
+- read your personal statement or scholarship essays and give feedback
+- coach you for interviews
+
+[Book a session](get-help.md#book-a-session) with the ECG Counsellor, or [send us a question](get-help.md). Let us know when you apply for a scholarship, are called for an interview, or receive an award, so we can support you.
+
+TODO: 2027 results-day timings and venue, once confirmed.
 {: .ecg-todo }
 
 {% include what-next.html
