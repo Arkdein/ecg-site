@@ -22,7 +22,7 @@ What are Gap Exploration Month, HECGS Day, Sec 4 ECG Experience and Horizon, and
 
 *Purposeful explorers, confident navigators.*
 
-In January, before JC lessons begin, JC1 students from the Integrated Programme spend a month learning outside the classroom. Each student puts together their own month from four kinds of experience:
+In January, before JC lessons begin, JC1 students from the Integrated Programme (IP students only) spend a month learning outside the classroom. Each student puts together their own month from four kinds of experience:
 
 - **Internships** with organisations such as schools, preschools, clinics, social service agencies, science centres and start-ups
 - **Entrepreneurship**: testing a small business idea of their own

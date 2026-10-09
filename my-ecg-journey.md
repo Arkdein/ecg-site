@@ -80,6 +80,3 @@ The **RVHS ECG Framework** has three stages:
 - **What to do:** start with [A-Level Results & Applying](results-and-applying.md). Applying overseas? See [United Kingdom](united-kingdom.md) (UCAS deadlines from 15 Oct), [United States](united-states.md) or [China](china.md).
 - **Paying for it:** [Scholarships](scholarships.md) and [Financial Aid](financial-aid.md)
 </details>
-
-TODO: the programmes above are taken from the 2025 ECG programme plan; check them against the 2027 plan. Confirm the stage for each level (the framework itself doesn't assign levels) and the reflection questions.
-{: .ecg-todo }

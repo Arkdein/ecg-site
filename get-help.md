@@ -23,8 +23,7 @@ Not sure what to study, where to apply, or how to write your personal statement?
 
 The ECG Room is open on school days. Drop by for a quick chat with the ECG Counsellor or an ECG teacher, or browse on your own. It has local and overseas university prospectuses, scholarship brochures, MBTI reading, and games and activities for exploring your interests.
 
-TODO: where the ECG Room is now (2025 slides say both "beside the Eco-trail" and "opposite the bookshop").
-{: .ecg-todo }
+You'll find it beside the Eco-trail, opposite the bookshop.
 
 ## Ask a question
 
