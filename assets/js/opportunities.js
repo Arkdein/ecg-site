@@ -15,6 +15,13 @@
    - Columns are found by their heading (Title, Organiser, Type,
      Field, Open to, Closing date, Summary, Link, Posted), so their
      order doesn't matter. Rows without a title are skipped.
+   - Summary text keeps its line breaks; a blank line starts a new
+     paragraph, and lines starting with "-" become a bulleted list.
+     Web addresses typed in the text become links. Long announcements
+     show the first paragraph, with the rest behind "Show full
+     announcement".
+   - The Link column is optional: when filled, a "Read more" button
+     is shown.
    - Only http(s) links are used. All text is inserted as text,
      never as HTML.
    Nothing the visitor types is saved or sent anywhere.
@@ -222,10 +229,45 @@
     return { text: "[Open until filled]", soon: false, badge: "" };
   }
 
+  /* ---------- Announcement text ---------- */
+
+  // Splits text into blocks at blank lines. A block whose every line starts
+  // with "-", "*" or "•" is a list; any other block is a paragraph whose
+  // single line breaks are kept.
+  function textBlocks(text) {
+    var out = [];
+    String(text || "").replace(/\r\n?/g, "\n").split(/\n[ \t]*\n+/).forEach(function (b) {
+      var lines = b.split("\n").map(function (l) { return l.replace(/\s+$/, ""); })
+                   .filter(function (l) { return l.trim() !== ""; });
+      if (!lines.length) return;
+      var isList = lines.every(function (l) { return /^\s*[-*\u2022]\s+/.test(l); });
+      out.push(isList ? { list: lines.map(function (l) { return l.replace(/^\s*[-*\u2022]\s+/, ""); }) }
+                      : { lines: lines.map(function (l) { return l.trim(); }) });
+    });
+    return out;
+  }
+
+  // Splits a line into plain text and web addresses:
+  // "See https://x.org/a." -> ["See ", {url:"https://x.org/a", text:"https://x.org/a"}, "."]
+  function linkParts(line) {
+    var parts = [], re = /\b(?:https?:\/\/|www\.)[^\s<>"]+/gi, last = 0, m;
+    while ((m = re.exec(line))) {
+      var raw = m[0].replace(/[.,;:!?)\]'’"]+$/, ""); // leave trailing punctuation outside the link
+      if (raw.indexOf("(") !== -1 && m[0].charAt(raw.length) === ")") raw += ")";
+      if (m.index > last) parts.push(line.slice(last, m.index));
+      parts.push({ url: /^www\./i.test(raw) ? "https://" + raw : raw, text: raw });
+      last = m.index + raw.length;
+      re.lastIndex = last;
+    }
+    if (last < line.length) parts.push(line.slice(last));
+    return parts;
+  }
+
   var api = {
     parseCSV: parseCSV, parseDate: parseDate, todaySG: todaySG, formatDate: formatDate,
     daysBetween: daysBetween, safeUrl: safeUrl, toItems: toItems, isOpen: isOpen,
-    filterItems: filterItems, sortItems: sortItems, options: options, closingLabel: closingLabel
+    filterItems: filterItems, sortItems: sortItems, options: options, closingLabel: closingLabel,
+    textBlocks: textBlocks, linkParts: linkParts
   };
   if (typeof module !== "undefined" && module.exports) { module.exports = api; return; }
 
@@ -355,6 +397,46 @@
     }
   }
 
+  // One line of text, with any web addresses as links
+  function addLine(parent, line) {
+    linkParts(line).forEach(function (p) {
+      if (typeof p === "string") parent.appendChild(document.createTextNode(p));
+      else parent.appendChild(el("a", { href: p.url, rel: "noopener", className: "ecg-opp-inline-link", text: p.text }));
+    });
+  }
+
+  function blockNode(b) {
+    if (b.list) {
+      var ul = el("ul");
+      b.list.forEach(function (t) { var li = el("li"); addLine(li, t); ul.appendChild(li); });
+      return ul;
+    }
+    var p = el("p");
+    b.lines.forEach(function (t, i) { if (i) p.appendChild(el("br")); addLine(p, t); });
+    return p;
+  }
+
+  // Short announcements show in full. Longer ones show the first block,
+  // with the rest behind "Show full announcement".
+  function summaryNode(text) {
+    var blocks = textBlocks(text);
+    var box = el("div", { className: "ecg-opp-summary" });
+    if (!blocks.length) return null;
+    var long = blocks.length > 2 || String(text).length > 400;
+    if (!long) { blocks.forEach(function (b) { box.appendChild(blockNode(b)); }); return box; }
+    // Preview: the first block, plus the next one if the first is only a greeting ("Dear students,")
+    var first = blocks[0].lines ? blocks[0].lines.join(" ") : "";
+    var keep = (blocks[0].lines && first.length < 80 && blocks.length > 2) ? 2 : 1;
+    blocks.slice(0, keep).forEach(function (b) { box.appendChild(blockNode(b)); });
+    var more = el("details", { className: "ecg-opp-more" }, [el("summary", { text: "Show full announcement" })]);
+    blocks.slice(keep).forEach(function (b) { more.appendChild(blockNode(b)); });
+    more.addEventListener("toggle", function () {
+      more.firstChild.textContent = more.open ? "Show less" : "Show full announcement";
+    });
+    box.appendChild(more);
+    return box;
+  }
+
   function card(it, today) {
     var lab = closingLabel(it, today);
     var h = el("h3", { className: "ecg-opp-title" }, [
@@ -367,11 +449,12 @@
     var li = el("li", { className: "ecg-opp-card" + (lab.soon ? " ecg-opp-soon" : "") }, [head]);
     if (meta) li.appendChild(el("p", { className: "ecg-opp-meta", text: meta }));
     if (it.openTo) li.appendChild(el("p", { className: "ecg-opp-who", text: "Open to: " + it.openTo }));
-    if (it.summary) li.appendChild(el("p", { className: "ecg-opp-summary", text: it.summary }));
+    var sum = summaryNode(it.summary);
+    if (sum) li.appendChild(sum);
     var foot = el("div", { className: "ecg-opp-foot" });
     if (it.link) {
-      foot.appendChild(el("a", { className: "btn btn-primary ecg-opp-apply", href: it.link, rel: "noopener",
-        text: "Apply", "aria-label": "Apply: " + it.title + " (organiser's website)" }));
+      foot.appendChild(el("a", { className: "btn ecg-opp-apply", href: it.link, rel: "noopener",
+        text: "Read more", "aria-label": "Read more: " + it.title + " (opens the organiser's page)" }));
     }
     if (it.posted) foot.appendChild(el("span", { className: "ecg-opp-posted", text: "Posted " + formatDate(it.posted) }));
     if (foot.childNodes.length) li.appendChild(foot);

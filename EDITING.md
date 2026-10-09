@@ -26,8 +26,11 @@ In the Sheet, on the **Entry** tab:
 1. Use the first empty row. One opportunity per row. The grey row under the headings says what goes in each column.
 2. Only add opportunities that recent graduates can apply for.
 3. Type the closing date as a date (e.g. 31/10/2026), or leave it blank if it stays open until filled. The listing disappears by itself after 11:59 pm on that date.
-4. Columns A to I are public. Put contacts and internal remarks in **Team notes** only.
-5. Leave **Approved** blank. The editor or deputy checks the row and chooses **Yes**; only then does it show on the website.
+4. Write the **Summary** the way you'd write the Classroom post. Line breaks are kept; a blank line starts a new paragraph, and lines starting with `- ` become bullet points. Web addresses typed in the text (e.g. a registration form) become clickable links. Long announcements show the first paragraph, with a "Show full announcement" button for the rest.
+5. **Link** is optional. If you fill it, the card gets a **Read more** button to that page.
+6. Images and attached flyers don't appear on the website. If the Classroom post says "scan the QR code in the flyer", paste the registration link into the Summary instead.
+7. Columns A to I are public. Put contacts and internal remarks in **Team notes** only.
+8. Leave **Approved** blank. The editor or deputy checks the row and chooses **Yes**; only then does it show on the website.
 
 Don't add, move or rename columns, and don't type in the **Public** tab: it fills itself from Entry and is what the website reads. Each term, delete rows that have closed (the website reads the first 200 rows).
 

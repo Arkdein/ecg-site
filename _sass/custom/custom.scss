@@ -196,8 +196,16 @@ details.ecg-level[open] summary { margin-bottom: 0.5rem; }
 .ecg-opp-meta { font-size: 0.9375rem; color: #3c4656; margin: 0.3rem 0 0; }
 .ecg-opp-who { font-size: 0.875rem; color: #4a5568; margin: 0.15rem 0 0; }
 .ecg-opp-summary { margin: 0.5rem 0 0; }
+.ecg-opp-summary p, .ecg-opp-summary ul { margin: 0 0 0.6rem; }
+.ecg-opp-summary > :last-child, .ecg-opp-more > :last-child { margin-bottom: 0; }
+.ecg-opp-summary ul { padding-left: 1.25rem; }
+.ecg-opp-summary li { margin: 0.1rem 0 !important; }
+.ecg-opp-inline-link { overflow-wrap: anywhere; }
+.ecg-opp-more summary { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: $rvhs-blue; cursor: pointer; }
+.ecg-opp-more[open] summary { margin-bottom: 0.4rem; }
 .ecg-opp-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 0.75rem; }
-.ecg-opp .ecg-opp-apply { margin: 0 !important; min-height: 44px; display: inline-flex; align-items: center; }
+.ecg-opp .ecg-opp-apply { margin: 0 !important; min-height: 44px; display: inline-flex; align-items: center; background: #fff; color: $rvhs-navy; border: 1px solid $rvhs-navy; box-shadow: none; }
+.ecg-opp .ecg-opp-apply:hover { background: $rvhs-tint; }
 .ecg-opp-posted, .ecg-opp-updated { font-size: 0.8125rem; color: #4a5568; }
 .ecg-opp-updated { margin: 0.5rem 0 0; }
 @media (max-width: 31.25rem) {

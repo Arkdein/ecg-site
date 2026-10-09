@@ -87,4 +87,21 @@ var open = sample.filter(function (x) { return opp.isOpen(x, "2026-10-09"); });
 assert.strictEqual(open.length, 5);
 assert.ok(open.every(function (x) { return x.link && x.posted; }));
 
+// Announcement text: paragraphs, kept line breaks, bulleted lists
+assert.deepStrictEqual(opp.textBlocks("Dear students,\n\nJoin us:\n\n- Nursing\n- Physiotherapy\n\nDate: 13 Oct  \nTime: 8 pm\n\n\n"), [
+  { lines: ["Dear students,"] },
+  { lines: ["Join us:"] },
+  { list: ["Nursing", "Physiotherapy"] },
+  { lines: ["Date: 13 Oct", "Time: 8 pm"] }
+]);
+assert.deepStrictEqual(opp.textBlocks("\r\n  \r\n"), []);
+assert.deepStrictEqual(opp.textBlocks("• One\n• Two"), [{ list: ["One", "Two"] }]);
+
+// Web addresses in text become links; trailing punctuation stays outside
+assert.deepStrictEqual(opp.linkParts("Register at https://forms.gle/abc123."), ["Register at ", { url: "https://forms.gle/abc123", text: "https://forms.gle/abc123" }, "."]);
+assert.deepStrictEqual(opp.linkParts("See www.liverpool.ac.uk, then apply"), ["See ", { url: "https://www.liverpool.ac.uk", text: "www.liverpool.ac.uk" }, ", then apply"]);
+assert.deepStrictEqual(opp.linkParts("(https://en.wikipedia.org/wiki/Foo_(bar))"), ["(", { url: "https://en.wikipedia.org/wiki/Foo_(bar)", text: "https://en.wikipedia.org/wiki/Foo_(bar)" }, ")"]);
+assert.deepStrictEqual(opp.linkParts("No links here"), ["No links here"]);
+assert.deepStrictEqual(opp.linkParts("javascript:alert(1)"), ["javascript:alert(1)"]);
+
 console.log("All Current Opportunities checks passed.");
