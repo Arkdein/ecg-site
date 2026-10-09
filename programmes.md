@@ -39,7 +39,7 @@ Your type describes what you naturally prefer, not what you're able to do, and t
 </div>
 
 {: .deadline }
-> **2027:** TODO dates (the 2026 programme ran on 18–19 May).
+> **2027:** dates to be confirmed. The 2026 programme ran on 18–19 May.
 
 ## JC1 Gap Exploration Month
 
@@ -58,11 +58,8 @@ The aim is to try things out, notice what you learn about yourself, and start JC
 [Click here for details](https://sites.google.com/moe.edu.sg/gap2026/home){: .btn .btn-primary aria-label="Click here for details: Gap Exploration Month site" }
 </div>
 
-TODO: what students hand in or present at the end of the month, if anything.
-{: .ecg-todo }
-
 {: .deadline }
-> **January 2027:** TODO dates and briefing. This page must be complete before JC1s start in January.
+> **January 2027:** dates and briefing to be confirmed.
 
 ## JC1 & JC2 HECGS Day
 
@@ -87,7 +84,7 @@ TODO: what students hand in or present at the end of the month, if anything.
 </div>
 
 {: .deadline }
-> **2027:** TODO date (the 2026 event was on 29 Apr).
+> **2027:** date to be confirmed. The 2026 event was on 29 Apr.
 
 ## Horizon Programme
 
@@ -103,4 +100,4 @@ Horizon connects JC1 students with experienced professionals from a range of ind
 > Students selected for Horizon take part in its overseas programme rather than other school overseas trips, so that as many students as possible get a meaningful international experience. Exceptions may be made in special cases.
 
 {: .deadline }
-> **Next intake (2027–28):** applications usually open in July. TODO: dates and form link. (The 2026–27 intake applied 16–22 Jul 2026; only shortlisted candidates were invited to a group interview.)
+> **Next intake (2027–28):** applications usually open in July. (The 2026–27 intake applied 16–22 Jul 2026; only shortlisted candidates were invited to a group interview.)
