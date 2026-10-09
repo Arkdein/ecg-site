@@ -3,7 +3,7 @@ title: Current Opportunities
 nav_order: 4
 owner: Internships
 last_reviewed: Oct 2026
-description: Where to find current internships, programmes and jobs, and how to apply for and learn from an internship.
+description: Open internships, jobs and programmes for recent RVHS graduates, where current students find announcements, and how to apply for and learn from an internship.
 ---
 
 # Current Opportunities
@@ -18,12 +18,22 @@ What can I apply for right now, and how do I make the most of it?
 {:toc}
 </details>
 
-## Where to find current openings
+## Current RVHS students
 
 {: .important }
-> Current internships, programmes, talks and post-A-Level jobs, with their closing dates, are posted in the **ECG Google Classroom**. Join it with your students.edu.sg account. Class code: TODO.
+> **Studying at RVHS now? Your announcements are in the ECG Google Classroom, not on this page.** Internships, programmes, talks and jobs for current students, with their closing dates, are posted there.
+>
+> [Join the ECG Google Classroom](https://classroom.google.com/c/ODIzMzI2MzY3ODk4?cjc=m242qct5){: .btn .btn-primary }
+>
+> Sign in with your students.edu.sg account. The Classroom is only for current RVHS students.
 
-TODO: add the Google Classroom class code or join link (Internships portfolio).
+## Open now for recent graduates
+
+Finished at RVHS and can't use the Classroom any more? These internships, jobs and programmes are open to recent graduates. Each one disappears after its closing date. Always check the details on the organiser's own page before you apply.
+
+{% include opportunities.html %}
+
+TODO: connect the Google Sheet. In "ECG Current Opportunities (website feed)": File > Share > Publish to web > Public tab > Comma-separated values (.csv) > Publish. Paste the link into `_config.yml` as `opportunities_csv`. Until then, sample listings are shown.
 {: .ecg-todo }
 
 ## Internships
@@ -34,7 +44,7 @@ An internship lets you try out a career, build your network and gain experience 
 
 The Student Internship Programme (SIP) creates internship opportunities for **Sec 4, JC1 and JC2** students. It is part of the [RVHS ECG Framework](my-ecg-journey.md): you explore the world of work first-hand, learn more about your own values, interests, personality and strengths, and build collaboration and communication skills.
 
-The school posts the internships it sources through its partners in the [ECG Google Classroom](#where-to-find-current-openings), first come, first served. We can't find an internship for every student, so we strongly encourage you to find your own as well.
+The school posts the internships it sources through its partners in the [ECG Google Classroom](#current-rvhs-students), first come, first served. We can't find an internship for every student, so we strongly encourage you to find your own as well.
 
 ### Finding and applying, step by step
 
@@ -52,7 +62,7 @@ The school posts the internships it sources through its partners in the [ECG Goo
 **3. Decide what you need.** Can you take an unpaid placement? Does it need to count towards something, such as a course requirement? What about the company's culture and the commitment expected? Use the **Purpose, Process and Impact** framework in your ECG Portfolio to plan.
 
 **4. Contact the company.**
-- Email to ask about internships and how to apply. Use your **students.edu.sg** email.
+- Email to ask about internships and how to apply. Use your **students.edu.sg** email, or, if you have graduated, a personal email address you check often.
 - Check your spelling and grammar, and ask a teacher or the ECG team to look over your email first.
 - Follow the company's process: a form, a CV, or both. A short cover letter showing your enthusiasm helps.
 - The [ECG Counsellor](get-help.md#book-a-session) can help you turn your ECG Portfolio into a CV.
@@ -67,13 +77,13 @@ The school posts the internships it sources through its partners in the [ECG Goo
 
 > Dear [Title] [Name],
 >
-> My name is [full name], a [Sec 4 / JC1 / JC2] student at River Valley High School taking [subjects]. I am active in [CCA and role].
+> My name is [full name], a [Sec 4 / JC1 / JC2 student at / 20XX graduate of] River Valley High School, taking [subjects]. I am active in [CCA and role].
 >
 > I am writing because I am interested in [the company's work], particularly [something specific], and would like to learn more about the field.
 >
 > I would be grateful to know whether there are any internship or attachment opportunities for students, and how I might apply.
 >
-> I can be reached at [students.edu.sg email]. Thank you for your time.
+> I can be reached at [email address]. Thank you for your time.
 >
 > Yours sincerely,
 > [Full name]
@@ -104,7 +114,7 @@ Internships, job shadowing and attachments are learning experiences, so students
 <details class="ecg-level" markdown="1">
 <summary>Will the school find an internship for me?</summary>
 
-Not for everyone. We post the opportunities we source in the [ECG Google Classroom](#where-to-find-current-openings), first come, first served, and encourage you to find your own too.
+Not for everyone. We post the opportunities we source in the [ECG Google Classroom](#current-rvhs-students), first come, first served, and encourage you to find your own too.
 </details>
 
 ## Questions

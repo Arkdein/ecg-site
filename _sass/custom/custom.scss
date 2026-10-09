@@ -163,3 +163,46 @@ details.ecg-level[open] summary { margin-bottom: 0.5rem; }
 @media print { .ecg-uas-reset { display: none !important; } }
 .ecg-uas .table-wrapper { overflow-x: auto; }
 @media (max-width: 31.25rem) { .ecg-uas-working { font-size: 0.9375rem; } .ecg-uas-working th, .ecg-uas-working td { padding: 0.4rem 0.4rem !important; } }
+
+// Current Opportunities list (_includes/opportunities.html + assets/js/opportunities.js)
+.ecg-opp { margin: 1rem 0 2rem; }
+.ecg-opp-status, .ecg-opp-empty { color: #3c4656; }
+.ecg-opp-error { background: #f6f7f9; border-left: 4px solid $rvhs-red-dark; padding: 0.6rem 0.9rem; }
+.ecg-opp-sample { background: #f6f7f9; border: 1px dashed #8a94a6; border-radius: 4px; color: #3c4656; padding: 0.4rem 0.8rem; font-size: 0.875rem; }
+.ecg-opp-controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0.6rem 0.75rem; border: 1px solid $border-color; border-top: 4px solid $rvhs-navy; border-radius: 6px; padding: 0.9rem 1rem; background: $rvhs-tint; }
+.ecg-opp-field { display: flex; flex-direction: column; gap: 0.2rem; flex: 1 1 10rem; min-width: 0; }
+.ecg-opp-field[hidden] { display: none; }
+.ecg-opp-search { flex: 2 1 16rem; }
+.ecg-opp-clear-wrap { flex: 0 0 auto; }
+.ecg-opp-field label { font-size: 0.875rem; font-weight: 600; color: $rvhs-navy; }
+.ecg-opp input[type="search"], .ecg-opp select {
+  font: inherit; font-size: 1rem; color: $rvhs-ink; background: #fff;
+  min-height: 44px; padding: 0.4rem 0.6rem; border: 1px solid #8a94a6; border-radius: 6px; width: 100%;
+}
+.ecg-opp select { cursor: pointer; }
+.ecg-opp-clear {
+  font: inherit; font-size: 1rem; min-height: 44px; padding: 0 1rem; cursor: pointer;
+  background: #fff; border: 1px solid #8a94a6; border-radius: 6px; color: $rvhs-blue;
+}
+.ecg-opp-clear:hover { border-color: $rvhs-blue; }
+.ecg-opp-count { font-weight: 600; color: $rvhs-navy; margin: 1rem 0 0.5rem; }
+.ecg-opp-list { list-style: none; padding: 0 !important; margin: 0; }
+.ecg-opp-list > li::before { content: none !important; }
+.ecg-opp-card { border: 1px solid $border-color; border-left: 4px solid $rvhs-navy; border-radius: 6px; padding: 0.8rem 1rem; margin: 0 0 0.75rem !important; background: #fff; }
+.ecg-opp-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.6rem; }
+.main-content .ecg-opp-title { margin: 0 !important; font-size: 1.1rem !important; color: $rvhs-navy; flex: 1 1 16rem; overflow-wrap: anywhere; }
+.ecg-opp-close { font-weight: 600; color: #3c4656; }
+.ecg-opp-badge { font-size: 0.75rem; font-weight: 700; color: $rvhs-navy; border: 1px solid $rvhs-navy; border-radius: 999px; padding: 0 0.5rem; white-space: nowrap; }
+.ecg-opp-meta { font-size: 0.9375rem; color: #3c4656; margin: 0.3rem 0 0; }
+.ecg-opp-who { font-size: 0.875rem; color: #4a5568; margin: 0.15rem 0 0; }
+.ecg-opp-summary { margin: 0.5rem 0 0; }
+.ecg-opp-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 0.75rem; }
+.ecg-opp .ecg-opp-apply { margin: 0 !important; min-height: 44px; display: inline-flex; align-items: center; }
+.ecg-opp-posted, .ecg-opp-updated { font-size: 0.8125rem; color: #4a5568; }
+.ecg-opp-updated { margin: 0.5rem 0 0; }
+@media (max-width: 31.25rem) {
+  .ecg-opp-controls { padding: 0.8rem 0.85rem; }
+  .ecg-opp-field, .ecg-opp-search, .ecg-opp-clear-wrap { flex: 1 1 100%; }
+  .ecg-opp .ecg-opp-apply { width: 100%; justify-content: center; }
+}
+@media print { .ecg-opp-controls { display: none !important; } }

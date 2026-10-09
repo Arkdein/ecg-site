@@ -15,6 +15,11 @@ baseurl: "/ecg-site"                       # ← EDIT (set at setup)
 # search engines not to list the site. Set to false at go-live.
 draft: true                                # ← EDIT at go-live
 
+# Current Opportunities list: the "Publish to web" CSV link of the
+# Public tab in the Google Sheet "ECG Current Opportunities (website feed)".
+# Leave empty to show sample listings.
+opportunities_csv: ""                      # ← EDIT (paste the link between the quotes)
+
 # Design (Just the Docs theme, loaded by GitHub)
 remote_theme: just-the-docs/just-the-docs@v0.12.0
 plugins:

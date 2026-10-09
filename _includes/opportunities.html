@@ -1,0 +1,21 @@
+{%- comment -%}
+  Current Opportunities list (searchable, filterable cards).
+  Use:  {% include opportunities.html %}
+
+  Listings come from the ECG team's Google Sheet, published as CSV.
+  The link is  opportunities_csv  in _config.yml. While it is empty,
+  the sample file assets/data/opportunities-sample.csv is shown.
+  How it works: assets/js/opportunities.js (the rules are at the top)
+  How it looks: the "Current Opportunities list" section of _sass/custom/custom.scss
+{%- endcomment -%}
+{%- if site.opportunities_csv and site.opportunities_csv != "" -%}
+  {%- assign opp_src = site.opportunities_csv -%}
+  {%- assign opp_sample = "false" -%}
+{%- else -%}
+  {%- assign opp_src = '/assets/data/opportunities-sample.csv' | relative_url -%}
+  {%- assign opp_sample = "true" -%}
+{%- endif -%}
+<div class="ecg-opp" data-src="{{ opp_src }}" data-sample="{{ opp_sample }}" data-help="{{ '/get-help' | relative_url }}#internships">
+  <noscript><p>The list needs JavaScript switched on. If you can't switch it on, contact the ECG team through <a href="{{ '/get-help' | relative_url }}#internships">Who to ask</a>.</p></noscript>
+</div>
+<script src="{{ '/assets/js/opportunities.js' | relative_url }}" defer></script>
