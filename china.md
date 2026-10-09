@@ -34,9 +34,6 @@ China has more than a thousand universities offering an enormous range of course
 
 RV students have applied for courses including International Relations, Chinese Studies, Physics and Mathematics.
 
-TODO: add other universities RV students apply to, if any.
-{: .ecg-todo }
-
 ## Chinese-medium or English-medium programmes
 
 Most undergraduate programmes for international students are **taught in Chinese**. They offer the widest choice of courses, usually cost much less, and ask for proof of Chinese proficiency. Many include some modules taught in English.
@@ -56,10 +53,24 @@ Some universities accept Singapore school Chinese results instead of HSK. For 20
 | Peking University | Taking H2 Chinese Language and Literature, H2 China Studies in Chinese or H2 Translation. Otherwise, HSK 6. |
 | Fudan University | Higher Chinese at O-Level (A2 or better), H1 Chinese (A), or taking H2 Chinese Language and Literature. Otherwise, HSK 5 (210 or more) or HSK 6 (180 or more). |
 
+**Tsinghua University** (2027 entry) asks for **HSK 5 or above, with more than 60 in each of listening, reading and writing**, for its programmes taught in Chinese and English. It does not list Singapore school Chinese results as an alternative. Native Chinese speakers, and students from high schools where lessons are taught in Chinese, can ask for an HSK waiver, which Tsinghua decides case by case; if you hope to use it, check with Tsinghua's admissions office first. Tsinghua also asks for an English test result (such as TOEFL or IELTS) from applicants whose native language is not English. A few Tsinghua programmes are taught fully in English and don't need HSK.
+
 These rules can change from year to year. Before deciding whether to sit HSK, check the current brochure on the university's admissions page (links in the table above).
 
-TODO: Tsinghua's language requirement, and the HSK test dates and registration link for Singapore.
-{: .ecg-todo }
+### Taking HSK in Singapore
+
+In Singapore, HSK is run by the **Crestar HSK Education and Assessment Centre** (RELC Building, Orange Grove Road). Register and pay on [Crestar's site](https://hsk-crestar.com.sg/application-process/) before the closing date. The worldwide test calendar is on the official [Chinese Tests site](https://www.chinesetest.cn).
+
+{: .deadline }
+> **Next HSK dates in Singapore**
+> - **HSK 1–6 (paper test):** 12 December. Register by 30 October. Results about 15 January.
+> - **HSK 7–9 (online, taken at home):** 22 November. Register by 4 November.
+>
+> Check the date on Crestar's site before you register.
+
+If you take HSK 3 or above, you must also take the matching speaking test (HSKK) on the same day.
+
+**HSK is changing.** From the December sitting, HSK moves to a new nine-level format (HSK 3.0). The new HSK 4 to 6 expect a larger vocabulary than the old ones. Certificates from the old format stay valid for two years from the test date. Check which version your university's requirement refers to, and practise with the new-format sample papers on the Chinese Tests site.
 
 ## Review-based vs exam-based admission
 
@@ -70,8 +81,11 @@ Universities admit international undergraduates in one of two ways, and some use
 
 At **Fudan**, for example, applicants whose A-Level and Chinese results meet the published requirements for their course are exempt from the written tests and are assessed on their application and an online interview.
 
-TODO: which route Tsinghua uses for A-Level students.
-{: .ecg-todo }
+**Tsinghua** (2027 entry) uses the same route for all international applicants, whatever their qualifications. A panel reviews your online application first. If you pass, you are invited to a "Comprehensive Assessment"; Tsinghua tells shortlisted applicants how and when it will be held. The final decision weighs your academic results, language results, supporting documents and the assessment. A few points for RV students:
+
+- A-Level results are accepted as evidence of your academic performance. If you apply while still in JC2, upload your current school transcripts and a school letter confirming when you will graduate.
+- You also need two recommendation letters, a personal statement and a self-introduction video of up to three minutes, in both Chinese and English.
+- Design and Fine Arts applicants also send a portfolio and sit two drawing papers; Architecture applicants send a portfolio.
 
 <details class="ecg-level" markdown="1">
 <summary>What a Peking University interview can be like</summary>

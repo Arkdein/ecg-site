@@ -75,4 +75,4 @@ They appear at the bottom of the page as *"Owner: ECG (Scholarships) · Last rev
 
 ## Rules (from the style sheet)
 
-See [STYLE.md](STYLE.md). The short version: explain, then link out; never copy figures or deadlines that change yearly; write "University Admission Score" in full; staff by role, never personal email; no student name + face + class together.
+See [STYLE.md](STYLE.md). The short version: explain, then link out; never copy figures or deadlines that change yearly; write "University Admission Score" in full; staff by role, with name and MOE email in the Get Help table, never a personal email; no student name + face + class together.

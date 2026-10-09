@@ -49,6 +49,7 @@ h1, h2, h3, h4, .site-title, .btn {
 
 // Tables, collapsible rows, cards
 th { background: $rvhs-tint; color: $rvhs-navy; }
+td a[href^="mailto:"] { overflow-wrap: anywhere; } // long MOE addresses wrap on phones
 details.ecg-level { border: 1px solid $border-color; border-left: 4px solid $rvhs-navy; border-radius: 6px; padding: 0.6rem 1rem; margin: 0.6rem 0; background: #fff; }
 details.ecg-level summary { font-weight: 600; color: $rvhs-navy; cursor: pointer; }
 details.ecg-level[open] summary { margin-bottom: 0.5rem; }

@@ -40,7 +40,7 @@ For anything else, send us a message and the right teacher will get back to you.
 
 This table is the single source of "who handles what". Other pages link to its rows, so when a person changes, update the row here once.
 
-| Destination or topic | What they help with | Who (role) |
+| Destination or topic | What they help with | Who |
 |---|---|---|
 | <span id="counselling"></span>Not sure where to start | Course and career decisions, personal statements, CVs, mock interviews | ECG Counsellor |
 | <span id="local-universities"></span>Local universities | NUS, SMU, SUSS, University of the Arts Singapore | Local universities teacher (NUS/SMU/SUSS/UAS) |
@@ -48,7 +48,7 @@ This table is the single source of "who handles what". Other pages link to its r
 | <span id="scholarships"></span>Scholarships and financial aid | Choosing and applying for scholarships; financial worries | Scholarships teachers; Senior Head (Talent Development, Scholarships & ECG) |
 | <span id="uk"></span>United Kingdom | UCAS applications and references | UK universities teacher |
 | <span id="us"></span>United States | Common App, counselor letter, school report | Subject Head (ECG) |
-| <span id="china"></span>China | Applications | Chinese universities teacher |
+| <span id="china"></span>China | Applications and interview practice | Chinese universities teacher: Mr Randall Hoon, [hoon_yao_tong_randall@moe.edu.sg](mailto:hoon_yao_tong_randall@moe.edu.sg) |
 | <span id="internships"></span>Internships | Internship queries and approvals | Senior Head (Talent Development, Scholarships & ECG) |
 | <span id="programmes"></span>Programmes | Horizon Programme, Sec 4 ECG Experience | Horizon & Sec 4 ECG teacher |
 | <span id="transcripts"></span>Any | Transcripts | Your Civics Tutor |
@@ -59,7 +59,7 @@ Ask at least four to six weeks before the university's deadline, so your teacher
 
 Contact any of us through the [question form](https://docs.google.com/forms/d/e/1FAIpQLSeOE8cXBpMHC2tbjBdEsutPvv78ClxrqpQtn8lb81KaPvbzGQ/viewform).
 
-TODO: decide whether to add staff names next to roles (the old site listed names and personal emails; the council recommends roles plus the form and booking link). Check that the SGC correction window (3 weeks, from the 2025 results-day briefing) is still current.
+TODO: add each teacher's name and MOE email next to their role, from the 2026 ECG Committee Deployment (decided Oct 2026: names and MOE emails, never personal emails). Check that the SGC correction window (3 weeks, from the 2025 results-day briefing) is still current.
 {: .ecg-todo }
 
 {: .note }

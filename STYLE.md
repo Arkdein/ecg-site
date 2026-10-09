@@ -29,7 +29,7 @@ One page. Every contributor reads it once before drafting.
 
 ## People and privacy
 
-- Staff by role ("Scholarships portfolio"), with the team booking link or Form. Never a personal email.
+- Staff by role ("Scholarships portfolio"), with the teacher's name and MOE email (…@moe.edu.sg) beside it in the Get Help table, plus the team booking link or Form. Never a personal email.
 - Students: no name + face + class together. Alumni stories need written consent (18+).
 
 ## Images
