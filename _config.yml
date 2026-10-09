@@ -18,7 +18,7 @@ draft: true                                # ← EDIT at go-live
 # Current Opportunities list: the "Publish to web" CSV link of the
 # Public tab in the Google Sheet "ECG Current Opportunities (website feed)".
 # Leave empty to show sample listings.
-opportunities_csv: ""                      # ← EDIT (paste the link between the quotes)
+opportunities_csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR5GulSl-PRYTpvAqoLXM_ohatOLSqggc7kzFniGNZZ-ACLOeag8pnM14APSZdwcF8xjcSbo5Y_9e5e/pub?gid=1427148673&single=true&output=csv"   # ← EDIT
 
 # Design (Just the Docs theme, loaded by GitHub)
 remote_theme: just-the-docs/just-the-docs@v0.12.0

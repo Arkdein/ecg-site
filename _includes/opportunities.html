@@ -15,7 +15,7 @@
   {%- assign opp_src = '/assets/data/opportunities-sample.csv' | relative_url -%}
   {%- assign opp_sample = "true" -%}
 {%- endif -%}
-<div class="ecg-opp" data-src="{{ opp_src }}" data-sample="{{ opp_sample }}" data-help="{{ '/get-help' | relative_url }}#internships">
+<div class="ecg-opp" data-src="{{ opp_src | escape }}" data-sample="{{ opp_sample }}" data-help="{{ '/get-help' | relative_url }}#internships">
   <noscript><p>The list needs JavaScript switched on. If you can't switch it on, contact the ECG team through <a href="{{ '/get-help' | relative_url }}#internships">Who to ask</a>.</p></noscript>
 </div>
 <script src="{{ '/assets/js/opportunities.js' | relative_url }}" defer></script>

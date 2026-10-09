@@ -33,9 +33,6 @@ Finished at RVHS and can't use the Classroom any more? These internships, jobs a
 
 {% include opportunities.html %}
 
-TODO: connect the Google Sheet. In "ECG Current Opportunities (website feed)": File > Share > Publish to web > Public tab > Comma-separated values (.csv) > Publish. Paste the link into `_config.yml` as `opportunities_csv`. Until then, sample listings are shown.
-{: .ecg-todo }
-
 ## Internships
 
 An internship lets you try out a career, build your network and gain experience for your CV. Research and plan before you contact anyone, so you find a good fit.
