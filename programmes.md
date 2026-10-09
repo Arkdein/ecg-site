@@ -57,11 +57,13 @@ TODO: what students hand in or present at the end of the month, if anything.
 
 ## Sec 4 ECG Experience
 
-The Sec 4 ECG Experience runs over two days in May, during the week after mid-year exams. It has two parts.
+The Sec 4 ECG Experience runs over two days in May, during the week after mid-year exams. It aims to help you explore different career options with curiosity, understand the real challenges different careers involve by hearing from people in industry, and see why lifelong learning and adding value to society matter.
 
-**MBTI workshop.** In a half-day workshop led by trained facilitators, you find out your preferences on the **Myers-Briggs Type Indicator (MBTI)**: where you draw your energy from, how you take in information, how you make decisions and how you like to organise your life. You then look at how your preferences show up in the way you communicate, study, handle stress and think about careers. Your type describes what you naturally prefer, not what you're able to do, so it can't tell you which career to choose. It gives you useful words for understanding yourself and working well with people who differ from you.
+**MBTI workshop.** You complete the **Myers-Briggs Type Indicator (MBTI)** online beforehand. At the workshop you receive your full profile report, with some career preferences, and take part in group activities that help you understand your own type and other people's. You also look at how your preferences show up in the way you communicate, study and handle stress. Your type describes what you naturally prefer, not what you're able to do, and there are no right or wrong types. It can't tell you which career to choose, but it gives you useful words for understanding yourself and working well with people who differ from you.
 
-**Fireside chats.** You join a small group with a guest speaker from a field you're interested in, and ask them about their work, how they got there and what they wish they had known at your age. Speakers come from a wide range of industries, and students are grouped by the interests they choose beforehand.
+**Fireside chats.** Over dinner, you sit in a group of six to eight students with two guests, who may be working professionals or current university students. You ask them what they studied, what led them to their careers and what a typical day is like. You don't choose your guests: the point is to practise networking with people you haven't met and to hear about careers you might not have considered.
+
+**On the day you don't have your workshop**, you explore careers and try the profiling tools in the World of Work section of [MySkillsFuture for Students](https://www.myskillsfuture.gov.sg/content/student/en/myskillsfuture-for-students.html). On the last day, you're given time to record what you learnt in your ECG e-portfolio.
 
 {: .deadline }
 > **2027:** TODO dates (the 2026 programme ran on 18–19 May). [Sec 4 ECG Experience site](https://sites.google.com/moe.edu.sg/sec4ecgexperience)

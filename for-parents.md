@@ -31,7 +31,7 @@ Many teenagers don't have a clear plan, and that's normal. Your conversations ma
 - Encourage them to try things out: CCAs, the [Student Internship Programme](opportunities.md#the-rvhs-student-internship-programme), the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience).
 - Talk about people you know in different jobs, and what their work is really like.
 
-**What the school does:** in Sec 3, a Networking Skills Workshop teaches students how to introduce themselves and talk to professionals. In Sec 4, the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience) includes an MBTI workshop on personality preferences and small-group fireside chats with guest speakers from different industries. Ask your child what they learnt about themselves, and which speaker they would like to hear more from.
+**What the school does:** in Sec 3, a Networking Skills Workshop teaches students how to introduce themselves and talk to professionals. In Sec 4, the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience) includes an MBTI workshop on personality preferences and small-group fireside chats over dinner with working professionals and university students. Ask your child what they learnt about themselves, and which speaker they would like to hear more from.
 </details>
 
 <details class="ecg-level" markdown="1">
