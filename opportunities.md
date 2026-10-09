@@ -45,29 +45,27 @@ The school posts the internships it sources through its partners in the [ECG Goo
 
 ### Finding and applying, step by step
 
-**1. Start with your V.I.P.S.** Look at the first page of your ECG Portfolio: your Values, Interests, Personality and Strengths. Then ask yourself:
-- Is there a skill I want to build?
-- Is there a field I'm thinking of for university or a career?
-- How much time and commitment can I give?
+{% include steps.html steps="Know yourself|Research|Decide what you need|Make contact|Follow up" label="Five steps to an internship" %}
 
-**2. Research.** Look into industries and companies that match your reasons. Ways in:
-- ask parents, relatives and family friends
-- look at businesses and organisations near where you live
-- check whether a company has a formal internship scheme or hiring period
-- if you have no contact, write to the company's general email address or a suitable person from its staff directory
+#### 1. Know yourself
 
-**3. Decide what you need.** Can you take an unpaid placement? Does it need to count towards something, such as a course requirement? What about the company's culture and the commitment expected? Use the **Purpose, Process and Impact** framework in your ECG Portfolio to plan.
+Start from the V.I.P.S. page of your ECG Portfolio: your Values, Interests, Personality and Strengths. What skill do you want to build, what field are you considering for university or a career, and how much time can you give?
 
-**4. Contact the company.**
-- Email to ask about internships and how to apply. Use your **students.edu.sg** email, or, if you have graduated, a personal email address you check often.
-- Check your spelling and grammar, and ask a teacher or the ECG team to look over your email first.
-- Follow the company's process: a form, a CV, or both. A short cover letter showing your enthusiasm helps.
-- The [ECG Counsellor](get-help.md#book-a-session) can help you turn your ECG Portfolio into a CV.
+#### 2. Research
 
-**5. Follow up.**
-- No reply after a week? Check your junk folder, then follow up politely.
-- Be ready for an interview, online or in person. Don't open with questions about leave or allowances.
-- If you're selected, follow the organisation's rules, and keep notes of what you do for your ECG Portfolio reflections.
+Ask parents, relatives and family friends, look at organisations near where you live, and check whether companies run a formal internship scheme. No contacts? Write to the company's general email address or a suitable person from its staff directory.
+
+#### 3. Decide what you need
+
+Can you take an unpaid placement? Does it need to count towards something, such as a course requirement? Plan it using **Purpose, Process and Impact** in your ECG Portfolio.
+
+#### 4. Make contact
+
+Email from your **students.edu.sg** address, or a personal one you check often if you've graduated. Ask a teacher or the ECG team to check your email first. Follow the company's process (a form, a CV or both) and add a short cover letter. The [ECG Counsellor](get-help.md#book-a-session) can help you turn your ECG Portfolio into a CV.
+
+#### 5. Follow up
+
+No reply after a week? Check your junk folder, then follow up politely. Be ready for an interview, online or in person. If you're selected, keep notes of what you do for your ECG Portfolio reflections.
 
 <details class="ecg-level" markdown="1">
 <summary>Sample email asking about internships</summary>

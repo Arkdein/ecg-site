@@ -58,6 +58,21 @@ details.ecg-level[open] summary { margin-bottom: 0.5rem; }
 .ecg-what-next dt { font-weight: 700; color: $rvhs-navy; }
 .ecg-what-next dd { margin: 0; }
 
+// Step strip (_includes/steps.html): numbered circles joined by a line.
+// Phones: a short vertical list. Wider screens: one row, labels under the numbers.
+.ecg-steps { list-style: none; counter-reset: none; margin: 1rem 0 1.5rem; padding: 0.9rem 1rem; background: $rvhs-tint; border-radius: 8px; }
+.main-content .ecg-steps > li { position: relative; display: flex; align-items: center; gap: 0.75rem; margin: 0; padding: 0.35rem 0; }
+.main-content .ecg-steps > li::before { content: none; }
+.ecg-steps > li:not(:last-child)::after { content: ""; position: absolute; left: 1rem; top: 2.4rem; bottom: -0.65rem; width: 2px; margin-left: -1px; background: #b8c2d3; }
+.ecg-steps-num { flex: none; position: relative; z-index: 1; width: 2rem; height: 2rem; border-radius: 50%; background: $rvhs-navy; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-family: "Plus Jakarta Sans", system-ui, sans-serif; font-weight: 700; font-size: 0.95rem; }
+.ecg-steps-label { font-weight: 600; color: $rvhs-navy; line-height: 1.3; }
+@media (min-width: 40rem) {
+  .ecg-steps { display: flex; padding: 1rem 0.5rem; }
+  .main-content .ecg-steps > li { flex: 1 1 0; flex-direction: column; gap: 0.45rem; text-align: center; padding: 0 0.25rem; }
+  .ecg-steps > li:not(:last-child)::after { left: calc(50% + 1.25rem); right: calc(-50% + 1.25rem); top: 1rem; bottom: auto; width: auto; height: 2px; margin: -1px 0 0; }
+  .ecg-steps-label { font-size: 0.95rem; }
+}
+
 // TODO placeholders: neutral, so they don't look like "Important" boxes
 .ecg-todo { background: #f6f7f9; border: 1px dashed #8a94a6; border-radius: 4px; color: #3c4656; padding: 0.4rem 0.8rem; font-size: 0.875rem; }
 

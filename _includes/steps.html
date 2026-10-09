@@ -1,0 +1,14 @@
+{%- comment -%}
+  Step strip: a row of numbered steps at the top of a how-to section.
+  Use:  {% include steps.html steps="Know yourself|Research|Decide|Make contact|Follow up" label="Five steps" %}
+  Separate the steps with | (a vertical bar). Keep each to one to three words.
+  Write the details underneath as normal headings (#### 1. Know yourself).
+  How it looks: the "Step strip" section of _sass/custom/custom.scss
+  (a row on computers, a short numbered list on phones).
+{%- endcomment -%}
+{%- assign ecg_steps = include.steps | split: "|" -%}
+<ol class="ecg-steps" aria-label="{{ include.label | default: 'Steps' | escape }}">
+  {%- for s in ecg_steps %}
+  <li><span class="ecg-steps-num" aria-hidden="true">{{ forloop.index }}</span><span class="ecg-steps-label">{{ s | strip | escape }}</span></li>
+  {%- endfor %}
+</ol>
