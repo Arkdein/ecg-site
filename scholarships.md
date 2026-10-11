@@ -81,7 +81,9 @@ Most university scholarships have **no bond** for Singapore Citizens. Apply thro
 
 ### Comparing scholarships
 
-[BrightSparks comparison tool](https://brightsparks.com.sg/compareScholarships.php) · [Scholars' Choice comparison](https://www.scholarschoice.com.sg/comparison/). Third-party sites can lag behind, so confirm details on the provider's own page.
+[BrightSparks comparison tool](https://brightsparks.com.sg/compareScholarships.php) · [Scholars' Choice comparison](https://www.scholarschoice.com.sg/comparison/).
+
+Third-party sites can lag behind, so confirm details on the provider's own page.
 
 {% include what-next.html
    explore="Read [Financial Aid](financial-aid.html) for other ways to pay"
