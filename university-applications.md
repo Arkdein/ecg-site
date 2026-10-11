@@ -19,4 +19,4 @@ Where do I start with university applications?
 | Compare Singapore's six autonomous universities and find courses | [Singapore Universities](singapore-universities.md) |
 | Apply to China, the UK or the US (some deadlines fall **before** results day) | [Overseas Universities](overseas-universities.md) |
 
-Paying for university: see [Scholarships](scholarships.md) and [Financial Aid](financial-aid.md).
+Paying for university: see [Paying for University](paying-for-university.md).
