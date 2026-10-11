@@ -72,7 +72,7 @@ Red **TODO** boxes are placeholders for content still to be written. Delete the 
 
 ## The lines at the top of each page
 
-Every page starts with a block between two `---` lines. Leave `title` and `nav_order` alone. Update these when you review a page:
+Every page starts with a block between two `---` lines. Leave `title`, `nav_order`, `parent` and `grand_parent` alone (they set the page's place in the sidebar). Update these when you review a page:
 
 ```
 owner: Scholarships

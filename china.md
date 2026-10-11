@@ -1,6 +1,7 @@
 ---
 title: China
 parent: Overseas Universities
+grand_parent: University Applications
 nav_order: 1
 owner: Chinese universities
 last_reviewed: Oct 2026

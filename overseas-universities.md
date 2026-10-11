@@ -1,6 +1,7 @@
 ---
 title: Overseas Universities
-nav_order: 7
+parent: University Applications
+nav_order: 3
 has_children: true
 owner: Editor
 last_reviewed: Oct 2026

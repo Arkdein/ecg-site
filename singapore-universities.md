@@ -1,6 +1,7 @@
 ---
 title: Singapore Universities
-nav_order: 6
+parent: University Applications
+nav_order: 2
 owner: Local universities; NTU/SUTD/SIT
 last_reviewed: Oct 2026
 description: Compare Singapore's six autonomous universities and find courses.

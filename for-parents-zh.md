@@ -39,7 +39,7 @@ description: 在孩子成长的各个阶段，如何与孩子谈升学和职业�
 <details class="ecg-level" markdown="1">
 <summary>中三、中四——探索阶段</summary>
 
-- 鼓励孩子多尝试：课外活动（CCA）、[学生实习计划（Student Internship Programme）](opportunities.md#the-rvhs-student-internship-programme)、[中四ECG体验活动（Sec 4 ECG Experience）](programmes.md#sec-4-ecg-experience)。
+- 鼓励孩子多尝试：课外活动（CCA）、[学生实习计划（Student Internship Programme）](internships.md#the-rvhs-student-internship-programme)、[中四ECG体验活动（Sec 4 ECG Experience）](programmes.md#sec-4-ecg-experience)。
 - 和孩子聊聊您身边从事不同工作的人，说说他们的工作实际是什么样子。
 
 **学校的安排：**中三的社交技能工作坊教学生如何自我介绍、如何与专业人士交谈。中四的[ECG体验活动](programmes.md#sec-4-ecg-experience)包括一场探讨性格偏好的MBTI工作坊，以及在晚餐时与在职人士和大学生进行的小组炉边交流。不妨问问孩子：从中对自己有了哪些新的认识？最想再听哪一位嘉宾多分享一些？

@@ -1,6 +1,7 @@
 ---
 title: United States
 parent: Overseas Universities
+grand_parent: University Applications
 nav_order: 3
 owner: US universities
 last_reviewed: Oct 2026

@@ -10,6 +10,10 @@ description: Studying in [destination] — is it for you, and how do you apply?
   DESTINATION PAGE TEMPLATE (UK, US, China, Australia, etc.)
   The "What next?" block at the end is for decision pages only.
   "talk" must match a row id in the Who to ask table on get-help.md.
+  Sidebar: to list the page under Overseas Universities, add these two
+  lines to the block at the top (both are needed):
+    parent: Overseas Universities
+    grand_parent: University Applications
 -->
 
 # Destination name

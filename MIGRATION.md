@@ -24,7 +24,7 @@ Source: sites.google.com/moe.edu.sg/ecgrvhs (26 pages, read 8 Oct 2026). Links a
 | Government / University / Private scholarships | Scholarships | Merged into one by-sector table plus university links; student photos and names not carried over |
 | University Financial Aid | Financial Aid | Kept; specific figures replaced with links |
 | Tools & Resources | Scholarships | Comparison tools kept; insurer calculators dropped |
-| Internships & Post-A-Level Jobs | Current Opportunities | Guidance kept on the page; live listings go in the ECG Google Classroom (current students) or the website's Google Sheet (recent graduates). The four listings on the old site (SID internship closing 31 Oct 2026, NUS ABFER temp staff closing 1 Dec 2026, IMH programme 2–4 Dec 2026, Allen & Gledhill attachee) should be posted in whichever fits who can apply |
+| Internships & Post-A-Level Jobs | Internships (guidance) and Current Opportunities (listings) | Guidance on the Internships page; live listings go in the ECG Google Classroom (current students) or the website's Google Sheet (recent graduates). The four listings on the old site (SID internship closing 31 Oct 2026, NUS ABFER temp staff closing 1 Dec 2026, IMH programme 2–4 Dec 2026, Allen & Gledhill attachee) should be posted in whichever fits who can apply |
 | FAQs for Internships | Current Opportunities | Steps, sample email and FAQs kept; named staff replaced with roles |
 | ECG Tools / MySkillsFuture | My ECG Journey | Kept as "Your tools" |
 | For Parents | For Parents | Reorganised by stage; OECD Dream Jobs link (moved) replaced with OECD's 2025 report; emerging-careers list dropped (undated) |

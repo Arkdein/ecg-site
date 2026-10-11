@@ -1,6 +1,6 @@
 ---
 title: For Parents
-nav_order: 11
+nav_order: 10
 owner: Counsellor
 last_reviewed: Oct 2026
 description: How to talk with your child about university and careers, at each stage.
@@ -33,7 +33,7 @@ Many teenagers don't have a clear plan, and that's normal. Your conversations ma
 <details class="ecg-level" markdown="1">
 <summary>Secondary 3 and 4 — Exploration</summary>
 
-- Encourage them to try things out: CCAs, the [Student Internship Programme](opportunities.md#the-rvhs-student-internship-programme), the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience).
+- Encourage them to try things out: CCAs, the [Student Internship Programme](internships.md#the-rvhs-student-internship-programme), the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience).
 - Talk about people you know in different jobs, and what their work is really like.
 
 **What the school does:** in Sec 3, a Networking Skills Workshop teaches students how to introduce themselves and talk to professionals. In Sec 4, the [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience) includes an MBTI workshop on personality preferences and small-group fireside chats over dinner with working professionals and university students. Ask your child what they learnt about themselves, and which speaker they would like to hear more from.

@@ -1,6 +1,6 @@
 ---
 title: Financial Aid
-nav_order: 9
+nav_order: 8
 owner: Scholarships
 last_reviewed: Oct 2026
 description: Other ways to pay for university.
