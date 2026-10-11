@@ -68,7 +68,7 @@ Self-assessments, course search, decision tools and application guides are all i
 
 - **This year's programmes:** [Gap Exploration Month](programmes.md#jc1-gap-exploration-month) (January, Integrated Programme students), [HECGS Day](programmes.md#jc1--jc2-hecgs-day), [Horizon Programme](programmes.md#horizon-programme) (apply in July), [Student Internship Programme](internships.md#the-rvhs-student-internship-programme). If you joined RVHS after the O-Levels, you also attend an MBTI workshop in May.
 - **One question to reflect on (RVX):** *Which course or career do I want to find out more about at HECGS Day, and what will I ask?*
-- **One tool to try:** the [weighted decision table](singapore-universities.md#deciding-between-options-a-weighted-table)
+- **One tool to try:** the [weighted decision table](career-and-courses.md#deciding-between-options-a-weighted-table)
 </details>
 
 <details class="ecg-level" markdown="1">

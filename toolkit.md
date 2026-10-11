@@ -1,6 +1,6 @@
 ---
 title: ECG Toolkit
-nav_order: 9
+nav_order: 10
 owner: Editor
 last_reviewed: Oct 2026
 description: Every ECG tool in one place — self-assessments, course search, decision tools and application guides — and where to find each one.
@@ -27,6 +27,7 @@ Each tool below links to where it lives on this site or elsewhere. Pick the stag
 
 ## Explore your options
 
+- **[Career & Courses](career-and-courses.md)**: how courses lead to careers, how to explore a field, and how to read graduate employment data.
 - **[MOE CourseFinder](https://www.moe.gov.sg/coursefinder)**: search post-secondary and university courses.
 - **[The six universities at a glance](singapore-universities.md#the-six-universities-at-a-glance)**: what each of Singapore's autonomous universities is known for.
 - **[Overseas Universities](overseas-universities.md)**: China, the UK and the US compared, with the earliest deadlines.
@@ -34,8 +35,8 @@ Each tool below links to where it lives on this site or elsewhere. Pick the stag
 
 ## Decide
 
-- **[How to choose a course](singapore-universities.md#how-to-choose-a-course)**: three questions to work through with a parent, a teacher or a senior.
-- **[Weighted decision table](singapore-universities.md#deciding-between-options-a-weighted-table)**: compare courses or universities on what matters to you. You can print the result and bring it to an ECG session.
+- **[How to choose a course](career-and-courses.md#how-to-choose-a-course)**: three questions to work through with a parent, a teacher or a senior.
+- **[Weighted decision table](career-and-courses.md#deciding-between-options-a-weighted-table)**: compare courses or universities on what matters to you. You can print the result and bring it to an ECG session.
 - **[Is a scholarship bond right for you?](scholarships.md#before-you-apply-is-a-bond-right-for-you)**: questions to ask yourself before you apply.
 
 ## Apply

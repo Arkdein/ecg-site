@@ -76,34 +76,7 @@ The **University of the Arts Singapore** is Singapore's arts university, formed 
 
 [UAS admissions](https://uas.edu.sg/admissions) · [Admissions FAQ](https://uas.edu.sg/admissions/faq) · [Apply via LASALLE](https://www.lasalle.edu.sg/admissions) · [Apply via NAFA](https://www.nafa.edu.sg/admissions)
 
-## How to choose a course
-
-Three questions to work through, ideally with a parent, a teacher or a senior:
-
-1. **Who am I?** What do I enjoy? What are my values, interests, personality and strengths? What motivates me?
-2. **Where do I want to go?** Which universities and courses fit my goals? How will a course build on my strengths?
-3. **How do I get there?** What are the entry requirements? What will it cost, and which scholarships or aid could help?
-
-Go to the universities' open houses before you decide.
-
-### Deciding between options: a weighted table
-
-If you're torn between courses or universities, a weighted table helps you compare them on what matters to you. List what you care about, give each one a weight for how much it matters, rate each option, and the tool below works out the totals.
-
-The numbers won't decide for you, but they make the differences between options easier to see. You can print the result and bring it to an ECG session.
-
-{% include weighted-table.html %}
-
-<details class="ecg-level" markdown="1">
-<summary>Prefer pen and paper?</summary>
-
-1. In the first column, list what matters to you (e.g. career options, overseas exposure, cost, campus life).
-2. Across the top, list your options.
-3. Rate each option on each consideration from 1 to 10.
-4. Give each consideration an importance weight from 1 to 5.
-5. Multiply each rating by its weight.
-6. Add up each column and compare.
-</details>
+Not sure which course is for you? See [Career & Courses](career-and-courses.md) for how courses lead to careers, and a weighted table to compare your options.
 
 {% include what-next.html
    explore="Search courses on the [MOE CourseFinder](https://www.moe.gov.sg/coursefinder)"
