@@ -13,7 +13,7 @@ description: Scholarships, government help, loans and university aid. Start here
 How will I pay for university?
 {: .fs-6 .fw-300 }
 
-Cost should not stop you from going to university. Most students combine more than one source of help.
+Cost should not stop you from going to university. You can combine more than one source of help.
 
 | If you want to… | Go to |
 |---|---|
