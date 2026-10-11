@@ -1,6 +1,6 @@
 ---
 title: For Parents
-nav_order: 10
+nav_order: 11
 owner: Counsellor
 last_reviewed: Oct 2026
 description: How to talk with your child about university and careers, at each stage.

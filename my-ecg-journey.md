@@ -23,9 +23,7 @@ The **RVHS ECG Framework** has three stages:
 
 ## Your tools
 
-- **[MySkillsFuture for Students](https://www.myskillsfuture.gov.sg/content/student/en/myskillsfuture-for-students.html)** — MOE's portal for self-assessments, and for exploring courses and careers. [User guides](https://www.myskillsfuture.gov.sg/content/student/en/preu/help/user-guides.html)
-- **ECG e-portfolio** — where you record your reflections. Ask your form or civics tutor to help you set it up.
-- **[MOE CourseFinder](https://www.moe.gov.sg/coursefinder)** — search post-secondary and university courses.
+Self-assessments, course search, decision tools and application guides are all in the [ECG Toolkit](toolkit.md). Record your reflections in your **ECG e-portfolio**; ask your form or civics tutor to help you set it up.
 
 ## Secondary
 {: #secondary }
