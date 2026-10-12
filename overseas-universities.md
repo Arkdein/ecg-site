@@ -3,7 +3,8 @@ title: Overseas Universities
 parent: University Applications
 nav_order: 3
 has_children: true
-owner: Editor
+owner: ECG Webmaster RH
+portfolio: Editor
 last_reviewed: Oct 2026
 description: Thinking of studying overseas? Start here for China, the UK and the US.
 ---

@@ -2,7 +2,8 @@
 title: Scholarships
 parent: Paying for University
 nav_order: 1
-owner: Scholarships
+owner: ECG Webmaster RH
+portfolio: Scholarships
 last_reviewed: Oct 2026
 description: What kinds of scholarships exist, and what you are prepared to commit to.
 ---

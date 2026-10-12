@@ -5,7 +5,8 @@ lang: zh-Hans
 translation: /for-parents.html
 translation_label: English
 translation_lang: en
-owner: Counsellor
+owner: ECG Webmaster RH
+portfolio: Counsellor
 last_reviewed: Oct 2026
 description: 在孩子成长的各个阶段，如何与孩子谈升学和职业。
 ---

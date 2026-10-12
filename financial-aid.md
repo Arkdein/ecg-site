@@ -2,7 +2,8 @@
 title: Financial Aid
 parent: Paying for University
 nav_order: 2
-owner: Scholarships
+owner: ECG Webmaster RH
+portfolio: Scholarships
 last_reviewed: Oct 2026
 description: Other ways to pay for university.
 ---

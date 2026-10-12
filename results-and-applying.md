@@ -2,7 +2,8 @@
 title: A-Level Results & Applying
 parent: University Applications
 nav_order: 1
-owner: Local universities
+owner: ECG Webmaster RH
+portfolio: Local universities
 last_reviewed: Oct 2026
 description: You have your A-Level results. What to do, in what order, and by when.
 ---

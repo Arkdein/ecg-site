@@ -3,7 +3,8 @@ title: Paying for University
 nav_order: 8
 has_children: true
 has_toc: false
-owner: Scholarships
+owner: ECG Webmaster RH
+portfolio: Scholarships
 last_reviewed: Oct 2026
 description: Scholarships, government help, loans and university aid. Start here.
 ---

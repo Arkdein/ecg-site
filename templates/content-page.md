@@ -1,7 +1,8 @@
 ---
 title: Page title
 nav_order: 99
-owner: Portfolio name
+owner: ECG Webmaster RH
+portfolio: Portfolio name
 last_reviewed: Not yet reviewed
 description: One sentence for search results and link previews.
 ---

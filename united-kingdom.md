@@ -3,7 +3,8 @@ title: United Kingdom
 parent: Overseas Universities
 grand_parent: University Applications
 nav_order: 2
-owner: UK universities
+owner: ECG Webmaster RH
+portfolio: UK universities
 last_reviewed: Oct 2026
 description: Is the UK system for you, how do UCAS applications work, and how do you choose your five courses?
 ---

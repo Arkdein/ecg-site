@@ -1,7 +1,8 @@
 ---
 title: Internships
 nav_order: 5
-owner: Internships
+owner: ECG Webmaster RH
+portfolio: Internships
 last_reviewed: Oct 2026
 description: How to find, apply for and learn from an internship, including the RVHS Student Internship Programme.
 ---

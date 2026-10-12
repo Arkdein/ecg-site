@@ -3,7 +3,8 @@ title: China
 parent: Overseas Universities
 grand_parent: University Applications
 nav_order: 1
-owner: Chinese universities
+owner: ECG Webmaster RH
+portfolio: Chinese universities
 last_reviewed: Oct 2026
 description: Studying at a university in mainland China — routes, language, scholarships and documents.
 ---

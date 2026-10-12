@@ -1,7 +1,8 @@
 ---
 title: Destination name
 nav_order: 99
-owner: Portfolio name
+owner: ECG Webmaster RH
+portfolio: Portfolio name
 last_reviewed: Not yet reviewed
 description: Studying in [destination] — is it for you, and how do you apply?
 ---

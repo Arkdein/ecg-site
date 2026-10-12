@@ -3,7 +3,8 @@ title: United States
 parent: Overseas Universities
 grand_parent: University Applications
 nav_order: 3
-owner: US universities
+owner: ECG Webmaster RH
+portfolio: US universities
 last_reviewed: Oct 2026
 description: How a US application is different, and where to find the RVHS guide.
 ---

@@ -1,7 +1,8 @@
 ---
 title: ECG Toolkit
 nav_order: 9
-owner: Editor
+owner: ECG Webmaster RH
+portfolio: Editor
 last_reviewed: Oct 2026
 description: Every ECG tool in one place — self-assessments, course search, decision tools and application guides — and where to find each one.
 ---

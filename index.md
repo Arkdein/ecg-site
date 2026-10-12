@@ -1,7 +1,8 @@
 ---
 title: Home
 nav_order: 1
-owner: Editor
+owner: ECG Webmaster RH
+portfolio: Editor
 last_reviewed: Oct 2026
 description: Education and Career Guidance at River Valley High School — where to go for what you need today.
 ---

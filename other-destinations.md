@@ -5,7 +5,8 @@ grand_parent: University Applications
 nav_order: 4
 nav_exclude: true
 search_exclude: true
-owner: To be assigned
+owner: ECG Webmaster RH
+portfolio: To be assigned
 last_reviewed: Oct 2026
 description: Studying in Australia, New Zealand, Europe, Canada and elsewhere.
 ---

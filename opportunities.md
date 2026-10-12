@@ -1,7 +1,8 @@
 ---
 title: Current Opportunities
 nav_order: 6
-owner: Internships
+owner: ECG Webmaster RH
+portfolio: Internships
 last_reviewed: Oct 2026
 description: Open internships, jobs and programmes for recent RVHS graduates, and where current students find announcements.
 ---

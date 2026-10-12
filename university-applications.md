@@ -3,7 +3,8 @@ title: University Applications
 nav_order: 7
 has_children: true
 has_toc: false
-owner: Editor
+owner: ECG Webmaster RH
+portfolio: Editor
 last_reviewed: Oct 2026
 description: Applying to university, in Singapore or overseas. Start here.
 ---

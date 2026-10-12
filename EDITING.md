@@ -36,11 +36,11 @@ Don't add, move or rename columns, and don't type in the **Public** tab: it fill
 
 ## The Chinese version of For Parents
 
-For Parents has a Chinese version (`for-parents-zh.md`), reached by the **中文** button at the top right of the page. It is a line-by-line translation. If you change For Parents, make the same change on the Chinese page, or ask the page owner to, so the two don't drift apart.
+For Parents has a Chinese version (`for-parents-zh.md`), reached by the **中文** button at the top right of the page. It is a line-by-line translation. If you change For Parents, make the same change on the Chinese page, or ask the portfolio owner to, so the two don't drift apart.
 
 ## "Was this page helpful?"
 
-The Yes / No buttons at the bottom of every page open a short Google Form. Answers go to the Google Sheet **ECG@RVHS website feedback (responses)**. The page owner checks it once a month. The buttons are switched on by `feedback_form_prefill` in `_config.yml`.
+The Yes / No buttons at the bottom of every page open a short Google Form. Answers go to the Google Sheet **ECG@RVHS website feedback (responses)**. The portfolio owner checks it once a month for their pages. The buttons are switched on by `feedback_form_prefill` in `_config.yml`.
 
 ## Markdown in one minute
 
@@ -72,14 +72,15 @@ Red **TODO** boxes are placeholders for content still to be written. Delete the 
 
 ## The lines at the top of each page
 
-Every page starts with a block between two `---` lines. Leave `title`, `nav_order`, `parent` and `grand_parent` alone (they set the page's place in the sidebar). Update these when you review a page:
+Every page starts with a block between two `---` lines. Leave `title`, `nav_order`, `parent` and `grand_parent` alone (they set the page's place in the sidebar). Leave `owner` alone too: every page is owned by ECG Webmaster RH. Update these when you review a page:
 
 ```
-owner: Scholarships
+owner: ECG Webmaster RH
+portfolio: Scholarships
 last_reviewed: Jan 2027
 ```
 
-They appear at the bottom of the page as *"Owner: ECG (Scholarships) · Last reviewed: Jan 2027"*.
+`portfolio` is the ECG portfolio that looks after the page's content. They appear at the bottom of the page as *"Owner: ECG Webmaster RH · Portfolio: Scholarships · Last reviewed: Jan 2027"*.
 
 ## Rules (from the style sheet)
 

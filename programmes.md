@@ -1,7 +1,8 @@
 ---
 title: Programmes
 nav_order: 3
-owner: Sec 4 / Horizon; JC ECG programmes
+owner: ECG Webmaster RH
+portfolio: Sec 4 / Horizon; JC ECG programmes
 last_reviewed: Oct 2026
 description: RVHS's own ECG programmes — Sec 4 ECG Experience, Gap Exploration Month, HECGS Day and Horizon.
 ---
