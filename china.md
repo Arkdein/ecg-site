@@ -104,7 +104,7 @@ Ask the [Chinese universities teacher](get-help.md#china) for a practice intervi
 
 ## Scholarships
 
-- **[Chinese Government Scholarship (CSC)](https://www.campuschina.org)** — applications are made through Campus China, the official site.
+- **[Chinese Government Scholarship (CSC)](https://studyinchina.csc.edu.cn/)** — applications are made online through Study in China, the China Scholarship Council's official application system.
 - **[SFCCA Scholarship](https://sfcca.sg/en/scholarship-bursary/)** — from the Singapore Federation of Chinese Clan Associations, for outstanding students at top Chinese universities, to develop bilingual and bicultural talent. No bond.
 - **University scholarships** — most universities offer their own; see each admissions site.
 
