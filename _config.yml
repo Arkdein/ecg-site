@@ -29,7 +29,7 @@ feedback_form_prefill: "https://docs.google.com/forms/d/e/1FAIpQLSct7nJ6J-WR4TjO
 # Paste the Measurement ID (starts with G-) between the quotes and
 # remove the # at the start of the line. Leave the # in place to
 # switch tracking off. See DASHBOARD.md.
-# ga_tracking: "G-XXXXXXXXXX"             # ← EDIT
+ga_tracking: "G-VBQEB9BZ5P"               # ← EDIT (put # at the start of this line to switch tracking off)
 
 # Design (Just the Docs theme, loaded by GitHub)
 remote_theme: just-the-docs/just-the-docs@v0.12.0
