@@ -42,6 +42,10 @@ For Parents has a Chinese version (`for-parents-zh.md`), reached by the **中文
 
 The Yes / No buttons at the bottom of every page open a short Google Form. Answers go to the Google Sheet **ECG@RVHS website feedback (responses)**. The portfolio owner checks it once a month for their pages. The buttons are switched on by `feedback_form_prefill` in `_config.yml`.
 
+## The Webmaster's Dashboard
+
+A Looker Studio report shows what needs attention: passed deadline dates, broken links, pages due for review, new feedback and questions. Portfolio owners can filter it to their own pages for the monthly check. How it works and how to set it up: [DASHBOARD.md](DASHBOARD.md).
+
 ## Markdown in one minute
 
 | You type | You get |
@@ -67,6 +71,8 @@ Grey boxes like this are written as:
 ```
 
 Other box types: `.important` (red), `.deadline` (yellow), `.tip` (green).
+
+In a `.deadline` box, write each date with its year (`15 Oct 2026`, `30 Sep to 20 Nov 2026`). The Webmaster's Dashboard checks these every night and flags any date that has passed. Dates without a year aren't checked.
 
 Red **TODO** boxes are placeholders for content still to be written. Delete the TODO line and the `{: .ecg-todo }` line beneath it once the section is done.
 
