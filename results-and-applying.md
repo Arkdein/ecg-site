@@ -90,11 +90,11 @@ For example, a 10th-percentile profile of **BCC/B** means 90% of applicants offe
 {: .important }
 > **An IGP is not a cut-off.** It is a reference point. If you have a strong interest in a course and a well-rounded profile, you can still apply even if your grades are below its IGP.
 
-IGPs: [NUS](https://www.nus.edu.sg/oam/admissions/indicative-grade-profile) · [NTU](https://www.ntu.edu.sg/admissions/undergraduate/indicative-grade-profile) · [SMU](https://admissions.smu.edu.sg/admissions-requirements/indicative-grade-profile) · [SUTD](https://www.sutd.edu.sg/admissions/undergraduate/singapore-cambridge-gce-a-level/indicative-grade-profile-igp/) · [SIT](https://singaporetech.edu.sg/files/igp) · [SUSS](https://www.suss.edu.sg/full-time-undergraduate/admissions/indicative-grade-profile-igp)
+IGPs: [NUS](https://www.nus.edu.sg/oam/admissions/indicative-grade-profile) · [NTU](https://www.ntu.edu.sg/admissions/undergraduate/important-links/indicative-grade-profile) · [SMU](https://admissions.smu.edu.sg/admissions-requirements/indicative-grade-profile) · [SUTD](https://www.sutd.edu.sg/admissions/undergraduate/singapore-cambridge-gce-a-level/indicative-grade-profile-igp/) · [SIT](https://singaporetech.edu.sg/files/igp) · [SUSS](https://www.suss.edu.sg/full-time-undergraduate/admissions/indicative-grade-profile-igp)
 
 ## 3. Check subject prerequisites
 
-Some courses require particular subjects or grades (for example, H2 Mathematics for engineering). Check before you list a course: [NUS prerequisites](https://nus.edu.sg/oam/admissions/before-you-apply/programme-prerequisites) · [NTU A-Level requirements](https://www.ntu.edu.sg/admissions/undergraduate/admission-guide/singapore-cambridge-gce-a-level) · [SMU](https://admissions.smu.edu.sg/admissions-requirements/singapore-cambridge-gce-levels) · [SUTD](https://www.sutd.edu.sg/admissions/undergraduate/singapore-cambridge-gce-a-level/criteria-for-admission) · [SIT](https://www.singaporetech.edu.sg/admissions/undergraduate/requirements/a-levels) · [SUSS](https://www.suss.edu.sg/full-time-undergraduate/admissions/eligibility)
+Some courses require particular subjects or grades (for example, H2 Mathematics for engineering). Check before you list a course: [NUS prerequisites](https://nus.edu.sg/oam/admissions/before-you-apply/programme-prerequisites) · [NTU A-Level requirements](https://www.ntu.edu.sg/admissions/undergraduate/admissions/general-admission-requirements) · [SMU](https://admissions.smu.edu.sg/admissions-requirements/singapore-cambridge-gce-levels) · [SUTD](https://www.sutd.edu.sg/admissions/undergraduate/singapore-cambridge-gce-a-level/criteria-for-admission) · [SIT](https://www.singaporetech.edu.sg/admissions/undergraduate/requirements/a-levels) · [SUSS](https://www.suss.edu.sg/full-time-undergraduate/admissions/eligibility)
 
 ## 4. Consider Aptitude-Based Admissions (ABA)
 
@@ -105,7 +105,7 @@ What this means for you: be clear about **why** you want a course and how it fit
 | University | How it works | Details |
 |---|---|---|
 | NUS | Short responses and a list of your achievements in the application | [NUS ABA](https://www.nus.edu.sg/oam/admissions/aptitude-based-admissions) |
-| NTU | An ABA section with an essay and appraisals | [NTU ABA](https://www.ntu.edu.sg/admissions/undergraduate/admission-guide/Aptitude-based-Admissions) |
+| NTU | An ABA section with short answers (up to 200 words each) and 1–2 appraisals | [NTU ABA](https://www.ntu.edu.sg/admissions/undergraduate/admissions/undergraduate/apply/aptitude-based-applications) |
 | SMU | No separate ABA route; every application is assessed holistically | [SMU FAQ](https://admissions.smu.edu.sg/faq/Admissions%20and%20applications) |
 | SUTD | Academics, personal qualities and portfolio; some applicants are interviewed | [SUTD criteria](https://www.sutd.edu.sg/admissions/undergraduate/singapore-cambridge-gce-a-level/criteria-for-admission) |
 | SIT | Personal statement and experience alongside grades | [SIT A-Levels](https://www.singaporetech.edu.sg/admissions/undergraduate/requirements/a-levels) |
