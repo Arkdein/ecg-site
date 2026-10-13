@@ -9,17 +9,20 @@ The Education and Career Guidance website for River Valley High School, built wi
 - **How to edit a page:** [EDITING.md](EDITING.md)
 - **Style sheet:** [STYLE.md](STYLE.md)
 - **New page templates:** [templates/](templates/)
+- **Webmaster's Dashboard:** [DASHBOARD.md](DASHBOARD.md)
 
 ## What's where
 
 | File | What it is |
 |---|---|
 | `index.md` … `for-parents.md` | The launch pages (council plan, 1 Oct 2026, as revised) |
-| `_config.yml` | Site settings: address, draft switch, crest |
+| `_config.yml` | Site settings: address, draft switch, crest, Google Analytics ID |
 | `_includes/` | Draft banner, sidebar crest and title, page owner and portfolio, and motto footer, "What next?" block, weighted table tool, University Admission Score calculator, Current Opportunities list |
 | `assets/js/` | Scripts for the weighted table tool, the University Admission Score calculator and the Current Opportunities list (nothing visitors type is saved or sent) |
 | `assets/data/` | Sample listings shown on Current Opportunities until the Google Sheet link is set |
-| `tests/` | Checks for the scripts: `node tests/opportunities.test.js`, `node tests/uas-calculator.test.js` |
+| `tests/` | Checks for the scripts: `node tests/opportunities.test.js`, `node tests/uas-calculator.test.js`, `node tests/site-health.test.js` |
+| `scripts/` | Not published. `site-health.js` (nightly page check for the dashboard) and `dashboard-sheet.gs` (Apps Script for the dashboard's data Sheet) |
+| `.github/workflows/` | `site-health.yml`: runs the nightly page check and puts the results on the `site-health` branch |
 | `_sass/` | School colours (`custom/setup.scss`), colour scheme, custom styles |
 | `templates/` | Page templates (not published) |
 

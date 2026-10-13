@@ -1,0 +1,70 @@
+# ECG@RVHS site health check
+#
+# Every night (and after every change to the site), this reads all the
+# pages and writes four CSV files for the Webmaster's Dashboard:
+# pages.csv, deadlines.csv, links.csv and summary.csv.
+#
+# The files go on the "site-health" branch, not on main, so they never
+# change the website and don't trigger a website rebuild. The dashboard's
+# Google Sheet reads them from:
+#   https://raw.githubusercontent.com/Arkdein/ecg-site/site-health/<file>.csv
+#
+# Nobody needs to touch this file. See DASHBOARD.md.
+# Note: GitHub pauses nightly runs after 60 days with no changes to the
+# repository. If the dashboard's "Checked on" date stops moving, open the
+# Actions tab, choose "Site health check", and click "Enable workflow".
+
+name: Site health check
+
+on:
+  schedule:
+    - cron: "7 18 * * *"      # 2:07 am Singapore time, every day
+  push:
+    branches: [main]
+  workflow_dispatch:          # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-health
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Get the site
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0      # full history, to see when each page last changed
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Test the checker
+        run: node tests/site-health.test.js
+
+      - name: Check every page
+        run: node scripts/site-health.js --out "$RUNNER_TEMP/site-health"
+
+      - name: Publish the results to the site-health branch
+        run: |
+          OUT="$RUNNER_TEMP/site-health"
+          cd "$OUT"
+          cat > README.md <<'EOF'
+          # Site health results
+
+          Made automatically every night by `.github/workflows/site-health.yml`
+          on the main branch. Don't edit these files: they are replaced on every run.
+          The Webmaster's Dashboard reads them. See DASHBOARD.md on main.
+          EOF
+          git init -q -b site-health
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Site health check $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site-health
+          cat summary.csv
