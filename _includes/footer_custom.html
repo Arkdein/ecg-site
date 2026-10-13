@@ -9,15 +9,19 @@
 {%- if page.lang == "zh-Hans" -%}
 <div class="ecg-feedback" role="group" aria-labelledby="ecg-feedback-q" lang="zh-Hans">
   <span class="ecg-feedback-q" id="ecg-feedback-q">这一页对您有帮助吗？</span>
-  <a class="btn" href="{{ fb_yes }}" target="_blank" rel="noopener">有帮助</a>
-  <a class="btn" href="{{ fb_no }}" target="_blank" rel="noopener">没有帮助</a>
+  <span class="ecg-feedback-btns">
+    <a class="btn" href="{{ fb_yes }}" target="_blank" rel="noopener">有帮助</a>
+    <a class="btn" href="{{ fb_no }}" target="_blank" rel="noopener">没有帮助</a>
+  </span>
   <span class="ecg-feedback-note">将在新窗口打开一份简短的英文问卷（Google Form）。</span>
 </div>
 {%- else -%}
 <div class="ecg-feedback" role="group" aria-labelledby="ecg-feedback-q">
   <span class="ecg-feedback-q" id="ecg-feedback-q">Was this page helpful?</span>
-  <a class="btn" href="{{ fb_yes }}" target="_blank" rel="noopener">Yes</a>
-  <a class="btn" href="{{ fb_no }}" target="_blank" rel="noopener">No</a>
+  <span class="ecg-feedback-btns">
+    <a class="btn" href="{{ fb_yes }}" target="_blank" rel="noopener">Yes</a>
+    <a class="btn" href="{{ fb_no }}" target="_blank" rel="noopener">No</a>
+  </span>
   <span class="ecg-feedback-note">Opens a short Google Form in a new tab.</span>
 </div>
 {%- endif -%}
