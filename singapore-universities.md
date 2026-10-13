@@ -25,7 +25,7 @@ Singapore has **six autonomous universities (AUs)**. Start with each university'
 | University | Prospectus | Indicative Grade Profile | A-Level requirements |
 |---|---|---|---|
 | National University of Singapore (NUS) | [Publications](https://www.nus.edu.sg/oam/why-nus/undergraduate-admissions-publications) | [IGP](https://www.nus.edu.sg/oam/admissions/indicative-grade-profile) | [Requirements](https://www.nus.edu.sg/oam/admissions/singapore-cambridge-gce-a-level/admission-requirements) |
-| Nanyang Technological University (NTU) | [Prospectus](https://www.ntu.edu.sg/undergraduate/prospectus) | [IGP](https://www.ntu.edu.sg/admissions/undergraduate/indicative-grade-profile) | [Requirements](https://www.ntu.edu.sg/admissions/undergraduate/admission-guide/singapore-cambridge-gce-a-level) |
+| Nanyang Technological University (NTU) | [Prospectus](https://www.ntu.edu.sg/undergraduate/prospectus) | [IGP](https://www.ntu.edu.sg/admissions/undergraduate/important-links/indicative-grade-profile) | [Requirements](https://www.ntu.edu.sg/admissions/undergraduate/admissions/general-admission-requirements) |
 | Singapore Management University (SMU) | [Admissions and prospectus](https://admissions.smu.edu.sg/admissions-requirements/singapore-cambridge-gce-levels) | [IGP](https://admissions.smu.edu.sg/admissions-requirements/indicative-grade-profile) | [Requirements](https://admissions.smu.edu.sg/admissions-requirements/singapore-cambridge-gce-levels) |
 | Singapore University of Technology and Design (SUTD) | [Brochures](https://www.sutd.edu.sg/about/publications/publicity/brochures/) | [IGP](https://www.sutd.edu.sg/admissions/undergraduate/singapore-cambridge-gce-a-level/indicative-grade-profile-igp/) | [Requirements](https://www.sutd.edu.sg/admissions/undergraduate/singapore-cambridge-gce-a-level/criteria-for-admission) |
 | Singapore Institute of Technology (SIT) | [Learner's Guide](https://www.singaporetech.edu.sg/admissions/undergraduate/learners-guide) | [IGP](https://singaporetech.edu.sg/files/igp) | [Requirements](https://www.singaporetech.edu.sg/admissions/undergraduate/requirements/a-levels) |
@@ -44,7 +44,7 @@ Many faculties across three campuses, with interdisciplinary colleges and a stro
 <details class="ecg-level" markdown="1">
 <summary>NTU — comprehensive, strong in engineering, science and technology</summary>
 
-An interdisciplinary common core for all undergraduates. Flagship programmes include the Renaissance Engineering Programme and the research-focused CN Yang Scholars Programme. [Aptitude-Based Admissions](https://www.ntu.edu.sg/admissions/undergraduate/admission-guide/Aptitude-based-Admissions)
+An interdisciplinary common core for all undergraduates. Flagship programmes include the Renaissance Engineering Programme and the research-focused CN Yang Scholars Programme. [Aptitude-Based Admissions](https://www.ntu.edu.sg/admissions/undergraduate/admissions/undergraduate/apply/aptitude-based-applications)
 </details>
 
 <details class="ecg-level" markdown="1">
