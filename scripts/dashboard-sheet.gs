@@ -41,14 +41,18 @@ const CONFIG = {
 
   // "Send us a question" responses Sheet (Get Help page)          ← EDIT
   // In the form: Responses > Link to Sheets, then paste that Sheet's address.
-  QUESTIONS_SHEET_URL: "",
+  QUESTIONS_SHEET_URL: "https://docs.google.com/spreadsheets/d/11FgLceOWVQPTzcZHJ9E_YD4a345jUl64V6JSGCboFTg/edit",
 
   // "ECG Current Opportunities (website feed)" Sheet (optional)   ← EDIT
-  OPPORTUNITIES_SHEET_URL: "",
+  OPPORTUNITIES_SHEET_URL: "https://docs.google.com/spreadsheets/d/1gzyrknzt8X-IkyRL9M_a_gcOufVxfKbhiXqkvqGSru8/edit",
 
   // Who gets an email for each new question (addQuestionAlert).   ← EDIT
   // MOE addresses, separated by commas.
   ALERT_EMAILS: "",
+
+  // Questions sent before this date only count as open if Status says so.
+  // (Before the dashboard, replies were noted in the Timestamp cell, and not always.)
+  TRACK_QUESTIONS_FROM: "2026-01-01",
 
   FEEDBACK_DAYS: 60,           // feedback shown in "Needs action" for this many days
   QUESTION_URGENT_DAYS: 3,     // an unanswered question becomes "high" after this many days
@@ -56,6 +60,10 @@ const CONFIG = {
 };
 
 const STATUS_CHOICES = ["New", "With someone", "Answered", "No reply needed"];
+const CLOSED_STATUSES = ["Answered", "Answered (noted)", "No reply needed", "Not tracked"];
+// How the team noted replies before the dashboard (in the Timestamp cell or the remarks column)
+const ANSWERED_RE = /answered|replied|responded|spoken|followed up|met with|have met/i;
+function isOpen_(q) { return CLOSED_STATUSES.indexOf(q.status) === -1; }
 const WITHDRAWAL_RE = /withdraw|remove (?:my|me)|take (?:it |me |my )?(?:down|off)|alumni gallery|gallery wall/i;
 
 // ===================================================================
@@ -158,7 +166,8 @@ function prepareQuestionsSheet_() {
   sh.getRange(2, c + 2, 999, 1).setDataValidation(
     SpreadsheetApp.newDataValidation().requireDate().setAllowInvalid(false).build())
     .setNumberFormat("d mmm yyyy");
-  sh.getRange(1, c).setNote("Blank = New. Set to Answered once you have replied, and fill in Replied on.");
+  sh.getRange(1, c).setNote("Set to Answered once you have replied, and fill in Replied on. " +
+    "Blank = New, unless the Timestamp or remarks already say answered/replied.");
 }
 
 // ===================================================================
@@ -196,10 +205,9 @@ function refresh() {
   // Summary: the site check's totals, plus this Sheet's own
   const sum = (site.summary && site.summary[0]) ? Object.assign({}, site.summary[0]) : {};
   sum.sheet_refreshed_at = now;
-  sum.questions_open = questions.filter(q => q.status !== "Answered" && q.status !== "No reply needed").length;
-  sum.questions_oldest_waiting_days = questions.filter(q => q.status !== "Answered" && q.status !== "No reply needed")
-    .reduce((m, q) => Math.max(m, q.days_waiting || 0), 0);
-  sum.withdrawal_requests_open = questions.filter(q => q.type === "Alumni Gallery withdrawal" && q.status !== "Answered").length;
+  sum.questions_open = questions.filter(isOpen_).length;
+  sum.questions_oldest_waiting_days = questions.filter(isOpen_).reduce((m, q) => Math.max(m, q.days_waiting || 0), 0);
+  sum.withdrawal_requests_open = questions.filter(q => q.type === "Alumni Gallery withdrawal" && isOpen_(q)).length;
   sum.feedback_last_30_days = feedback.filter(f => f.received && daysBetween_(f.received, now) <= 30).length;
   sum.feedback_no_last_30_days = feedback.filter(f => f.received && daysBetween_(f.received, now) <= 30 && f.answer === "No").length;
   sum.opportunities_awaiting_approval = opps.filter(o => o.status === "Awaiting approval").length;
@@ -235,37 +243,69 @@ function refreshQuestions_(hub, now) {
   const sh = formResponsesSheet_(ss);
   const values = sh.getDataRange().getValues();
   const head = values.shift().map(String);
-  const col = re => head.findIndex(h => re.test(h));
-  const cTime = col(/timestamp/i);
+  const cols = re => head.map((h, i) => re.test(h) ? i : -1).filter(i => i > -1);
+  const first = (r, idx) => { for (const i of idx) { const v = String(r[i]).trim(); if (v) return v; } return ""; };
+
+  // The form branches by who is asking (student / graduate / parent), so the
+  // topic and question each appear in several columns: take whichever is filled.
+  const cTime = head.findIndex(h => /timestamp/i.test(h));
   const cStatus = head.indexOf("Status"), cAssigned = head.indexOf("Assigned to"), cReplied = head.indexOf("Replied on");
-  const cTopic = col(/topic|about|area|regarding|category/i);
-  const cWho = col(/i am|you are|role|level/i);
+  const topicCols = cols(/with regards to|topic|regarding|category/i);
+  const whoCols = cols(/^i am/i);
+  const remarkCols = cols(/remark/i);
   // The question text is read only to spot withdrawal requests. It is never copied.
-  const textCols = head.map((h, i) => i).filter(i =>
-    i !== cTime && i !== cStatus && i !== cAssigned && i !== cReplied && i !== cTopic && i !== cWho);
+  const textCols = cols(/my question:?$|^question|message/i);
+  const trackFrom = toDate_(CONFIG.TRACK_QUESTIONS_FROM);
   const base = ss.getUrl().replace(/\/edit.*$/, "") + "/edit#gid=" + sh.getSheetId() + "&range=A";
 
   const rows = [];
   values.forEach((r, i) => {
-    if (!r[cTime]) return;
-    const text = textCols.map(c => String(r[c])).join(" ");
-    const status = cStatus > -1 && r[cStatus] ? String(r[cStatus]) : "New";
-    const done = status === "Answered" || status === "No reply needed";
-    rows.push({
-      received: r[cTime],
-      topic: cTopic > -1 ? String(r[cTopic]) : "",
-      asked_by: cWho > -1 ? String(r[cWho]) : "",
-      type: WITHDRAWAL_RE.test(text) ? "Alumni Gallery withdrawal" : "Question",
+    const stamp = parseStamp_(r[cTime]);
+    if (!stamp.date) return;
+    const notes = stamp.note + " " + remarkCols.map(c => String(r[c])).join(" ");
+    let status;
+    if (cStatus > -1 && String(r[cStatus]).trim()) status = String(r[cStatus]).trim();
+    else if (ANSWERED_RE.test(notes)) status = "Answered (noted)";
+    else if (trackFrom && stamp.date < trackFrom) status = "Not tracked";
+    else status = "New";
+    const q = {
+      received: stamp.date,
+      topic: first(r, topicCols),
+      asked_by: shortWho_(first(r, whoCols)),
+      type: WITHDRAWAL_RE.test(textCols.map(c => String(r[c])).join(" ")) ? "Alumni Gallery withdrawal" : "Question",
       status: status,
       assigned_to: cAssigned > -1 ? String(r[cAssigned]) : "",
       replied_on: cReplied > -1 && r[cReplied] ? r[cReplied] : "",
-      days_waiting: done ? "" : daysBetween_(r[cTime], now),
+      days_waiting: "",
       open_in_sheet: base + (i + 2),
-    });
+    };
+    if (isOpen_(q)) q.days_waiting = daysBetween_(stamp.date, now);
+    rows.push(q);
   });
+  rows.sort((a, b) => b.received - a.received);
   writeTable_(hub.getSheetByName("Questions"), rows,
     ["received", "topic", "asked_by", "type", "status", "assigned_to", "replied_on", "days_waiting", "open_in_sheet"]);
   return rows;
+}
+
+// A Timestamp cell is a date, or (when someone typed a note into it) text
+// such as "21/04/2023 23:28:28\n\nanswered: rachel".
+function parseStamp_(v) {
+  if (v instanceof Date) return { date: v, note: "" };
+  const s = String(v || "");
+  const m = /^\s*(\d{1,2})\/(\d{1,2})\/(\d{4})(?:\s+(\d{1,2}):(\d{2})(?::(\d{2}))?)?/.exec(s);
+  if (!m) return { date: null, note: s };
+  return {
+    date: new Date(+m[3], +m[2] - 1, +m[1], +(m[4] || 0), +(m[5] || 0), +(m[6] || 0)),
+    note: s.slice(m[0].length),
+  };
+}
+
+function shortWho_(s) {
+  if (/parent/i.test(s)) return "Parent";
+  if (/graduated/i.test(s)) return "Recent graduate";
+  if (/currently studying|current/i.test(s)) return "Current student";
+  return s;
 }
 
 function refreshOpportunities_(hub, now) {
@@ -315,7 +355,7 @@ function buildActions_(site, feedback, questions, opps, checklist, now) {
   pages.forEach(p => { portfolioOf[p.page_title] = p.portfolio; urlOf[p.page_title] = p.page_url; });
 
   questions.forEach(q => {
-    if (q.status === "Answered" || q.status === "No reply needed") return;
+    if (!isOpen_(q)) return;
     if (q.type === "Alumni Gallery withdrawal") {
       add("1 High", "Questions", "Alumni Gallery withdrawal request", "Remove the profile from the gallery, then reply", "Webmaster", q.received, q.open_in_sheet);
     } else {
@@ -386,7 +426,7 @@ function addQuestionAlert() {
 function onQuestion_(e) {
   const ss = SpreadsheetApp.openByUrl(CONFIG.QUESTIONS_SHEET_URL);
   const named = (e && e.namedValues) || {};
-  const topicKey = Object.keys(named).find(k => /topic|about|area|regarding|category/i.test(k));
+  const topicKey = Object.keys(named).find(k => /with regards to|topic|regarding|category/i.test(k) && named[k][0]);
   const text = Object.keys(named).map(k => (named[k] || []).join(" ")).join(" ");
   const withdrawal = WITHDRAWAL_RE.test(text);
   const subject = withdrawal ? "ECG website: Alumni Gallery withdrawal request" : "ECG website: new question" +
@@ -467,6 +507,9 @@ function toDate_(v) {
   if (m) return new Date(+m[3], +m[2] - 1, +m[1]);
   m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(s);
   if (m) return new Date(+m[1], +m[2] - 1, +m[3]);
+  m = /^(\d{1,2})\s+([A-Za-z]{3})[a-z]*\.?\s+(\d{4})$/.exec(s);      // 31 Dec 2026
+  const mon = m && ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"].indexOf(m[2].toLowerCase());
+  if (m && mon > -1) return new Date(+m[3], mon, +m[1]);
   return null;
 }
 

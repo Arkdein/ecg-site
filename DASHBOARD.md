@@ -1,6 +1,6 @@
 # ECG@RVHS Webmaster's Dashboard
 
-A Looker Studio report that answers one question: **what needs attention on the website this week?** It brings together page views, the "Was this page helpful?" answers, "Send us a question", and an automatic nightly check of every page.
+A Data Studio report (Google renamed Looker Studio back to Data Studio) that answers one question: **what needs attention on the website this week?** It brings together page views, the "Was this page helpful?" answers, "Send us a question", and an automatic nightly check of every page.
 
 Owner: ECG Webmaster RH. Everything below is set up once. After that, nothing needs feeding by hand.
 
@@ -55,15 +55,17 @@ The script `scripts/dashboard-sheet.gs` creates the Sheet and keeps it up to dat
 4. Choose **setup** in the function menu and click **Run**. Allow access when asked.
 5. Open **Executions**, click the run, and copy the link to the new Sheet **ECG@RVHS Webmaster's Dashboard (data)**.
 
-What `setup` changes outside the new Sheet: it adds three columns to the question responses, **Status**, **Assigned to** and **Replied on**. When you answer a question there, set Status to *Answered* and fill in Replied on. A blank Status counts as *New*.
+What `setup` changes outside the new Sheet: it adds three columns to the right of the question responses, **Status**, **Assigned to** and **Replied on**. When you answer a question, set Status to *Answered* and fill in Replied on, instead of typing a note into the Timestamp cell.
+
+How the dashboard reads older rows: a blank Status counts as *Answered (noted)* if the Timestamp cell or the remarks column already says answered, replied or responded. Otherwise it counts as *New* if the question came in on or after `TRACK_QUESTIONS_FROM` (1 Jan 2026), or *Not tracked* if it's older.
 
 **Email for new questions (recommended).** The dashboard is the overview, not the alarm: a worrying question can't wait for a weekly look. Either switch on the form's own notification (**Responses** > ⋮ > **Get email notifications for new responses**), or, to alert more than one person, fill in `ALERT_EMAILS` in the script and run **addQuestionAlert** once. Its emails give the topic and a link, never the question itself.
 
 If the Sheet's **Summary** tab shows *refresh_notes*, something couldn't be read; the note says what.
 
-## Part 3: The Looker Studio report (about 45 minutes)
+## Part 3: The Data Studio report (about 45 minutes)
 
-Go to [lookerstudio.google.com](https://lookerstudio.google.com) > **Blank report**. If your MOE account can't open Looker Studio, the school has switched it off; ask ICT, or build it on the account that will own the dashboard after handover.
+Go to [datastudio.google.com](https://datastudio.google.com) (lookerstudio.google.com also works) > **Blank report**. If your MOE account can't open Looker Studio, the school has switched it off; ask ICT, or build it on the account that will own the dashboard after handover.
 
 ### Data sources
 
