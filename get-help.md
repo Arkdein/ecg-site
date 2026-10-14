@@ -42,7 +42,7 @@ For anything else, send us a message and the right teacher will get back to you.
 
 When the A-Level results are released, the **ECG Centre @ MOE** also offers counselling by phone or online. It's useful if you want another view, or can't get a session with us in time. [Book with the ECG Centre @ MOE](https://go.gov.sg/moe-ecg-centre).
 
-For what ECG covers in Singapore schools, and MOE's resources for parents, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance/overview).
+For what ECG covers in Singapore schools, and MOE's resources for parents, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance).
 
 ## Who to ask & school documents
 

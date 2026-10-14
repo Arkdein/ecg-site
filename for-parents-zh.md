@@ -75,6 +75,6 @@ description: 在孩子成长的各个阶段，如何与孩子谈升学和职业�
 
 ## 联系我们
 
-请参阅[寻求协助（Get Help）](get-help.md)页面。如想了解新加坡学校如何开展教育与职业辅导，请参阅[教育部：教育与职业辅导](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance/overview)。
+请参阅[寻求协助（Get Help）](get-help.md)页面。如想了解新加坡学校如何开展教育与职业辅导，请参阅[教育部：教育与职业辅导](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance)。
 
 </div>

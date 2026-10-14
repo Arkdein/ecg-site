@@ -69,4 +69,4 @@ Today's teenagers will enter a very different job market. These are useful start
 
 ## Talk to us
 
-See [Get Help](get-help.md). For how ECG works in Singapore schools, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance/overview).
+See [Get Help](get-help.md). For how ECG works in Singapore schools, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance).
