@@ -14,8 +14,15 @@ h1, h2, h3, h4, .site-title, .btn {
 .main-content h2 { font-weight: 700; }
 .main-content h4 { text-transform: none; letter-spacing: normal; font-size: 1rem !important; }
 
-// Thin red school accent along the top of the page, and under every page title
-.side-bar, .main-header { box-shadow: inset 0 4px 0 $rvhs-red; }
+// Thin red school accent along the top of the page, and under every page title.
+// One unbroken line across the whole page, over the search box too
+// (body::before); the sidebar keeps its own line because it stays put
+// when the page scrolls.
+body::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: $rvhs-red; z-index: 101; pointer-events: none;
+}
+.side-bar { box-shadow: inset 0 4px 0 $rvhs-red; }
 .main-content h1::after {
   content: ""; display: block; width: 48px; height: 4px;
   margin-top: 0.5rem; border-radius: 2px; background: $rvhs-red;
