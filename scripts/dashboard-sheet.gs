@@ -16,6 +16,8 @@
  *                    - "Send us a question": date, topic, status only
  *                      (never the question text, names or emails)
  *                    - Current Opportunities rows waiting for approval
+ *                    - ECG Committee edit requests (page, type, status;
+ *                      never the requester's email)
  *                  and rebuilds the "Needs action" list.
  *   addQuestionAlert()  Optional. Emails ALERT_EMAILS when a question
  *                  comes in (date and topic only, plus a link).
@@ -46,6 +48,9 @@ const CONFIG = {
   // "ECG Current Opportunities (website feed)" Sheet (optional)   ← EDIT
   OPPORTUNITIES_SHEET_URL: "https://docs.google.com/spreadsheets/d/1gzyrknzt8X-IkyRL9M_a_gcOufVxfKbhiXqkvqGSru8/edit",
 
+  // "Edit requests for ECG@RVHS 2027 Website (Sheet)" — committee edit requests (optional)
+  EDIT_REQUESTS_SHEET_URL: "https://docs.google.com/spreadsheets/d/14jxF9mCdOKwVjTBUXdU7sjdU6e2SKZlnVdc_NNxz09w/edit",
+
   // Who gets an email for each new question (addQuestionAlert).   ← EDIT
   // MOE addresses, separated by commas.
   ALERT_EMAILS: "",
@@ -57,7 +62,13 @@ const CONFIG = {
   FEEDBACK_DAYS: 60,           // feedback shown in "Needs action" for this many days
   QUESTION_URGENT_DAYS: 3,     // an unanswered question becomes "high" after this many days
   CLOSING_SOON_DAYS: 7,        // a listing is "closing soon" this many days before it closes
+  EDIT_NEEDED_SOON_DAYS: 7,    // an edit request becomes "high" this many days before its Needed by date
+  EDIT_QUERY_CHASE_DAYS: 7,    // a request on Query is chased after this many days
 };
+
+// Edit requests: Status values in the edit-requests Sheet (blank = New)
+const EDIT_CLOSED = ["Live", "Declined"];
+function isEditOpen_(e) { return EDIT_CLOSED.indexOf(e.status) === -1; }
 
 const STATUS_CHOICES = ["New", "With someone", "Answered", "No reply needed"];
 const CLOSED_STATUSES = ["Answered", "Answered (noted)", "No reply needed", "Not tracked"];
@@ -97,7 +108,7 @@ function getHub_(create) {
 
 const TABS = [
   "Read me", "Needs action", "Summary", "Pages", "Deadlines", "Links",
-  "Feedback", "Questions", "Opportunities", "Launch checklist"
+  "Feedback", "Questions", "Edit requests", "Opportunities", "Launch checklist"
 ];
 
 function ensureTabs_(ss) {
@@ -110,7 +121,7 @@ function ensureTabs_(ss) {
 
   const readMe = ss.getSheetByName("Read me");
   readMe.clear();
-  readMe.getRange(1, 1, 13, 2).setValues([
+  readMe.getRange(1, 1, 14, 2).setValues([
     ["ECG@RVHS Webmaster's Dashboard (data)", ""],
     ["This Sheet feeds the Looker Studio dashboard. It refreshes itself every hour.", ""],
     ["Don't type in any tab except Launch checklist. The others are replaced on every refresh.", ""],
@@ -121,6 +132,7 @@ function ensureTabs_(ss) {
     ["Pages / Deadlines / Links", "The nightly site check from GitHub (one row per page, deadline date, link)"],
     ["Feedback", "'Was this page helpful?' answers (no names are collected)"],
     ["Questions", "'Send us a question': date, topic and status only. Read and answer questions in the responses Sheet."],
+    ["Edit requests", "ECG Committee edit requests: page, type, status and how long they've been open. Work on them in the edit-requests Sheet."],
     ["Opportunities", "Current Opportunities rows and whether they are waiting for approval"],
     ["Launch checklist", "Go-live tasks. Tick Done here; the dashboard shows what's left."],
     ["Made by", "scripts/dashboard-sheet.gs in the Arkdein/ecg-site repository"],
@@ -189,17 +201,20 @@ function refresh() {
     }
   });
 
-  let feedback = [], questions = [], opps = [];
+  let feedback = [], questions = [], opps = [], edits = [];
   try { feedback = refreshFeedback_(hub); } catch (e) { notes.push("Feedback not refreshed: " + e.message); }
   if (CONFIG.QUESTIONS_SHEET_URL) {
     try { questions = refreshQuestions_(hub, now); } catch (e) { notes.push("Questions not refreshed: " + e.message); }
   } else notes.push("Questions: QUESTIONS_SHEET_URL is empty in the script.");
+  if (CONFIG.EDIT_REQUESTS_SHEET_URL) {
+    try { edits = refreshEditRequests_(hub, now, site.pages || []); } catch (e) { notes.push("Edit requests not refreshed: " + e.message); }
+  }
   if (CONFIG.OPPORTUNITIES_SHEET_URL) {
     try { opps = refreshOpportunities_(hub, now); } catch (e) { notes.push("Opportunities not refreshed: " + e.message); }
   }
 
   const checklist = readTable_(hub.getSheetByName("Launch checklist"));
-  const actions = buildActions_(site, feedback, questions, opps, checklist, now);
+  const actions = buildActions_(site, feedback, questions, opps, checklist, now, edits);
   writeTable_(hub.getSheetByName("Needs action"), actions);
 
   // Summary: the site check's totals, plus this Sheet's own
@@ -210,6 +225,9 @@ function refresh() {
   sum.withdrawal_requests_open = questions.filter(q => q.type === "Alumni Gallery withdrawal" && isOpen_(q)).length;
   sum.feedback_last_30_days = feedback.filter(f => f.received && daysBetween_(f.received, now) <= 30).length;
   sum.feedback_no_last_30_days = feedback.filter(f => f.received && daysBetween_(f.received, now) <= 30 && f.answer === "No").length;
+  sum.edit_requests_open = edits.filter(isEditOpen_).length;
+  sum.edit_requests_new = edits.filter(e => e.status === "New").length;
+  sum.edit_requests_oldest_open_days = edits.filter(isEditOpen_).reduce((m, e) => Math.max(m, e.days_open || 0), 0);
   sum.opportunities_awaiting_approval = opps.filter(o => o.status === "Awaiting approval").length;
   sum.checklist_left = checklist.filter(c => c["Item"] && c["Done"] !== true).length;
   sum.needs_action_high = actions.filter(a => a.priority === "1 High").length;
@@ -308,6 +326,68 @@ function shortWho_(s) {
   return s;
 }
 
+// ECG Committee edit requests. Copies page, type, a short summary of the
+// change, who asked (name only), status and dates. Never the email address.
+function refreshEditRequests_(hub, now, pages) {
+  const ss = SpreadsheetApp.openByUrl(CONFIG.EDIT_REQUESTS_SHEET_URL);
+  const sh = ss.getSheetByName("Requests") || formResponsesSheet_(ss);
+  const values = sh.getDataRange().getValues();
+  const head = values.shift().map(String);
+  const col = re => head.findIndex(h => re.test(h));
+  const cTime = col(/^timestamp/i), cPage = col(/^page/i), cSection = col(/^section/i),
+        cType = col(/^type of change/i), cChange = col(/^change to/i), cNeeded = col(/^needed by/i),
+        cName = col(/^your name/i), cFiles = col(/^photos|^files/i), cStatus = col(/^status$/i),
+        cNotes = col(/^webmaster notes/i), cLive = col(/^date live/i), cRef = col(/^change ref/i);
+  const base = ss.getUrl().replace(/\/edit.*$/, "") + "/edit#gid=" + sh.getSheetId() + "&range=A";
+
+  // Match the Page field (a full page address, or "All pages") to the site check's pages
+  const byPath = {};
+  pages.forEach(p => { if (p.page_url) byPath[String(p.page_url).replace(/^https?:\/\/[^/]+/, "").replace(/\/$/, "")] = p; });
+  const pageOf = v => {
+    const s = String(v || "").trim();
+    const path = s.replace(/^https?:\/\/[^/]+/, "").replace(/[?#].*$/, "").replace(/\/$/, "");
+    return byPath[path] || null;
+  };
+  const today = startOfDay_(now);
+  const rows = [];
+  values.forEach((r, i) => {
+    const received = r[cTime] instanceof Date ? r[cTime] : toDate_(r[cTime]);
+    if (!received) return;
+    const pageRaw = cPage > -1 ? String(r[cPage]).trim() : "";
+    const p = pageOf(pageRaw);
+    const status = cStatus > -1 && String(r[cStatus]).trim() ? String(r[cStatus]).trim() : "New";
+    const needed = cNeeded > -1 ? toDate_(r[cNeeded]) : null;
+    const change = cChange > -1 ? String(r[cChange]).replace(/\s+/g, " ").trim() : "";
+    const e = {
+      received: received,
+      page_title: p ? p.page_title : (/^all pages$/i.test(pageRaw) ? "All pages" : pageRaw),
+      portfolio: p ? p.portfolio : "Webmaster",
+      section: cSection > -1 ? String(r[cSection]).trim() : "",
+      type: cType > -1 ? String(r[cType]).trim() : "",
+      change_summary: change.length > 120 ? change.slice(0, 117) + "..." : change,
+      requested_by: cName > -1 ? String(r[cName]).trim() : "",
+      has_files: cFiles > -1 && String(r[cFiles]).trim() ? "Yes" : "No",
+      needed_by: needed || "",
+      status: status,
+      webmaster_notes: cNotes > -1 ? String(r[cNotes]).trim() : "",
+      date_live: cLive > -1 && r[cLive] ? r[cLive] : "",
+      change_ref: cRef > -1 ? String(r[cRef]).trim() : "",
+      days_open: "",
+      days_to_needed_by: needed ? daysBetween_(today, needed) : "",
+      page_url: p ? p.page_url : "",
+      open_in_sheet: base + (i + 2),
+    };
+    if (isEditOpen_(e)) e.days_open = daysBetween_(received, now);
+    rows.push(e);
+  });
+  rows.sort((a, b) => b.received - a.received);
+  writeTable_(hub.getSheetByName("Edit requests") || hub.insertSheet("Edit requests"), rows,
+    ["received", "page_title", "portfolio", "section", "type", "change_summary", "requested_by", "has_files",
+     "needed_by", "status", "webmaster_notes", "date_live", "change_ref", "days_open", "days_to_needed_by",
+     "page_url", "open_in_sheet"]);
+  return rows;
+}
+
 function refreshOpportunities_(hub, now) {
   const ss = SpreadsheetApp.openByUrl(CONFIG.OPPORTUNITIES_SHEET_URL);
   const sh = ss.getSheetByName("Entry") || ss.getSheets()[0];
@@ -345,7 +425,7 @@ function refreshOpportunities_(hub, now) {
 }
 
 // One list of everything that needs someone, most urgent first.
-function buildActions_(site, feedback, questions, opps, checklist, now) {
+function buildActions_(site, feedback, questions, opps, checklist, now, edits) {
   const out = [];
   const add = (priority, area, item, todo, portfolio, date, link) =>
     out.push({ priority: priority, area: area, item: item, what_to_do: todo, portfolio: portfolio || "", date: date || "", link: link || "" });
@@ -363,6 +443,29 @@ function buildActions_(site, feedback, questions, opps, checklist, now) {
       add(urgent ? "1 High" : "2 Medium", "Questions", "Question" + (q.topic ? ": " + q.topic : ""),
         (q.status === "New" ? "Read and pass to the right person" : "Waiting for a reply from " + (q.assigned_to || "someone")) +
         " (" + q.days_waiting + " day" + (q.days_waiting === 1 ? "" : "s") + ")", "", q.received, q.open_in_sheet);
+    }
+  });
+
+  (edits || []).forEach(e => {
+    if (!isEditOpen_(e)) return;
+    const due = e.days_to_needed_by !== "" && e.days_to_needed_by <= CONFIG.EDIT_NEEDED_SOON_DAYS;
+    const label = "Edit request: " + e.page_title + (e.type ? " (" + e.type + ")" : "") + (e.requested_by ? ", from " + e.requested_by : "");
+    const neededNote = e.needed_by ? (e.days_to_needed_by < 0 ? " Needed by date has passed." : " Needed in " + e.days_to_needed_by + " day" + (e.days_to_needed_by === 1 ? "" : "s") + ".") : "";
+    if (e.status === "New") {
+      add(due ? "1 High" : "2 Medium", "Edit requests", label,
+        "Read it, then set Approved or Query (" + e.days_open + " day" + (e.days_open === 1 ? "" : "s") + " old)." + neededNote,
+        e.portfolio, e.needed_by || e.received, e.open_in_sheet);
+    } else if (e.status === "Approved") {
+      add(due ? "1 High" : "2 Medium", "Edit requests", label,
+        "Approved: make the change, then set Live." + neededNote, e.portfolio, e.needed_by || e.received, e.open_in_sheet);
+    } else if (e.status === "Query") {
+      const chase = e.days_open >= CONFIG.EDIT_QUERY_CHASE_DAYS;
+      add(due ? "1 High" : chase ? "2 Medium" : "3 Low", "Edit requests", label,
+        (chase ? "Still on Query: chase the answer. " : "Waiting for an answer to the query. ") + e.webmaster_notes.slice(0, 120) + neededNote,
+        e.portfolio, e.needed_by || e.received, e.open_in_sheet);
+    } else {
+      add("2 Medium", "Edit requests", label, "Unrecognised Status \"" + e.status + "\": set New, Query, Approved, Live or Declined.",
+        e.portfolio, e.received, e.open_in_sheet);
     }
   });
 
