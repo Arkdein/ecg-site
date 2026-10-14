@@ -34,6 +34,16 @@
   {%- if page.next_review %} · Next review: {{ page.next_review }}{% endif %}
 </p>
 {%- endif -%}
+{%- comment -%}
+  Edit-request link for ECG Committee members. The Form is restricted to
+  named committee members, so anyone else who clicks it is refused.
+  Set by edit_request_form_prefill in _config.yml (leave empty to hide).
+{%- endcomment -%}
+{%- if site.edit_request_form_prefill and site.edit_request_form_prefill != "" -%}
+{%- assign er_page = site.url | append: site.baseurl | append: page.url | url_encode -%}
+{%- assign er_link = site.edit_request_form_prefill | replace: "PAGE_URL", er_page -%}
+<p class="ecg-edit-request">ECG Committee: <a href="{{ er_link }}" target="_blank" rel="noopener">request an edit to this page</a> (MOE sign-in, committee members only)</p>
+{%- endif -%}
 <div class="ecg-footer">
   <p class="ecg-motto"><span lang="zh-Hans">立德立功 · 化愚化顽</span> · Upholding Virtues, Contributing to Society</p>
   <p>Education and Career Guidance Committee · <a href="https://www.rivervalleyhigh.moe.edu.sg/">River Valley High School</a></p>
