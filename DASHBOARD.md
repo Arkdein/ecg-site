@@ -57,7 +57,9 @@ The script `scripts/dashboard-sheet.gs` creates the Sheet and keeps it up to dat
 
 What `setup` changes outside the new Sheet: it adds three columns to the right of the question responses, **Status**, **Assigned to** and **Replied on**. When you answer a question, set Status to *Answered* and fill in Replied on, instead of typing a note into the Timestamp cell.
 
-How the dashboard reads older rows: a blank Status counts as *Answered (noted)* if the Timestamp cell or the remarks column already says answered, replied or responded. Otherwise it counts as *New* if the question came in on or after `TRACK_QUESTIONS_FROM` (1 Jan 2026), or *Not tracked* if it's older.
+How the dashboard reads older rows: a blank Status counts as *Answered (noted)* if the Timestamp cell or the remarks column already says answered, replied or responded. Otherwise it counts as *New* if the question came in on or after `TRACK_QUESTIONS_FROM` (14 Oct 2026: every question before that date was treated as closed), or *Not tracked* if it's older. To reopen an older question, set its Status to *New* or *With someone* in the responses Sheet.
+
+The responses Sheet also has a **Summary** column (added 14 Oct 2026, far right). The Webmaster Control Panel fills it with a one-line summary written by Claude the first time it sees an open question; the dashboard doesn't use it.
 
 **Email for new questions (recommended).** The dashboard is the overview, not the alarm: a worrying question can't wait for a weekly look. Either switch on the form's own notification (**Responses** > ⋮ > **Get email notifications for new responses**), or, to alert more than one person, fill in `ALERT_EMAILS` in the script and run **addQuestionAlert** once. Its emails give the topic and a link, never the question itself.
 

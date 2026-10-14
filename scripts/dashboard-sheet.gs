@@ -56,8 +56,9 @@ const CONFIG = {
   ALERT_EMAILS: "",
 
   // Questions sent before this date only count as open if Status says so.
-  // (Before the dashboard, replies were noted in the Timestamp cell, and not always.)
-  TRACK_QUESTIONS_FROM: "2026-01-01",
+  // Randall closed everything before 14 Oct 2026 (decided 14 Oct 2026): those rows
+  // read as "Not tracked" unless someone sets their Status by hand.
+  TRACK_QUESTIONS_FROM: "2026-10-14",
 
   FEEDBACK_DAYS: 60,           // feedback shown in "Needs action" for this many days
   QUESTION_URGENT_DAYS: 3,     // an unanswered question becomes "high" after this many days
