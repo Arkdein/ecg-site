@@ -82,6 +82,8 @@ Other box types: `.important` (red), `.deadline` (yellow), `.tip` (green).
 
 In a `.deadline` box, write each date with its year (`15 Oct 2026`, `30 Sep to 20 Nov 2026`). The Webmaster's Dashboard checks these every night and flags any date that has passed. Dates without a year aren't checked.
 
+Use `.deadline` only for **external cut-offs** (UCAS, universities, scholarships, HSK, results day). For the school's own programmes, don't give exact dates: write the usual period in a `.note` box ("usually in April") and send students to the programme's site, or to the ECG Google Classroom for Horizon. See [STYLE.md](STYLE.md#dates).
+
 Red **TODO** boxes are placeholders for content still to be written. Delete the TODO line and the `{: .ecg-todo }` line beneath it once the section is done.
 
 ## The lines at the top of each page
