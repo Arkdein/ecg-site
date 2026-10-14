@@ -153,7 +153,7 @@ function ensureTabs_(ss) {
       ["Google Analytics: Google signals off, data retention 14 months", "Randall", "", false, ""],
       ["Alumni Gallery: retention period decided", "ECG Committee", "", false, ""],
       ["Go / no-go decision", "ECG Committee", new Date(2027, 0, 6), false, ""],
-      ["Switch to the new site (draft: false in _config.yml)", "Randall", new Date(2027, 0, 11), false, "Turns off the draft banner and no-indexing"],
+      ["Switch to the new site (draft: false in _config.yml)", "Randall", new Date(2027, 0, 11), false, "Turns off no-indexing and hides the TODO boxes"],
       ["'Moved' banners on the old Google Site", "Randall", new Date(2027, 0, 11), false, ""],
       ["Hand over dashboard, forms and Sheets to the ECG shared account", "Randall", "", false, ""],
     ];

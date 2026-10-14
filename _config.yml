@@ -11,8 +11,8 @@ description: Education and Career Guidance at River Valley High School
 url: "https://arkdein.github.io"          # ← EDIT (set at setup)
 baseurl: "/ecg-site"                       # ← EDIT (set at setup)
 
-# While true: shows a "draft" banner on every page and tells
-# search engines not to list the site. Set to false at go-live.
+# While true: tells search engines not to list the site and shows
+# the TODO boxes. Set to false at go-live. (No banner since 14 Oct 2026.)
 draft: true                                # ← EDIT at go-live
 
 # Current Opportunities list: the "Publish to web" CSV link of the
