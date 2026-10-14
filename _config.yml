@@ -23,7 +23,7 @@ opportunities_csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR5GulSl-PRY
 # Key Announcements on Home: the "Publish to web" CSV link of the
 # "Announcements public" tab in the same Google Sheet. While empty, the
 # block stays hidden (add ?preview=announcements to see sample ones).
-announcements_csv: ""                      # ← EDIT
+announcements_csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR5GulSl-PRYTpvAqoLXM_ohatOLSqggc7kzFniGNZZ-ACLOeag8pnM14APSZdwcF8xjcSbo5Y_9e5e/pub?gid=502&single=true&output=csv"   # ← EDIT
 
 # "Was this page helpful?" buttons at the bottom of every page:
 # the PREFILL TEMPLATE link printed by the feedback-form script
