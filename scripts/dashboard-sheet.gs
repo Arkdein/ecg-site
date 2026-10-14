@@ -585,7 +585,10 @@ function writeTable_(sh, rows, header) {
     const col = sh.getRange(2, c + 1, Math.max(rows.length, 1), 1);
     if (vals.length && vals.every(v => v instanceof Date)) col.setNumberFormat(/_at|received/.test(h) ? "yyyy-mm-dd hh:mm" : "yyyy-mm-dd");
     else if (vals.length && vals.every(v => typeof v === "number")) col.setNumberFormat("0.##");
-    else col.setNumberFormat("@");
+    else if (vals.length) col.setNumberFormat("@");
+    // An empty column keeps a number format: Data Studio reads number fields
+    // (days_waiting, days_open) as numbers and fails on a column turned to text.
+    else col.setNumberFormat("0.##");
   });
   range.setValues(data);
   sh.getRange(1, 1, 1, header.length).setFontWeight("bold");
