@@ -59,6 +59,8 @@ What `setup` changes outside the new Sheet: it adds three columns to the right o
 
 How the dashboard reads older rows: a blank Status counts as *Answered (noted)* if the Timestamp cell or the remarks column already says answered, replied or responded. Otherwise it counts as *New* if the question came in on or after `TRACK_QUESTIONS_FROM` (14 Oct 2026: every question before that date was treated as closed), or *Not tracked* if it's older. To reopen an older question, set its Status to *New* or *With someone* in the responses Sheet.
 
+In the data Sheet's **Questions** tab, `days_waiting` is **-1** for a closed question (never blank), so the column always holds numbers for Data Studio.
+
 The responses Sheet also has a **Summary** column (added 14 Oct 2026, far right). The Webmaster Control Panel fills it with a one-line summary written by Claude the first time it sees an open question; the dashboard doesn't use it.
 
 **Email for new questions (recommended).** The dashboard is the overview, not the alarm: a worrying question can't wait for a weekly look. Either switch on the form's own notification (**Responses** > ⋮ > **Get email notifications for new responses**), or, to alert more than one person, fill in `ALERT_EMAILS` in the script and run **addQuestionAlert** once. Its emails give the topic and a link, never the question itself.
