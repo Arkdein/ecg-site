@@ -45,7 +45,7 @@ const CONFIG = {
   // In the form: Responses > Link to Sheets, then paste that Sheet's address.
   QUESTIONS_SHEET_URL: "https://docs.google.com/spreadsheets/d/11FgLceOWVQPTzcZHJ9E_YD4a345jUl64V6JSGCboFTg/edit",
 
-  // "ECG Current Opportunities (website feed)" Sheet (optional)   ← EDIT
+  // "ECG Opportunities and Announcements (website feed)" Sheet (optional)   ← EDIT
   OPPORTUNITIES_SHEET_URL: "https://docs.google.com/spreadsheets/d/1gzyrknzt8X-IkyRL9M_a_gcOufVxfKbhiXqkvqGSru8/edit",
 
   // "Edit requests for ECG@RVHS 2027 Website (Sheet)" — committee edit requests (optional)
@@ -109,7 +109,7 @@ function getHub_(create) {
 
 const TABS = [
   "Read me", "Needs action", "Summary", "Pages", "Deadlines", "Links",
-  "Feedback", "Questions", "Edit requests", "Opportunities", "Launch checklist"
+  "Feedback", "Questions", "Edit requests", "Opportunities", "Announcements", "Launch checklist"
 ];
 
 function ensureTabs_(ss) {
@@ -122,7 +122,7 @@ function ensureTabs_(ss) {
 
   const readMe = ss.getSheetByName("Read me");
   readMe.clear();
-  readMe.getRange(1, 1, 14, 2).setValues([
+  readMe.getRange(1, 1, 15, 2).setValues([
     ["ECG@RVHS Webmaster's Dashboard (data)", ""],
     ["This Sheet feeds the Looker Studio dashboard. It refreshes itself every hour.", ""],
     ["Don't type in any tab except Launch checklist. The others are replaced on every refresh.", ""],
@@ -135,6 +135,7 @@ function ensureTabs_(ss) {
     ["Questions", "'Send us a question': date, topic and status only. Read and answer questions in the responses Sheet."],
     ["Edit requests", "ECG Committee edit requests: page, type, status and how long they've been open. Work on them in the edit-requests Sheet."],
     ["Opportunities", "Current Opportunities rows and whether they are waiting for approval"],
+    ["Announcements", "Key announcements (Home page): approval, Show from / Remove after, and whether they are live"],
     ["Launch checklist", "Go-live tasks. Tick Done here; the dashboard shows what's left."],
     ["Made by", "scripts/dashboard-sheet.gs in the Arkdein/ecg-site repository"],
   ]);
@@ -202,7 +203,7 @@ function refresh() {
     }
   });
 
-  let feedback = [], questions = [], opps = [], edits = [];
+  let feedback = [], questions = [], opps = [], edits = [], anns = [];
   try { feedback = refreshFeedback_(hub); } catch (e) { notes.push("Feedback not refreshed: " + e.message); }
   if (CONFIG.QUESTIONS_SHEET_URL) {
     try { questions = refreshQuestions_(hub, now); } catch (e) { notes.push("Questions not refreshed: " + e.message); }
@@ -212,10 +213,11 @@ function refresh() {
   }
   if (CONFIG.OPPORTUNITIES_SHEET_URL) {
     try { opps = refreshOpportunities_(hub, now); } catch (e) { notes.push("Opportunities not refreshed: " + e.message); }
+    try { anns = refreshAnnouncements_(hub, now); } catch (e) { notes.push("Announcements not refreshed: " + e.message); }
   }
 
   const checklist = readTable_(hub.getSheetByName("Launch checklist"));
-  const actions = buildActions_(site, feedback, questions, opps, checklist, now, edits);
+  const actions = buildActions_(site, feedback, questions, opps, checklist, now, edits, anns);
   writeTable_(hub.getSheetByName("Needs action"), actions);
 
   // Summary: the site check's totals, plus this Sheet's own
@@ -394,7 +396,8 @@ function refreshEditRequests_(hub, now, pages) {
 
 function refreshOpportunities_(hub, now) {
   const ss = SpreadsheetApp.openByUrl(CONFIG.OPPORTUNITIES_SHEET_URL);
-  const sh = ss.getSheetByName("Entry") || ss.getSheets()[0];
+  const sh = ss.getSheetByName("Opportunities") || ss.getSheetByName("Entry");   // "Entry" before 14 Oct 2026
+  if (!sh) throw new Error("no Opportunities tab in the opportunities Sheet");
   const values = sh.getDataRange().getValues();
   const head = values.shift().map(String);
   const col = re => head.findIndex(h => re.test(h));
@@ -428,8 +431,49 @@ function refreshOpportunities_(hub, now) {
   return rows;
 }
 
+// Key announcements (Announcements tab of the opportunities Sheet).
+// Written to its own tab so the Opportunities tab's columns don't change.
+function refreshAnnouncements_(hub, now) {
+  const ss = SpreadsheetApp.openByUrl(CONFIG.OPPORTUNITIES_SHEET_URL);
+  const sh = ss.getSheetByName("Announcements");
+  if (!sh) return [];
+  const values = sh.getDataRange().getValues();
+  const head = values.shift().map(String);
+  const col = re => head.findIndex(h => re.test(h));
+  const cHead = col(/^headline/i), cFor = col(/^for$/i), cFrom = col(/show from/i), cTo = col(/remove after/i), cApproved = col(/approved/i);
+  const base = ss.getUrl().replace(/\/edit.*$/, "") + "/edit#gid=" + sh.getSheetId() + "&range=A";
+  const today = startOfDay_(now);
+  const rows = [];
+  values.forEach((r, i) => {
+    if (i === 0) return;                         // grey help row under the headings
+    const headline = cHead > -1 ? String(r[cHead]).trim() : "";
+    if (!headline) return;
+    const approved = cApproved > -1 ? String(r[cApproved]).trim() : "";
+    const from = cFrom > -1 ? toDate_(r[cFrom]) : null;
+    const to = cTo > -1 ? toDate_(r[cTo]) : null;
+    let status;
+    if (!to) status = "No Remove after date";
+    else if (to < today) status = "Expired (delete at end of term)";
+    else if (approved !== "Yes") status = "Awaiting approval";
+    else if (from && from > today) status = "Scheduled";
+    else status = "Live";
+    rows.push({
+      headline: headline,
+      for: cFor > -1 ? String(r[cFor]).trim() : "",
+      show_from: from || "",
+      remove_after: to || "",
+      approved: approved,
+      status: status,
+      open_in_sheet: base + (i + 2),
+    });
+  });
+  const tab = hub.getSheetByName("Announcements") || hub.insertSheet("Announcements");
+  writeTable_(tab, rows, ["headline", "for", "show_from", "remove_after", "approved", "status", "open_in_sheet"]);
+  return rows;
+}
+
 // One list of everything that needs someone, most urgent first.
-function buildActions_(site, feedback, questions, opps, checklist, now, edits) {
+function buildActions_(site, feedback, questions, opps, checklist, now, edits, anns) {
   const out = [];
   const add = (priority, area, item, todo, portfolio, date, link) =>
     out.push({ priority: priority, area: area, item: item, what_to_do: todo, portfolio: portfolio || "", date: date || "", link: link || "" });
@@ -501,6 +545,11 @@ function buildActions_(site, feedback, questions, opps, checklist, now, edits) {
   opps.forEach(o => {
     if (o.status === "Awaiting approval") add("2 Medium", "Opportunities", o.title, "Check the row and set Approved to Yes", "Internships", o.closing_date, o.open_in_sheet);
     if (/^Closed/.test(o.status)) add("3 Low", "Opportunities", o.title, "Closed: delete the row at the end of term", "Internships", o.closing_date, o.open_in_sheet);
+  });
+  (anns || []).forEach(a => {
+    if (a.status === "Awaiting approval") add("2 Medium", "Announcements", a.headline, "Check the announcement and set Approved to Yes", "Editor", a.show_from || a.remove_after, a.open_in_sheet);
+    if (a.status === "No Remove after date") add("2 Medium", "Announcements", a.headline, "Add a Remove after date: without it the announcement never shows", "Editor", a.show_from, a.open_in_sheet);
+    if (/^Expired/.test(a.status)) add("3 Low", "Announcements", a.headline, "Expired: delete the row at the end of term", "Editor", a.remove_after, a.open_in_sheet);
   });
 
   const today = startOfDay_(now);

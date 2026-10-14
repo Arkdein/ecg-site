@@ -49,7 +49,7 @@ While the site is a draft, most visits are the team's own. When you build the re
 
 The script `scripts/dashboard-sheet.gs` creates the Sheet and keeps it up to date. Run it on the account that owns the forms.
 
-1. Open the **"Send us a question"** form > **Responses** > **Link to Sheets**, and copy that Sheet's address. Do the same for **ECG Current Opportunities (website feed)** if you want listings on the dashboard.
+1. Open the **"Send us a question"** form > **Responses** > **Link to Sheets**, and copy that Sheet's address. Do the same for **ECG Opportunities and Announcements (website feed)** if you want listings on the dashboard.
 2. Go to [script.google.com](https://script.google.com) > **New project**. Name it `ECG Webmaster Dashboard`.
 3. Replace the code with the whole of `scripts/dashboard-sheet.gs`. At the top, paste the two addresses into `QUESTIONS_SHEET_URL` and `OPPORTUNITIES_SHEET_URL`. Save.
 4. Choose **setup** in the function menu and click **Run**. Allow access when asked.

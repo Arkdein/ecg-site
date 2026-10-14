@@ -16,9 +16,14 @@ baseurl: "/ecg-site"                       # ← EDIT (set at setup)
 draft: true                                # ← EDIT at go-live
 
 # Current Opportunities list: the "Publish to web" CSV link of the
-# Public tab in the Google Sheet "ECG Current Opportunities (website feed)".
+# Opportunities public tab in the Google Sheet "ECG Opportunities and Announcements (website feed)".
 # Leave empty to show sample listings.
 opportunities_csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR5GulSl-PRYTpvAqoLXM_ohatOLSqggc7kzFniGNZZ-ACLOeag8pnM14APSZdwcF8xjcSbo5Y_9e5e/pub?gid=1427148673&single=true&output=csv"   # ← EDIT
+
+# Key Announcements on Home: the "Publish to web" CSV link of the
+# "Announcements public" tab in the same Google Sheet. While empty, the
+# block stays hidden (add ?preview=announcements to see sample ones).
+announcements_csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR5GulSl-PRYTpvAqoLXM_ohatOLSqggc7kzFniGNZZ-ACLOeag8pnM14APSZdwcF8xjcSbo5Y_9e5e/pub?gid=502&single=true&output=csv"   # ← EDIT
 
 # "Was this page helpful?" buttons at the bottom of every page:
 # the PREFILL TEMPLATE link printed by the feedback-form script

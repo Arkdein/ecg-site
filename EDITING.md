@@ -19,9 +19,9 @@ The site updates about a minute after a change is published.
 There are two places, for two groups of students:
 
 - **Current RVHS students:** post in the **ECG Google Classroom**, as now. The Current Opportunities page sends current students there.
-- **Recent graduates** (who can't use the Classroom): add the opportunity to the Google Sheet **ECG Current Opportunities (website feed)**. It appears on the Current Opportunities page within about 5 minutes. You don't need GitHub for this.
+- **Recent graduates** (who can't use the Classroom): add the opportunity to the **Opportunities** tab of the Google Sheet **ECG Opportunities and Announcements (website feed)**. It appears on the Current Opportunities page within about 5 minutes. You don't need GitHub for this.
 
-In the Sheet, on the **Entry** tab:
+In the Sheet, on the **Opportunities** tab:
 
 1. Use the first empty row. One opportunity per row. The grey row under the headings says what goes in each column.
 2. Only add opportunities that recent graduates can apply for.
@@ -30,9 +30,32 @@ In the Sheet, on the **Entry** tab:
 5. **Link** is optional. If you fill it, the card gets a **Read more** button to that page.
 6. Images and attached flyers don't appear on the website. If the Classroom post says "scan the QR code in the flyer", paste the registration link into the Summary instead.
 7. Columns A to I are public. Put contacts and internal remarks in **Team notes** only.
-8. Leave **Approved** blank. The editor or deputy checks the row and chooses **Yes**; only then does it show on the website.
+8. Leave **Approved** blank. Randall, Chitra or Rachel checks the row and chooses **Yes**; only then does it show on the website. (The Approved column is locked to those three.)
 
-Don't add, move or rename columns, and don't type in the **Public** tab: it fills itself from Entry and is what the website reads. Each term, delete rows that have closed (the website reads the first 200 rows).
+Don't add, move or rename columns, and don't rename tabs, and don't type in the **Opportunities public** tab: it fills itself from Opportunities and is what the website reads. Each term, delete rows that have closed (the website reads the first 200 rows).
+
+## Key announcements (Home page)
+
+The Home page has a **Key announcements** block for things the school is telling students or parents: results-day arrangements, briefings for graduates, where to get help in the application window. It is hidden whenever nothing is current, which is most of the year.
+
+Any committee member can post one, on the **Announcements** tab of the same Google Sheet (**ECG Opportunities and Announcements (website feed)**). No GitHub needed.
+
+1. Use the first empty row. One announcement per row. The grey row under the headings says what goes in each column.
+2. **Headline**: short and specific. **For**: pick from the list. **Message**: one to three sentences; put the full details on the website page you link to (results-day arrangements go on A-Level Results & Applying, through an edit request if you can't edit the page).
+3. **Link**: a page on this site written as `/page-name` (e.g. `/results-and-applying`), or an official `https://` page. **Button text** is optional ("Read more" if blank).
+4. **Show from**: the first day it shows (blank = as soon as it is approved). **Remove after**: required, the last day it shows. Dates day first, e.g. 31/3/2027. It disappears after 11:59 pm Singapore time on that day. A row without Remove after never shows.
+5. Leave **Approved** blank. Randall, Chitra or Rachel checks it and chooses **Yes**.
+
+Rules:
+
+- **Announcement or opportunity?** If there is something to apply for, it is an opportunity (Opportunities tab), not an announcement. Never put the same item in both tabs; an announcement about an opportunity links to Current Opportunities instead.
+- **Official channel first.** Post only what has already gone out through Parents Gateway or a school email, with the same wording and dates. Note where it was sent in **Team notes**.
+- No student names, class lists or results.
+- Up to four show at a time, newest **Show from** first.
+- Exact dates and times are fine here, because every announcement removes itself. (Programme pages still use periods; see the style sheet.)
+- English only for now: the block is not on 家长专区.
+
+To check an approved announcement before its Show from date, open the Home page with `?preview=announcements` at the end of the address (e.g. `…/ecg-site/?preview=announcements`). Visitors never see that view.
 
 ## The accuracy line and "Last reviewed"
 
