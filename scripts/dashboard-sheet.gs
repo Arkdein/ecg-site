@@ -396,7 +396,8 @@ function refreshEditRequests_(hub, now, pages) {
 
 function refreshOpportunities_(hub, now) {
   const ss = SpreadsheetApp.openByUrl(CONFIG.OPPORTUNITIES_SHEET_URL);
-  const sh = ss.getSheetByName("Entry") || ss.getSheets()[0];
+  const sh = ss.getSheetByName("Opportunities") || ss.getSheetByName("Entry");   // "Entry" before 14 Oct 2026
+  if (!sh) throw new Error("no Opportunities tab in the opportunities Sheet");
   const values = sh.getDataRange().getValues();
   const head = values.shift().map(String);
   const col = re => head.findIndex(h => re.test(h));

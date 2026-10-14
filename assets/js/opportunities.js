@@ -3,8 +3,8 @@
    Placed on a page with {% include opportunities.html %}.
 
    Where the listings come from:
-   - The ECG team's Google Sheet ("ECG Current Opportunities (website
-     feed)"), Public tab, published to the web as CSV. Its link is
+   - The ECG team's Google Sheet ("ECG Opportunities and Announcements (website
+     feed)"), Opportunities public tab, published to the web as CSV. Its link is
      set as  opportunities_csv  in _config.yml.
    - If that link is empty, the sample file assets/data/
      opportunities-sample.csv is shown instead, with a notice.

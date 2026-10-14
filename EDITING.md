@@ -19,9 +19,9 @@ The site updates about a minute after a change is published.
 There are two places, for two groups of students:
 
 - **Current RVHS students:** post in the **ECG Google Classroom**, as now. The Current Opportunities page sends current students there.
-- **Recent graduates** (who can't use the Classroom): add the opportunity to the **Entry** tab of the Google Sheet **ECG Opportunities and Announcements (website feed)**. It appears on the Current Opportunities page within about 5 minutes. You don't need GitHub for this.
+- **Recent graduates** (who can't use the Classroom): add the opportunity to the **Opportunities** tab of the Google Sheet **ECG Opportunities and Announcements (website feed)**. It appears on the Current Opportunities page within about 5 minutes. You don't need GitHub for this.
 
-In the Sheet, on the **Entry** tab:
+In the Sheet, on the **Opportunities** tab:
 
 1. Use the first empty row. One opportunity per row. The grey row under the headings says what goes in each column.
 2. Only add opportunities that recent graduates can apply for.
@@ -32,7 +32,7 @@ In the Sheet, on the **Entry** tab:
 7. Columns A to I are public. Put contacts and internal remarks in **Team notes** only.
 8. Leave **Approved** blank. Randall, Chitra or Rachel checks the row and chooses **Yes**; only then does it show on the website. (The Approved column is locked to those three.)
 
-Don't add, move or rename columns, and don't type in the **Public** tab: it fills itself from Entry and is what the website reads. Each term, delete rows that have closed (the website reads the first 200 rows).
+Don't add, move or rename columns, and don't rename tabs, and don't type in the **Opportunities public** tab: it fills itself from Opportunities and is what the website reads. Each term, delete rows that have closed (the website reads the first 200 rows).
 
 ## Key announcements (Home page)
 
@@ -48,7 +48,7 @@ Any committee member can post one, on the **Announcements** tab of the same Goog
 
 Rules:
 
-- **Announcement or opportunity?** If there is something to apply for, it is an opportunity (Entry tab), not an announcement. Never put the same item in both tabs; an announcement about an opportunity links to Current Opportunities instead.
+- **Announcement or opportunity?** If there is something to apply for, it is an opportunity (Opportunities tab), not an announcement. Never put the same item in both tabs; an announcement about an opportunity links to Current Opportunities instead.
 - **Official channel first.** Post only what has already gone out through Parents Gateway or a school email, with the same wording and dates. Note where it was sent in **Team notes**.
 - No student names, class lists or results.
 - Up to four show at a time, newest **Show from** first.

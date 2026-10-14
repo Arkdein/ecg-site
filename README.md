@@ -28,9 +28,9 @@ The Education and Career Guidance website for River Valley High School, built wi
 
 ## Current Opportunities feed
 
-Listings for recent graduates come from the Google Sheet **ECG Opportunities and Announcements (website feed)** (owned by the ECG account that created it). The page reads the Sheet's **Public** tab, published to the web as CSV, each time it loads; nothing needs rebuilding when a teacher adds a row.
+Listings for recent graduates come from the Google Sheet **ECG Opportunities and Announcements (website feed)** (owned by the ECG account that created it). The page reads the Sheet's **Opportunities public** tab, published to the web as CSV, each time it loads; nothing needs rebuilding when a teacher adds a row.
 
-To connect it (once): in the Sheet, File > Share > Publish to web > choose **Public** and **Comma-separated values (.csv)** > Publish, then paste the link into `_config.yml` as `opportunities_csv`. If the school account doesn't allow publishing to the web, the Sheet has to be owned by an account that does. Google refreshes published sheets about every 5 minutes.
+To connect it (once): in the Sheet, File > Share > Publish to web > choose **Opportunities public** and **Comma-separated values (.csv)** > Publish, then paste the link into `_config.yml` as `opportunities_csv`. If the school account doesn't allow publishing to the web, the Sheet has to be owned by an account that does. Google refreshes published sheets about every 5 minutes.
 
 ## Key Announcements feed (Home)
 
