@@ -9,7 +9,7 @@
    - It gets a small ↗ after the link text, and screen readers
      hear "(opens in a new tab)". On a Chinese page (lang: zh-Hans,
      or inside an element with lang="zh-…") they hear
-     "（在新标签页中打开）".
+     "（在新页中打开）".
    - Links on this site, email links (mailto:) and phone links
      (tel:) are left alone.
    - Links added later by other scripts (e.g. the Current
@@ -27,7 +27,7 @@
 
   var DONE = "data-ecg-ext";           // marks a link already handled
   var NOTED = ".ecg-feedback";          // boxes that already say "opens in a new tab"
-  var TEXT = { en: "(opens in a new tab)", zh: "（在新标签页中打开）" };
+  var TEXT = { en: "(opens in a new tab)", zh: "（在新页中打开）" };
 
   // Is `href` a link to another website? `here` is this page's address.
   function isExternal(href, here) {

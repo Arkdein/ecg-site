@@ -33,7 +33,7 @@ assert.strictEqual(ext.isExternal("", here), false);
 assert.strictEqual(ext.isExternal(null, here), false);
 
 // Screen-reader note in the page's language
-assert.strictEqual(ext.noteFor("zh-Hans"), "（在新标签页中打开）");
+assert.strictEqual(ext.noteFor("zh-Hans"), "（在新页中打开）");
 assert.strictEqual(ext.noteFor("en"), "(opens in a new tab)");
 assert.strictEqual(ext.noteFor(""), "(opens in a new tab)");
 
