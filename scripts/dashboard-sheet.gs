@@ -295,7 +295,10 @@ function refreshQuestions_(hub, now) {
       status: status,
       assigned_to: cAssigned > -1 ? String(r[cAssigned]) : "",
       replied_on: cReplied > -1 && r[cReplied] ? r[cReplied] : "",
-      days_waiting: "",
+      // -1 = closed. Never left blank: when every question is closed an all-blank
+      // column makes Data Studio's "Questions waiting" table fail to load
+      // (its filter is days_waiting >= 0, which also hides these rows).
+      days_waiting: -1,
       open_in_sheet: base + (i + 2),
     };
     if (isOpen_(q)) q.days_waiting = daysBetween_(stamp.date, now);
@@ -586,8 +589,7 @@ function writeTable_(sh, rows, header) {
     if (vals.length && vals.every(v => v instanceof Date)) col.setNumberFormat(/_at|received/.test(h) ? "yyyy-mm-dd hh:mm" : "yyyy-mm-dd");
     else if (vals.length && vals.every(v => typeof v === "number")) col.setNumberFormat("0.##");
     else if (vals.length) col.setNumberFormat("@");
-    // An empty column keeps a number format: Data Studio reads number fields
-    // (days_waiting, days_open) as numbers and fails on a column turned to text.
+    // An empty column keeps a number format rather than turning to text.
     else col.setNumberFormat("0.##");
   });
   range.setValues(data);
