@@ -61,6 +61,7 @@ description: 在孩子成长的各个阶段，如何与孩子谈升学和职业�
 - 在成绩放榜前，和孩子一起阅读[A水准成绩与申请升学](results-and-applying.md)页面。大学申请在放榜前后开放，三月中旬截止。
 - 如果奖学金附带服务合约，请和孩子仔细讨论这项承诺意味着什么，详见“[服务合约适合你吗？](scholarships.md#before-you-apply-is-a-bond-right-for-you)”。
 - 如果担心费用，请及早[联系我们](get-help.md#scholarships)。
+- 成绩放榜前后，孩子也可以预约[教育部教育与职业辅导中心（ECG Centre @ MOE）](https://go.gov.sg/moe-ecg-centre)的电话或线上辅导。
 </details>
 
 ## 不断变化的职场
@@ -74,6 +75,6 @@ description: 在孩子成长的各个阶段，如何与孩子谈升学和职业�
 
 ## 联系我们
 
-请参阅[寻求协助（Get Help）](get-help.md)页面。
+请参阅[寻求协助（Get Help）](get-help.md)页面。如想了解新加坡学校如何开展教育与职业辅导，请参阅[教育部：教育与职业辅导](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance/overview)。
 
 </div>

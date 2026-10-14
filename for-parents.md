@@ -55,6 +55,7 @@ Many teenagers don't have a clear plan, and that's normal. Your conversations ma
 - Read [A-Level Results & Applying](results-and-applying.md) together before results day. University applications open around results day and close in mid-March.
 - If a scholarship has a bond, talk through the commitment: see [Is a bond right for you?](scholarships.md#before-you-apply-is-a-bond-right-for-you)
 - If cost is a worry, [talk to us](get-help.md#scholarships) early.
+- Around results release, your child can also book phone or online counselling with the [ECG Centre @ MOE](https://go.gov.sg/moe-ecg-centre).
 </details>
 
 ## The changing world of work
@@ -68,4 +69,4 @@ Today's teenagers will enter a very different job market. These are useful start
 
 ## Talk to us
 
-See [Get Help](get-help.md).
+See [Get Help](get-help.md). For how ECG works in Singapore schools, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance/overview).
