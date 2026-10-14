@@ -12,3 +12,5 @@
 {%- if page.translation %}
 <link rel="alternate" hreflang="{{ page.translation_lang }}" href="{{ page.translation | absolute_url }}">
 {%- endif %}
+{%- comment -%} Links to other websites open in a new tab, with ↗ (assets/js/external-links.js) {%- endcomment %}
+<script src="{{ '/assets/js/external-links.js' | relative_url }}?v={{ site.time | date: '%s' }}" data-page-lang="{{ page.lang | default: 'en' }}" defer></script>

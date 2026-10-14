@@ -29,6 +29,7 @@ One page. Every contributor reads it once before drafting.
 - Link text says where it goes: "[SMU admissions](…)", never "click here".
   - Exception (team decision, 9 Oct 2026): on Programmes, each programme's site button reads **Click here for details**. Give it an `aria-label` naming the programme so screen readers can tell the buttons apart, e.g. `{: .btn .btn-primary aria-label="Click here for details: HECGS Day site" }`.
 - PDFs: say so in the link — "Briefing slides (PDF)".
+- Links to other websites open in a new tab with a small ↗ after the text; this happens automatically (assets/js/external-links.js), so don't add `{:target="_blank"}` or write "opens in a new tab". Links to our own pages and email addresses stay in the same tab. To keep one external link in the same tab, add `{: .ecg-same-tab }` after it.
 
 ## People and privacy
 
