@@ -57,6 +57,10 @@ assert.strictEqual(boxes[0].firstLine, "2027 entry:");
 assert.strictEqual(sh.slugify("JC1 & JC2 HECGS Day"), "jc1--jc2-hecgs-day");
 assert.strictEqual(sh.slugify("1. Work out your University Admission Score"), "1-work-out-your-university-admission-score");
 assert.strictEqual(sh.slugify("Before you apply: is a bond right for you?"), "before-you-apply-is-a-bond-right-for-you");
+// Kramdown block attribute on the line after a heading sets that heading's id
+var ialIds = sh.collectAnchors("## Help from MOE\n{: #moe-ecg }\n\nText\n## Secondary students\n{: .note #secondary }\n");
+assert.ok(ialIds["moe-ecg"] && ialIds["secondary"], "IAL ids on the next line");
+assert.ok(!ialIds["help-from-moe"], "an IAL id replaces the automatic one");
 var ids = sh.collectAnchors("## Book a session\n## Book a session\n| <span id=\"uk\"></span>UK |\n## Custom {#my-id}\n");
 assert.ok(ids["book-a-session"] && ids["book-a-session-1"] && ids.uk && ids["my-id"]);
 

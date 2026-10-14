@@ -198,11 +198,15 @@ function slugify(heading) {
 
 function collectAnchors(body) {
   var ids = {}, seen = {};
-  stripComments(body).split(/\r?\n/).forEach(function (line) {
+  var lines = stripComments(body).split(/\r?\n/);
+  lines.forEach(function (line, i) {
     var h = /^#{1,6}\s+(.*?)\s*$/.exec(line);
     if (h) {
       var explicit = /\{#([\w-]+)\}\s*$/.exec(h[1]);
       if (explicit) { ids[explicit[1]] = true; return; }
+      // Kramdown block attribute on the next line: "## Help from MOE" then "{: #moe-ecg }"
+      var ial = /^\{:[^}]*#([\w-]+)[^}]*\}\s*$/.exec(lines[i + 1] || "");
+      if (ial) { ids[ial[1]] = true; return; }
       var s = slugify(h[1]);
       if (seen[s] !== undefined) { seen[s]++; ids[s + "-" + seen[s]] = true; }
       else { seen[s] = 0; ids[s] = true; }
