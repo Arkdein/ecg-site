@@ -12,7 +12,7 @@ Owner: ECG Webmaster RH. Everything below is set up once. After that, nothing ne
 | **Nightly site check** (GitHub) | Review dates, TODOs, deadline boxes with passed dates, broken links, Chinese For Parents out of step | Every night at 2 am and after every change to the site |
 | **"Was this page helpful?"** responses | Yes / Partly / No and comments per page | Copied every hour |
 | **"Send us a question"** responses | Date, topic, status, who it's with, days waiting. **Never the question text, names or emails.** | Copied every hour |
-| **Current Opportunities** Sheet | Listings waiting for approval, closing soon, closed | Copied every hour |
+| **Opportunities and Announcements** Sheet | Opportunities and Home announcements: waiting for approval, live, scheduled, closing soon, closed or expired | Copied every hour |
 | **Launch checklist** (a tab you tick) | Go-live tasks still open | When you tick them |
 
 ```
@@ -87,6 +87,7 @@ Add these with **Add data** (one at a time):
 | Questions | Google Sheets | data Sheet > **Questions** |
 | Edit requests | Google Sheets | data Sheet > **Edit requests** |
 | Opportunities | Google Sheets | data Sheet > **Opportunities** |
+| Announcements | Google Sheets | data Sheet > **Announcements** |
 | Launch checklist | Google Sheets | data Sheet > **Launch checklist** |
 
 For each Sheets source: **Resource** > **Manage added data sources** > **Edit** > **Data freshness**: **Every 1 hour**. For GA4, set it to every hour too.
@@ -139,6 +140,8 @@ Then add:
 - **Bar** (Questions): topic × Record Count, last 90 days. Shows which pages aren't answering students' questions.
 - **Table** (Edit requests): received, page_title, type, change_summary, requested_by, has_files, needed_by, status, days_open, open_in_sheet (as a link). Filter: status is not Live or Declined. Sort by needed_by, then received. Conditional formatting: status = New → light blue; Query → light yellow.
 - **Table** (Opportunities): title, closing_date, status, open_in_sheet. Sort by status.
+- **Table** (Announcements): headline, for, show_from, remove_after, status, open_in_sheet. Sort by show_from, newest first. Conditional formatting: status = Awaiting approval or No Remove after date → light yellow.
+- **Scorecards** (Summary): opportunities_live, announcements_live, announcements_scheduled, announcements_awaiting_approval. These four fields sit at the end of the Summary tab (added 14 Oct 2026); after the script update, refresh the Summary source's fields once (Resource › Manage added data sources › Summary › Edit › Refresh fields).
 - **Table** (Launch checklist): Item, Who, Due, Done. Filter: Done is false.
 
 ### Edit requests (added 14 Oct 2026)

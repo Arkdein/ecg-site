@@ -236,6 +236,12 @@ function refresh() {
   sum.needs_action_high = actions.filter(a => a.priority === "1 High").length;
   sum.needs_action_total = actions.length;
   sum.refresh_notes = notes.join(" | ");
+  // Added 14 Oct 2026. Keep new Summary fields at the END: Data Studio
+  // fields after an inserted column break ("the underlying data has changed").
+  sum.opportunities_live = opps.filter(o => /^Live/.test(o.status)).length;
+  sum.announcements_live = anns.filter(a => a.status === "Live").length;
+  sum.announcements_scheduled = anns.filter(a => a.status === "Scheduled").length;
+  sum.announcements_awaiting_approval = anns.filter(a => a.status === "Awaiting approval" || a.status === "No Remove after date").length;
   writeTable_(hub.getSheetByName("Summary"), [sum]);
 }
 
