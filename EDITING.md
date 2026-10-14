@@ -61,7 +61,7 @@ A Looker Studio report shows what needs attention: passed deadline dates, broken
 | `## Heading` | a section heading |
 | `**bold**` | **bold** |
 | `- item` | a bullet point |
-| `[SMU website](https://www.smu.edu.sg)` | a link |
+| `[SMU website](https://www.smu.edu.sg)` | a link to another website (opens in a new tab with ↗, automatically) |
 | `[Scholarships](scholarships.md)` | a link to another page on our site |
 
 A photo with a caption is written as (the photo file goes in `assets/images/photos/`; see the style sheet before adding one):
