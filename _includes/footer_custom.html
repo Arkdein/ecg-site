@@ -26,6 +26,18 @@
 </div>
 {%- endif -%}
 {%- endif -%}
+{%- comment -%}
+  Accuracy disclaimer (Mdm Choy's request, 14 Oct 2026). Points readers to
+  the "Last reviewed" date on the line below. Shown on every page that has
+  last_reviewed in its front matter.
+{%- endcomment -%}
+{%- if page.last_reviewed -%}
+{%- if page.lang == "zh-Hans" -%}
+<p class="ecg-disclaimer" lang="zh-Hans">本页信息截至最后审阅日期（见下方 Last reviewed）准确无误。如需最新详情，请查阅各大学或相关机构的官方网站。</p>
+{%- else -%}
+<p class="ecg-disclaimer">Information on this page is accurate as of the date it was last reviewed. Please check the official university or agency website for the latest details.</p>
+{%- endif -%}
+{%- endif -%}
 {%- if page.owner -%}
 <p class="ecg-page-meta">
   Owner: {{ page.owner }}
