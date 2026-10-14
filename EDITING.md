@@ -34,6 +34,10 @@ In the Sheet, on the **Entry** tab:
 
 Don't add, move or rename columns, and don't type in the **Public** tab: it fills itself from Entry and is what the website reads. Each term, delete rows that have closed (the website reads the first 200 rows).
 
+## The accuracy line and "Last reviewed"
+
+Every page ends with: *"Information on this page is accurate as of the date it was last reviewed. Please check the official university or agency website for the latest details."* (家长专区 has the Chinese version.) It points to the **Last reviewed** date on the line below it, which comes from `last_reviewed` in the page's front matter. When you check a page, update `last_reviewed` to the current month, even if nothing else changed, so the date stays honest.
+
 ## The Chinese version of For Parents
 
 For Parents has a Chinese version (`for-parents-zh.md`), reached by the **中文** button at the top right of the page. It is a line-by-line translation. If you change For Parents, make the same change on the Chinese page, or ask the portfolio owner to, so the two don't drift apart.
