@@ -42,6 +42,10 @@ For Parents has a Chinese version (`for-parents-zh.md`), reached by the **中文
 
 The Yes / No buttons at the bottom of every page open a short Google Form. Answers go to the Google Sheet **ECG@RVHS website feedback (responses)**. The portfolio owner checks it once a month for their pages. The buttons are switched on by `feedback_form_prefill` in `_config.yml`.
 
+## Requesting an edit (ECG Committee)
+
+Committee members who are not editors ask for changes through the **request an edit to this page** link at the bottom of every page. It opens a Google Form with the page already filled in; only named committee members can submit it (MOE sign-in). Requests go to the Google Sheet **Edit requests for ECG@RVHS 2027 Website (Sheet)**, tab **Requests**. The Webmaster sets the Status (New, Query, Approved, Live, Declined) and notes questions there. Nothing goes live without the Webmaster's approval. The link is switched on by `edit_request_form_prefill` in `_config.yml`. To add or remove committee members, open the Form, click **Published**, and change the responders.
+
 ## The Webmaster's Dashboard
 
 A Looker Studio report shows what needs attention: passed deadline dates, broken links, pages due for review, new feedback and questions. Portfolio owners can filter it to their own pages for the monthly check. How it works and how to set it up: [DASHBOARD.md](DASHBOARD.md).
