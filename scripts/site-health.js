@@ -291,6 +291,11 @@ function externalVerdict(r) {
     return { status: "Check by hand", detail: r.error };
   }
   if (r.finalUrl && /accounts\.google\.com|login\.microsoftonline\.com/.test(r.finalUrl)) return { status: "Needs sign-in", detail: "Opens a sign-in page" };
+  // Sites that send a missing page to their own "not found" page (MOE: /page-not-found)
+  if (r.finalUrl && /\/(page-)?not-found\b|\/404(\.html?)?(?:[?#]|$)/i.test(r.finalUrl)) return { status: "Broken", detail: "Goes to a 'page not found' page" };
+  // 202 = "accepted", not a loaded page. moe.gov.sg answers link checkers this way even for
+  // pages that no longer exist, so it can't count as OK (found 14 Oct 2026).
+  if (r.code === 202) return { status: "Check by hand", detail: "Site answered 202 (doesn't show the page to link checkers)" };
   if (r.code >= 200 && r.code < 400) return { status: "OK", detail: String(r.code) };
   if (r.code === 404 || r.code === 410) return { status: "Broken", detail: "Page not found (" + r.code + ")" };
   return { status: "Check by hand", detail: "Site answered " + r.code + " (may block link checkers)" };

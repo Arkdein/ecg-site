@@ -166,7 +166,7 @@ Scholarship deadlines fall in the same weeks as university applications. See [Sc
 
 [Book a session](get-help.md#book-a-session) with the ECG Counsellor, or [send us a question](get-help.md). Let us know when you apply for a scholarship, are called for an interview, or receive an award, so we can support you.
 
-**MOE also helps.** Around results release, the ECG Centre @ MOE offers counselling by phone or online: [book with the ECG Centre @ MOE](https://go.gov.sg/moe-ecg-centre). For more on ECG, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance/overview).
+**MOE also helps.** Around results release, the ECG Centre @ MOE offers counselling by phone or online: [book with the ECG Centre @ MOE](https://go.gov.sg/moe-ecg-centre). For more on ECG, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance).
 
 TODO: 2027 results-day timings and venue, once confirmed.
 {: .ecg-todo }
