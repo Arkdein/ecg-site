@@ -37,6 +37,13 @@ For anything else, send us a message and the right teacher will get back to you.
 
 [Send us a question](https://docs.google.com/forms/d/e/1FAIpQLSeOE8cXBpMHC2tbjBdEsutPvv78ClxrqpQtn8lb81KaPvbzGQ/viewform){: .btn }
 
+## Help from MOE
+{: #moe-ecg }
+
+When the A-Level results are released, the **ECG Centre @ MOE** also offers counselling by phone or online. It's useful if you want another view, or can't get a session with us in time. [Book with the ECG Centre @ MOE](https://go.gov.sg/moe-ecg-centre).
+
+For what ECG covers in Singapore schools, and MOE's resources for parents, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance/overview).
+
 ## Who to ask & school documents
 
 This table is the single source of "who handles what". Other pages link to its rows, so when a person changes, update the row here once.
