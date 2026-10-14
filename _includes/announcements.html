@@ -1,0 +1,23 @@
+{%- comment -%}
+  Key Announcements block (Home page). Hidden unless something is current.
+  Use:  {% include announcements.html %}
+
+  Announcements come from the Announcements tab of the Google Sheet
+  "ECG Opportunities and Announcements (website feed)", published as CSV
+  (tab "Announcements public"). The link is  announcements_csv  in
+  _config.yml. While it is empty, nothing shows, except in preview mode
+  (add ?preview=announcements to the address), which uses the sample file
+  assets/data/announcements-sample.csv.
+  How it works: assets/js/announcements.js (the rules are at the top)
+  How it looks: the "Key Announcements" section of _sass/custom/custom.scss
+{%- endcomment -%}
+{%- if site.announcements_csv and site.announcements_csv != "" -%}
+  {%- assign ann_src = site.announcements_csv -%}
+  {%- assign ann_sample = "false" -%}
+{%- else -%}
+  {%- assign ann_src = '/assets/data/announcements-sample.csv' | relative_url -%}
+  {%- assign ann_sample = "true" -%}
+{%- endif -%}
+<section class="ecg-ann" data-src="{{ ann_src | escape }}" data-sample="{{ ann_sample }}" data-base="{{ site.baseurl }}" hidden></section>
+<script src="{{ '/assets/js/opportunities.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/announcements.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
