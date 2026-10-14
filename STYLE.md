@@ -20,6 +20,8 @@ One page. Every contributor reads it once before drafting.
 
 - On the page: **31 Oct 2026** (day, short month, year). No ordinals ("31st").
 - Closing dates in headings: **[Closes 31 Oct 2026] Title**.
+- **School programmes** (Sec 4 ECG Experience, Gap Exploration Month, HECGS Day, Horizon, parents' morning and other RVHS events): give the usual period, never an exact date ("usually in April", "applications usually open in July (Term 3)"). Send students to the programme's own site for exact dates; for Horizon, to the ECG Google Classroom. Use a `.note` box, not `.deadline`. (Team decision, 14 Oct 2026.)
+- **External cut-offs** (UCAS, Singapore universities, overseas universities, scholarships, HSK, exam results): give the exact date with its year in a `.deadline` box, and link the official dates page.
 
 ## Buttons and links
 

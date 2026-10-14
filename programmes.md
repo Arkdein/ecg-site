@@ -20,6 +20,8 @@ What are Sec 4 ECG Experience, Gap Exploration Month, HECGS Day and Horizon, and
 | [HECGS Day](#jc1--jc2-hecgs-day) | All JC1 and JC2 | April (1 day) |
 | [Horizon Programme](#horizon-programme) | JC1, by application | Apply in July |
 
+The months above are a guide. Exact dates change each year: check each programme's site (the **Click here for details** buttons below) or, for Horizon, the [ECG Google Classroom](opportunities.md#current-rvhs-students).
+
 ## Sec 4 ECG Experience
 
 ![A guest and Sec 4 students smiling at the camera over dinner during a fireside chat](assets/images/photos/sec4-fireside-chat-2025.jpg){: loading="lazy"}
@@ -91,5 +93,5 @@ Horizon connects JC1 students with experienced professionals from a range of ind
 {: .note }
 > Students selected for Horizon take part in its overseas programme rather than other school overseas trips, so that as many students as possible get a meaningful international experience. Exceptions may be made in special cases.
 
-{: .deadline }
-> **Next intake (2027–28):** applications usually open in July. (The 2026–27 intake applied 16–22 Jul 2026; only shortlisted candidates were invited to a group interview.)
+{: .note }
+> **When to apply:** applications for each new JC1 intake usually open in **July** (Term 3). Shortlisted students are invited to a group interview. The exact dates and the application link are posted in the [ECG Google Classroom](opportunities.md#current-rvhs-students).
