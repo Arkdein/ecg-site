@@ -81,6 +81,7 @@ Add these with **Add data** (one at a time):
 | Links | Google Sheets | data Sheet > **Links** |
 | Feedback | Google Sheets | data Sheet > **Feedback** |
 | Questions | Google Sheets | data Sheet > **Questions** |
+| Edit requests | Google Sheets | data Sheet > **Edit requests** |
 | Opportunities | Google Sheets | data Sheet > **Opportunities** |
 | Launch checklist | Google Sheets | data Sheet > **Launch checklist** |
 
@@ -90,7 +91,7 @@ For each Sheets source: **Resource** > **Manage added data sources** > **Edit** 
 
 The page to open every Monday.
 
-- **Scorecards** (source: Summary): *needs_action_high* ("Urgent"), *questions_open*, *questions_oldest_waiting_days* ("Oldest question, days"), *withdrawal_requests_open*, *broken_links*, *deadline_dates_passed*, *checklist_left*. Aggregation: **Max** (Summary has one row).
+- **Scorecards** (source: Summary): *needs_action_high* ("Urgent"), *questions_open*, *questions_oldest_waiting_days* ("Oldest question, days"), *withdrawal_requests_open*, *edit_requests_open* ("Open edit requests"), *broken_links*, *deadline_dates_passed*, *checklist_left*. Aggregation: **Max** (Summary has one row).
 - **Text line** (Summary): *checked_for_date_sgt* labelled "Site checked on" and *sheet_refreshed_at* labelled "Data refreshed". If either stops moving, see Troubleshooting.
 - **Table** (Needs action): priority, area, item, what_to_do, portfolio, date. Make *link* a hyperlink column (Dimension > Type > **URL**, show as link). Sort by priority, ascending. Rows per page: 25.
 - **Conditional formatting** on the table: priority = `1 High` → light red background.
@@ -132,8 +133,22 @@ Then add:
 
 - **Table** (Questions): received, topic, type, status, assigned_to, days_waiting, open_in_sheet (as a link). Filter: status is not Answered or No reply needed. Sort by received, oldest first.
 - **Bar** (Questions): topic × Record Count, last 90 days. Shows which pages aren't answering students' questions.
+- **Table** (Edit requests): received, page_title, type, change_summary, requested_by, has_files, needed_by, status, days_open, open_in_sheet (as a link). Filter: status is not Live or Declined. Sort by needed_by, then received. Conditional formatting: status = New → light blue; Query → light yellow.
 - **Table** (Opportunities): title, closing_date, status, open_in_sheet. Sort by status.
 - **Table** (Launch checklist): Item, Who, Due, Done. Filter: Done is false.
+
+### Edit requests (added 14 Oct 2026)
+
+ECG Committee members ask for website changes through **request an edit to this page** at the bottom of every page. Their requests land in the Sheet **Edit requests for ECG@RVHS 2027 Website (Sheet)** (`EDIT_REQUESTS_SHEET_URL` in the script). Every hour the data Sheet copies page, type, a 120-character summary of the change, the requester's name, status and dates into the **Edit requests** tab (never their email), and adds open requests to **Needs action**:
+
+| Status | Shows in Needs action as | Priority |
+|---|---|---|
+| New (or blank) | Read it, then set Approved or Query | Medium; High if Needed by is within 7 days or passed |
+| Query | Waiting for an answer / chase after 7 days | Low, then Medium; High if Needed by is close |
+| Approved | Make the change, then set Live | Medium; High if Needed by is close |
+| Live, Declined | Not shown | |
+
+Open requests already appear in the **Needs action** table on page 1 with no change to the report. To add the scorecard and the table above: add the **Edit requests** data source, then on the **Summary** source click **Edit** > **Refresh fields** so *edit_requests_open* appears.
 
 ### Look and sharing
 
