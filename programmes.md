@@ -55,7 +55,7 @@ In January, before JC lessons begin, JC1 IP students spend a month learning outs
 The aim is to try things out, notice what you learn about yourself, and start JC1 with a clearer sense of direction. Record your reflections in your ECG e-portfolio: they're useful later for personal statements and interviews.
 
 <div class="ecg-start-here" markdown="1">
-[Click here for details](https://sites.google.com/moe.edu.sg/gap2026/home){: .btn .btn-primary aria-label="Click here for details: Gap Exploration Month site" }
+[Click here for details](https://sites.google.com/moe.edu.sg/gap-exploration-month-2027){: .btn .btn-primary aria-label="Click here for details: Gap Exploration Month site" }
 </div>
 
 ## JC1 & JC2 HECGS Day
