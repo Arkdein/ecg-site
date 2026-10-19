@@ -1,0 +1,15 @@
+{%- comment -%}
+  "Get the weekly ECG update" box (Home and Current Opportunities).
+  Use:  {% include weekly-update.html %}
+  Shows only when both  weekly_update_signup  (the sign-up Form) and
+  weekly_update_group  (the Google Group's address) are set in
+  _config.yml. The button goes to the Weekly ECG update page, which has
+  the Form and both ways to join the Group. See WEEKLY-UPDATE.md.
+{%- endcomment -%}
+{%- if site.weekly_update_signup and site.weekly_update_signup != "" and site.weekly_update_group and site.weekly_update_group != "" -%}
+<div class="ecg-weekly">
+  <p class="ecg-weekly-title">Get the weekly ECG update</p>
+  <p>One email every Monday with the week's new announcements and opportunities, plus anything closing that week. For students, graduates and parents. Unsubscribe any time.</p>
+  <p><a class="btn btn-primary" href="{{ '/weekly-update.html' | relative_url }}">Sign up by email</a></p>
+</div>
+{%- endif -%}

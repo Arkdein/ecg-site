@@ -66,6 +66,12 @@ details.ecg-level[open] summary { margin-bottom: 0.5rem; }
 .ecg-what-next dt { font-weight: 700; color: $rvhs-navy; }
 .ecg-what-next dd { margin: 0; }
 
+// Weekly update sign-up box (_includes/weekly-update.html)
+.ecg-weekly { border: 1px solid $border-color; border-top: 4px solid $rvhs-navy; border-radius: 6px; padding: 1rem 1.25rem; margin: 1.5rem 0; background: $rvhs-tint; }
+.ecg-weekly p { margin: 0.4rem 0; }
+.main-content .ecg-weekly-title { font-weight: 700; color: $rvhs-navy; font-size: 1.1rem; margin-top: 0; }
+@media (max-width: 31.25rem) { .ecg-weekly .btn { display: flex; justify-content: center; align-items: center; min-height: 48px; width: 100%; } }
+
 // Step strip (_includes/steps.html): numbered circles joined by a line.
 // Phones: a short vertical list. Wider screens: one row, labels under the numbers.
 .ecg-steps { list-style: none; counter-reset: none; margin: 1rem 0 1.5rem; padding: 0.9rem 1rem; background: $rvhs-tint; border-radius: 8px; }

@@ -36,6 +36,15 @@ feedback_form_prefill: "https://docs.google.com/forms/d/e/1FAIpQLSct7nJ6J-WR4TjO
 # Leave empty to hide the link.
 edit_request_form_prefill: "https://docs.google.com/forms/d/e/1FAIpQLScYI_xhyg-PZxYaw8rvLqNpQVipq3Xq9mJX4pfd5YQ6a1blRw/viewform?usp=pp_url&entry.332194054=PAGE_URL"   # ← EDIT
 
+# "Get the weekly ECG update" box on Home and Current Opportunities, and the
+# Weekly ECG update page (/weekly-update.html). Both lines are needed:
+#   weekly_update_signup: the public link of the sign-up Form
+#                         (printed by scripts/weekly-update-signups.gs)
+#   weekly_update_group:  the Google Group's address, e.g. rvhs-ecg-weekly@googlegroups.com
+# Leave either empty to hide the box. See WEEKLY-UPDATE.md.
+weekly_update_signup: ""   # ← EDIT
+weekly_update_group: ""    # ← EDIT
+
 # Google Analytics 4 (page views for the Webmaster's Dashboard).
 # Paste the Measurement ID (starts with G-) between the quotes and
 # remove the # at the start of the line. Leave the # in place to
@@ -96,6 +105,7 @@ exclude:
   - README.md
   - EDITING.md
   - DASHBOARD.md
+  - WEEKLY-UPDATE.md
   - scripts/
   - STYLE.md
   - MIGRATION.md

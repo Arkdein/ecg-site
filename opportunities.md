@@ -34,6 +34,8 @@ Finished at RVHS and can't use the Classroom any more? These internships, jobs a
 
 {% include opportunities.html %}
 
+{% include weekly-update.html %}
+
 ## Looking for an internship?
 
 How to find one, the RVHS Student Internship Programme, a sample email and FAQs are on [Internships](internships.md).
