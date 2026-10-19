@@ -1,8 +1,11 @@
 /**
  * ECG@RVHS Weekly Update — the Monday email
  * ------------------------------------------------------------------
- * Runs on Randall's PERSONAL Google account (the owner of the Google
- * Group). Not part of the website. See WEEKLY-UPDATE.md.
+ * Runs on Randall's MOE account (hoon_yao_tong_randall@moe.edu.sg).
+ * The Google Group belongs to his personal account; the MOE address is
+ * a Manager of the Group, so it may post to it. Subscribers see the MOE
+ * address, never the personal one. Not part of the website. See
+ * WEEKLY-UPDATE.md.
  *
  * Every Monday at about 7 am (Singapore) it:
  *   1. reads the two published CSVs the website already uses
@@ -24,27 +27,37 @@
  * Functions
  *   previewToMe()        Sends this week's email to YOU only. Doesn't
  *                        count as sent. Use it to check the layout.
+ *   testToGroup()        Sends this week's email to the Group, marked
+ *                        [Test]. Doesn't count as sent. Use it before
+ *                        launch, while only test addresses have joined,
+ *                        to check the MOE account can reach the Group.
  *   sendWeeklyUpdate()   The real send (the Monday trigger runs this).
  *   installTrigger()     Run once: Mondays, 7–8 am Singapore time.
  *   forgetSentItems()    Clears the memory of what was sent (the next
  *                        email then treats the last 7 days as new).
  *
- * How to install (about 5 minutes, signed in to your personal account)
- *   1. script.google.com > New project. Name it "ECG Weekly Update".
- *   2. Project Settings (gear) > tick "Show appsscript.json", and set
+ * How to install (about 10 minutes)
+ *   1. In the Google Group (personal account): Members > Add members >
+ *      hoon_yao_tong_randall@moe.edu.sg, "Directly add members" on,
+ *      role Manager.
+ *   2. Signed in to the MOE account: script.google.com > New project.
+ *      Name it "ECG Weekly Update".
+ *   3. Project Settings (gear) > tick "Show appsscript.json", and set
  *      "timeZone": "Asia/Singapore" in that file.
- *   3. Paste this whole file into Code.gs and save.
- *   4. Fill in GROUP_EMAIL below.
- *   5. Run previewToMe and allow access. Check the email.
- *   6. Run installTrigger.
+ *   4. Paste this whole file into Code.gs and save. (GROUP_EMAIL is
+ *      already filled in.)
+ *   5. Run previewToMe and allow access. Check the email in your MOE inbox.
+ *   6. Run testToGroup. Check it arrives at your test addresses, and
+ *      that nothing is waiting under the Group's "Pending" messages.
+ *   7. At launch only: run installTrigger.
  * ------------------------------------------------------------------
  */
 
 const CONFIG = {
-  // The Google Group's address, e.g. "rvhs-ecg-weekly@googlegroups.com"   ← EDIT
-  GROUP_EMAIL: "",
+  // The Google Group's address
+  GROUP_EMAIL: "ecgrvhs-weekly-update@googlegroups.com",
 
-  // Shown as the sender's name. Your Gmail address still shows beside it.
+  // Shown as the sender's name. The MOE address shows beside it.
   SENDER_NAME: "The RVHS ECG Team",
 
   // The same published CSV links as opportunities_csv / announcements_csv in _config.yml
@@ -87,8 +100,8 @@ function sendWeeklyUpdate() {
       return;
     }
     const email = renderEmail(digest, today, CONFIG);
-    GmailApp.sendEmail(CONFIG.GROUP_EMAIL, email.subject, email.text,
-                       { htmlBody: email.html, name: CONFIG.SENDER_NAME });
+    MailApp.sendEmail(CONFIG.GROUP_EMAIL, email.subject, email.text,
+                      { htmlBody: email.html, name: CONFIG.SENDER_NAME });
     saveSent_(markSent(sent, digest.newKeys.concat(digest.silentKeys), today));
     console.log("Sent: " + email.subject + " (" + digest.newKeys.length + " new items)");
   } finally {
@@ -103,10 +116,22 @@ function previewToMe() {
                              today, loadSent_(), CONFIG);
   const email = renderEmail(digest, today, CONFIG);
   const note = digest.send ? "" : "[PREVIEW: this week would NOT be sent — " + digest.reason + "]\n\n";
-  GmailApp.sendEmail(me, "[Preview] " + email.subject, note + email.text,
-                     { htmlBody: (note ? "<p><b>" + esc(note.trim()) + "</b></p>" : "") + email.html,
-                       name: CONFIG.SENDER_NAME });
+  MailApp.sendEmail(me, "[Preview] " + email.subject, note + email.text,
+                    { htmlBody: (note ? "<p><b>" + esc(note.trim()) + "</b></p>" : "") + email.html,
+                      name: CONFIG.SENDER_NAME });
   console.log("Preview sent to " + me + (digest.send ? "" : " (would be skipped: " + digest.reason + ")"));
+}
+
+function testToGroup() {
+  if (!CONFIG.GROUP_EMAIL) throw new Error("Fill in CONFIG.GROUP_EMAIL first.");
+  const today = todaySG(new Date());
+  const digest = buildDigest(fetchRows_(CONFIG.OPPORTUNITIES_CSV), fetchRows_(CONFIG.ANNOUNCEMENTS_CSV),
+                             today, loadSent_(), CONFIG);
+  const email = renderEmail(digest, today, CONFIG);
+  const note = "[TEST from the ECG team: please ignore. Real weekly emails start after launch.]";
+  MailApp.sendEmail(CONFIG.GROUP_EMAIL, "[Test] " + email.subject, note + "\n\n" + email.text,
+                    { htmlBody: "<p><b>" + esc(note) + "</b></p>" + email.html, name: CONFIG.SENDER_NAME });
+  console.log("Test sent to " + CONFIG.GROUP_EMAIL + ". Nothing was marked as sent.");
 }
 
 function installTrigger() {
