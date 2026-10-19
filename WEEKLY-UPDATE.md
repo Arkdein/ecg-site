@@ -1,6 +1,6 @@
 # The weekly ECG update (email)
 
-One email every Monday morning to everyone on the mailing list: the week's new **Key announcements** and **Current Opportunities**, plus listings that close that week. Weeks with nothing new get no email. Set up 19 Oct 2026 (team decisions: anyone can sign up with a personal email, no approval, sent through a Google Group that people join themselves, signed "The RVHS ECG Team").
+One email every Monday morning to everyone on the mailing list: the week's new **Key announcements** and **Current Opportunities**, plus listings that close that week. Weeks with nothing new get no email. Set up 19 Oct 2026 (team decisions: anyone can sign up with a personal email, no approval, sent through a Google Group that people join themselves, sent from the MOE account and signed "The RVHS ECG Team").
 
 ## How it fits together
 
@@ -10,13 +10,13 @@ One email every Monday morning to everyone on the mailing list: the week's new *
 | Box "Get the weekly ECG update" (`_includes/weekly-update.html`) | — | On Home and Current Opportunities; links to the page. Shows once `weekly_update_signup` and `weekly_update_group` are set in `_config.yml`. |
 | Sign-up Form + Sheet ("ECG@RVHS weekly update sign-ups (Sheet)") | Randall's MOE account | Record of who signed up: name, personal email, year of graduation, class, consent. Made by `scripts/weekly-update-signups.gs`. |
 | Google Group "ECG@RVHS Weekly Update" (`ecgrvhs-weekly-update@googlegroups.com`) | Randall's personal account | The mailing list. People join and leave it themselves. Delivers the email with Google's unsubscribe link. |
-| Script "ECG Weekly Update" (`scripts/weekly-update-email.gs`) | Personal account | Mondays 7–8 am: reads the website's two published CSVs and sends one email to the Group. |
+| Script "ECG Weekly Update" (`scripts/weekly-update-email.gs`) | Randall's MOE account (a Manager of the Group) | Mondays 7–8 am: reads the website's two published CSVs and sends one email to the Group. Subscribers see the MOE address, never the personal one. |
 
 The Form and the Group are separate: someone can fill in the Form and not join, or join without the Form. The Group's member list is the mailing list; the Form is a record of interest.
 
 ## Why a Google Group
 
-A script on a personal Gmail account can email at most 100 recipients a day and 50 per message (Google's Apps Script quotas). Sending to the Group counts as one recipient, so the Monday email goes out automatically however long the list gets. With "Anyone can join", nobody has to be added by hand, and Google confirms each address itself.
+A script can email at most 50 recipients per message, and a personal Gmail account only 100 a day (Google's Apps Script quotas). Sending to the Group counts as one recipient, so the Monday email goes out automatically however long the list gets. With "Anyone can join", nobody has to be added by hand, and Google confirms each address itself. The Group lives on the personal account because Groups on MOE accounts only let MOE users join.
 
 ## Setting up (once)
 
@@ -32,8 +32,9 @@ A script on a personal Gmail account can email at most 100 recipients a day and 
    - Who can view members: **Group managers** (subscribers can't see each other's emails)
 4. **Create group**. Don't add anyone.
 5. Group settings: keep email posting on (the script posts by email) and keep Google's email footer (it carries the unsubscribe link).
-6. Optional: add a committee member as a second owner, so the list doesn't depend on one person.
-7. Test both ways to join on the Weekly ECG update page: once with a Gmail address, once with a non-Google address (send the joining email, then reply to Google's confirmation). Check that both appear under **Members**.
+6. **Members > Add members**: `hoon_yao_tong_randall@moe.edu.sg`, "Directly add members" on, role **Manager**. This lets the MOE account send the Monday email.
+7. Optional: add a committee member as a second owner, so the list doesn't depend on one person.
+8. Test both ways to join on the Weekly ECG update page: once with a Gmail address, once with a non-Google address (send the joining email, then reply to Google's confirmation). Check that both appear under **Members**.
 
 ### 2. The sign-up Form (MOE account)
 
@@ -42,13 +43,14 @@ A script on a personal Gmail account can email at most 100 recipients a day and 
 3. Run **setup**, allow access. The log prints the Form's edit link, public link and the Sheet link.
 4. Open the Form > **Publish**: responders must be **Anyone with the link**, not only Ministry of Education users.
 
-### 3. The Monday email (personal account)
+### 3. The Monday email (MOE account)
 
-1. script.google.com, signed in to the **personal** account > New project "ECG Weekly Update".
+1. script.google.com, signed in to the **MOE** account > New project "ECG Weekly Update".
 2. Project Settings > tick "Show appsscript.json"; in that file set `"timeZone": "Asia/Singapore"`.
 3. Paste `scripts/weekly-update-email.gs` into Code.gs (`GROUP_EMAIL` is already filled in). Save.
-4. Run **previewToMe**, allow access. Check the email in your personal inbox (it only goes to you).
-5. Run **installTrigger** (Mondays, 7–8 am Singapore time).
+4. Run **previewToMe**, allow access. Check the email in your MOE inbox (it only goes to you).
+5. While only test addresses have joined, run **testToGroup**. It arrives marked [Test] and isn't counted as sent. Check it reached the test addresses and that nothing is waiting under the Group's **Pending** messages. If it never arrives, MOE may be blocking the script's email to outside addresses: tell Claude.
+6. **At launch only**, run **installTrigger** (Mondays, 7–8 am Singapore time).
 
 ### 4. The website
 
@@ -87,4 +89,4 @@ Change the logic only with the tests: `node tests/weekly-update.test.js`.
 ## Still to decide
 
 - Data protection wording: the consent line in the Form is the team's draft. Replace it with the school's standard personal-data wording when available (the same open item as the Alumni Gallery form), and decide how long sign-up details are kept.
-- Sending from a personal account: the From line shows the personal Gmail address beside "The RVHS ECG Team". Check with School Leadership that this is acceptable before launch.
+- The email comes from the MOE address, but the Group itself sits on a personal Google account. Check with School Leadership that this is acceptable before launch.
