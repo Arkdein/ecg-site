@@ -1,7 +1,6 @@
 ---
 title: Scholarships
-parent: Paying for University
-nav_order: 1
+nav_order: 8
 owner: ECG Webmaster RH
 portfolio: Scholarships
 last_reviewed: Oct 2026

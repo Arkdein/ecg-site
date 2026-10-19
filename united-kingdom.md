@@ -77,7 +77,7 @@ Before a course goes on your shortlist, answer these:
 |---|---|
 | Does the exact course suit **what and how** you want to study? | The course page: compulsory modules, options, teaching and assessment |
 | Do you meet its **subject, grade and test** requirements? | The university's international (Singapore) entry requirements |
-| Can your family or sponsor meet the **full cost**? | Current fees on the university's site, plus a realistic budget for living costs, travel and exchange rates. See [Paying for University](paying-for-university.md) |
+| Can your family or sponsor meet the **full cost**? | Current fees on the university's site, plus a realistic budget for living costs, travel and exchange rates. See [Scholarships](scholarships.md) and [Financial Aid](financial-aid.md) |
 | If you have a **sponsor or scholarship**, will it approve this exact course and university? | The sponsor's current rules, or written confirmation from the sponsor |
 | If **National Service** applies to you, will the course hold your place while you serve? | The university's deferral policy, or ask its admissions office |
 | For a **regulated profession**, will Singapore recognise the degree? | Law: [SILE Qualified Person rules](https://www.sile.edu.sg/qualified-person). Medicine: [SMC registration for international medical graduates](https://www.smc.gov.sg/for-professionals/apply-for-registration/). Others: the professional body |
