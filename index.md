@@ -34,6 +34,8 @@ At RVHS, Education and Career Guidance (ECG) helps every student understand who 
 
 Where to find internships, programmes and jobs you can apply for now.
 
+{% include weekly-update.html %}
+
 ## Need a person?
 
 [Book an ECG session or find who to ask](get-help.md){: .btn }

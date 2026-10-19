@@ -1,0 +1,13 @@
+{%- comment -%}
+  "Get the weekly ECG update" sign-up box (Home and Current Opportunities).
+  Use:  {% include weekly-update.html %}
+  The button opens the sign-up Form set as  weekly_update_signup  in
+  _config.yml. While that is empty, nothing shows. See WEEKLY-UPDATE.md.
+{%- endcomment -%}
+{%- if site.weekly_update_signup and site.weekly_update_signup != "" -%}
+<div class="ecg-weekly">
+  <p class="ecg-weekly-title">Get the weekly ECG update</p>
+  <p>One email every Monday with the week's new announcements and opportunities, plus anything closing that week. For students, graduates and parents. Unsubscribe any time.</p>
+  <p><a class="btn btn-primary" href="{{ site.weekly_update_signup | escape }}">Sign up by email</a></p>
+</div>
+{%- endif -%}

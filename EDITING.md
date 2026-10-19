@@ -57,6 +57,14 @@ Rules:
 
 To check an approved announcement before its Show from date, open the Home page with `?preview=announcements` at the end of the address (e.g. `…/ecg-site/?preview=announcements`). Visitors never see that view.
 
+## The weekly ECG update (email)
+
+Every Monday morning, people who signed up get one email with the week's new **Key announcements** and **Current Opportunities**, plus listings closing that week. Weeks with nothing new get no email. It is built from the same Google Sheet, so **there is nothing extra to post**: approve an announcement or opportunity as usual and it goes into the next Monday email.
+
+- Only approved rows that are on the website go out. A row changed after it was sent is not sent again (unless its title or date changes).
+- Sign-ups come through the **Sign up by email** box on Home and Current Opportunities, set by `weekly_update_signup` in `_config.yml`. The Webmaster adds new sign-ups to the Google Group each Monday.
+- How it works and how to set it up: [WEEKLY-UPDATE.md](WEEKLY-UPDATE.md).
+
 ## The accuracy line and "Last reviewed"
 
 Every page ends with: *"Information on this page is accurate as of the date it was last reviewed. Please check the official university or agency website for the latest details."* (家长专区 has the Chinese version.) It points to the **Last reviewed** date on the line below it, which comes from `last_reviewed` in the page's front matter. When you check a page, update `last_reviewed` to the current month, even if nothing else changed, so the date stays honest.
