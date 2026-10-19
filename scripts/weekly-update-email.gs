@@ -41,8 +41,8 @@
  */
 
 const CONFIG = {
-  // The Google Group's address, e.g. "rvhs-ecg-weekly@googlegroups.com"   ← EDIT
-  GROUP_EMAIL: "",
+  // The Google Group's address
+  GROUP_EMAIL: "ecgrvhs-weekly-update@googlegroups.com",
 
   // Shown as the sender's name. Your Gmail address still shows beside it.
   SENDER_NAME: "The RVHS ECG Team",

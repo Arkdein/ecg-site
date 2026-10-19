@@ -42,8 +42,8 @@ edit_request_form_prefill: "https://docs.google.com/forms/d/e/1FAIpQLScYI_xhyg-P
 #                         (printed by scripts/weekly-update-signups.gs)
 #   weekly_update_group:  the Google Group's address, e.g. rvhs-ecg-weekly@googlegroups.com
 # Leave either empty to hide the box. See WEEKLY-UPDATE.md.
-weekly_update_signup: ""   # ← EDIT
-weekly_update_group: ""    # ← EDIT
+weekly_update_signup: "https://docs.google.com/forms/d/1E-a1J4LF3RezV7nbWLpZireRGWJ3AChRxuckncRqQ6c/viewform"   # ← EDIT
+weekly_update_group: "ecgrvhs-weekly-update@googlegroups.com"    # ← EDIT
 
 # Google Analytics 4 (page views for the Webmaster's Dashboard).
 # Paste the Measurement ID (starts with G-) between the quotes and

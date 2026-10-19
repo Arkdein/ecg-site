@@ -9,7 +9,7 @@ One email every Monday morning to everyone on the mailing list: the week's new *
 | Page **Weekly ECG update** (`weekly-update.md`, hidden from the sidebar) | — | Step 1: the sign-up Form. Step 2: two ways to join the Group (Google account, or a joining email from any address). |
 | Box "Get the weekly ECG update" (`_includes/weekly-update.html`) | — | On Home and Current Opportunities; links to the page. Shows once `weekly_update_signup` and `weekly_update_group` are set in `_config.yml`. |
 | Sign-up Form + Sheet ("ECG@RVHS weekly update sign-ups (Sheet)") | Randall's MOE account | Record of who signed up: name, personal email, year of graduation, class, consent. Made by `scripts/weekly-update-signups.gs`. |
-| Google Group "ECG@RVHS Weekly Update" (`…@googlegroups.com`) | Randall's personal account | The mailing list. People join and leave it themselves. Delivers the email with Google's unsubscribe link. |
+| Google Group "ECG@RVHS Weekly Update" (`ecgrvhs-weekly-update@googlegroups.com`) | Randall's personal account | The mailing list. People join and leave it themselves. Delivers the email with Google's unsubscribe link. |
 | Script "ECG Weekly Update" (`scripts/weekly-update-email.gs`) | Personal account | Mondays 7–8 am: reads the website's two published CSVs and sends one email to the Group. |
 
 The Form and the Group are separate: someone can fill in the Form and not join, or join without the Form. The Group's member list is the mailing list; the Form is a record of interest.
@@ -46,7 +46,7 @@ A script on a personal Gmail account can email at most 100 recipients a day and 
 
 1. script.google.com, signed in to the **personal** account > New project "ECG Weekly Update".
 2. Project Settings > tick "Show appsscript.json"; in that file set `"timeZone": "Asia/Singapore"`.
-3. Paste `scripts/weekly-update-email.gs` into Code.gs. Fill in `GROUP_EMAIL`. Save.
+3. Paste `scripts/weekly-update-email.gs` into Code.gs (`GROUP_EMAIL` is already filled in). Save.
 4. Run **previewToMe**, allow access. Check the email in your personal inbox (it only goes to you).
 5. Run **installTrigger** (Mondays, 7–8 am Singapore time).
 
@@ -56,7 +56,7 @@ In `_config.yml` set:
 
 ```yaml
 weekly_update_signup: "<the Form's public link>"
-weekly_update_group: "rvhs-ecg-weekly@googlegroups.com"
+weekly_update_group: "ecgrvhs-weekly-update@googlegroups.com"
 ```
 
 The box appears on Home and Current Opportunities, and the Weekly ECG update page shows both steps, about a minute after the change is live. Leave either line empty to hide the box (the page then says sign-up isn't open yet).
