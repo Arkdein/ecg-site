@@ -62,7 +62,7 @@ To check an approved announcement before its Show from date, open the Home page 
 Every Monday morning, people who signed up get one email with the week's new **Key announcements** and **Current Opportunities**, plus listings closing that week. Weeks with nothing new get no email. It is built from the same Google Sheet, so **there is nothing extra to post**: approve an announcement or opportunity as usual and it goes into the next Monday email.
 
 - Only approved rows that are on the website go out. A row changed after it was sent is not sent again (unless its title or date changes).
-- Sign-ups come through the **Sign up by email** box on Home and Current Opportunities, set by `weekly_update_signup` in `_config.yml`. The Webmaster adds new sign-ups to the Google Group each Monday.
+- Sign-ups come through the **Sign up by email** box on Home and Current Opportunities, which opens the hidden **Weekly ECG update** page (`weekly-update.md`): a short Form, then people join the Google Group themselves. Switched on by `weekly_update_signup` and `weekly_update_group` in `_config.yml`.
 - How it works and how to set it up: [WEEKLY-UPDATE.md](WEEKLY-UPDATE.md).
 
 ## The accuracy line and "Last reviewed"

@@ -19,7 +19,7 @@
  *
  * The script remembers what it has already sent (Script properties),
  * so nothing is sent twice and nothing posted on a Monday is missed.
- * It never reads the sign-up list: membership lives in the Group.
+ * It never reads the sign-up list: people join the Group themselves.
  *
  * Functions
  *   previewToMe()        Sends this week's email to YOU only. Doesn't
@@ -54,6 +54,7 @@ const CONFIG = {
   SITE_URL: "https://arkdein.github.io/ecg-site",
   OPPORTUNITIES_PAGE: "/opportunities.html",
   GET_HELP_PAGE: "/get-help.html",
+  SIGNUP_PAGE: "/weekly-update.html",
 
   // Email even when nothing is new but something closes this week?
   // Team decision (19 Oct 2026): no — skip weeks with nothing new.
@@ -422,13 +423,14 @@ function renderEmail(dg, today, cfg) {
   h.push('<p style="margin:28px 0 8px">' + button(oppPage, "See all current opportunities") + '</p>');
   h.push('<p>Always check the details on the organiser\'s own page before you apply. Questions? <a href="' + esc(helpPage) + '" style="color:' + NAVY + '">Ask the ECG team</a>.</p>');
   h.push('<p>The RVHS ECG Team</p>');
-  h.push('<p style="color:' + GREY + ';font-size:13px;border-top:1px solid #d9dde3;padding-top:8px">You signed up for this weekly email on the ECG@RVHS website. To stop it, use the unsubscribe link below.</p>');
+  h.push('<p style="color:' + GREY + ';font-size:13px;border-top:1px solid #d9dde3;padding-top:8px">You signed up for this weekly email on the ECG@RVHS website. To stop it, use the unsubscribe link below. Know someone who\'d like it? They can <a href="' + esc(site + cfg.SIGNUP_PAGE) + '" style="color:' + GREY + '">sign up here</a>.</p>');
   h.push('</div>');
 
   t.push("All current opportunities: " + oppPage, "",
          "Always check the details on the organiser's own page before you apply. Questions? " + helpPage, "",
          "The RVHS ECG Team", "",
-         "You signed up for this weekly email on the ECG@RVHS website. To stop it, use the unsubscribe link below.");
+         "You signed up for this weekly email on the ECG@RVHS website. To stop it, use the unsubscribe link below.",
+         "Know someone who'd like it? They can sign up at " + site + cfg.SIGNUP_PAGE);
 
   return { subject: subject, html: h.join("\n"), text: t.join("\n") };
 }
