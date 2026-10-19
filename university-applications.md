@@ -21,7 +21,7 @@ Where do I start with university applications?
 | Apply to China, the UK or the US (some deadlines fall **before** results day) | [Overseas Universities](overseas-universities.md) |
 | Consider other routes: polytechnic, private universities, retaking the A-Levels, or working first | [Other routes after A-Levels](career-and-courses.md#other-routes-after-a-levels) |
 
-Paying for university: see [Paying for University](paying-for-university.md).
+Paying for university: see [Scholarships](scholarships.md) and [Financial Aid](financial-aid.md).
 
 ## Before you choose
 
