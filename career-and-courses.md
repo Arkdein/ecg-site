@@ -49,6 +49,7 @@ Rules for professional careers can change. Check with the professional body or t
 - **[MySkillsFuture for Students](https://www.myskillsfuture.gov.sg/content/student/en/myskillsfuture-for-students.html)**: explore careers that match your self-assessment results.
 - **[Skills Framework](https://www.skillsfuture.gov.sg/skills-framework)**: for each sector of Singapore's economy, the job roles, the skills they need and how people progress.
 - **[Careers@Gov](https://www.careers.gov.sg/explore-sectors/)**: what the public service does, sector by sector.
+- **[DISCOVER](https://discover.nyc.gov.sg/)**: the National Youth Council's career portal for young people aged 15 to 35. Take a short quiz for career suggestions, read about industries, and sign up for free job tasters, mentoring sessions and events. A good way to try out a field before you choose a course.
 - **Talk to people who do the job.** The [Sec 4 ECG Experience](programmes.md#sec-4-ecg-experience) fireside chats and [HECGS Day](programmes.md#jc1--jc2-hecgs-day) are your chance. Ask what a typical day is like and what they wish they'd known.
 - **Try it out.** An [internship](internships.md) or a few days of job shadowing tells you more than any website.
 

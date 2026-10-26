@@ -168,6 +168,8 @@ Scholarship deadlines fall in the same weeks as university applications. See [Sc
 
 **MOE also helps.** Around results release, the ECG Centre @ MOE offers counselling by phone or online: [book with the ECG Centre @ MOE](https://go.gov.sg/moe-ecg-centre). For more on ECG, see [MOE: Education and Career Guidance](https://www.moe.gov.sg/education-in-sg/our-programmes/education-and-career-guidance).
 
+**Want to hear from people already working?** The National Youth Council's [DISCOVER mentors](https://discover.nyc.gov.sg/mentors) give career advice in groups or one-on-one, and DISCOVER lists free job tasters you can join in the months after the A-Levels.
+
 TODO: 2027 results-day timings and venue, once confirmed.
 {: .ecg-todo }
 

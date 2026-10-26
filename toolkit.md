@@ -29,6 +29,7 @@ Each tool below links to where it lives on this site or elsewhere. Pick the stag
 ## Explore your options
 
 - **[Career & Courses](career-and-courses.md)**: how courses lead to careers, how to explore a field, and how to read graduate employment data.
+- **[DISCOVER](https://discover.nyc.gov.sg/)**: the National Youth Council's career portal (ages 15 to 35). Career suggestions, industry guides, and free job tasters, mentoring and events.
 - **[MOE CourseFinder](https://www.moe.gov.sg/coursefinder)**: search post-secondary and university courses.
 - **[The six universities at a glance](singapore-universities.md#the-six-universities-at-a-glance)**: what each of Singapore's autonomous universities is known for.
 - **[Overseas Universities](overseas-universities.md)**: China, the UK and the US compared, with the earliest deadlines.
