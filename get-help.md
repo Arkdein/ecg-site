@@ -3,7 +3,7 @@ title: Get Help
 nav_order: 11
 owner: ECG Webmaster RH
 portfolio: Counsellor; Editor
-last_reviewed: Nov 2026
+last_reviewed: Oct 2026
 description: Who to ask, how to book an ECG session, and how to get a reference or transcript.
 ---
 
@@ -36,13 +36,6 @@ You'll find it beside the Eco-trail, opposite the bookshop.
 For anything else, send us a message and the right teacher will get back to you.
 
 [Send us a question](https://docs.google.com/forms/d/e/1FAIpQLSeOE8cXBpMHC2tbjBdEsutPvv78ClxrqpQtn8lb81KaPvbzGQ/viewform){: .btn }
-
-## Finding your way around this site
-{: #find-your-way }
-
-1. **Start with the button that fits you.** On [Home](index.md), choose *I'm a Secondary student*, *I'm a JC student* or *I'm a parent*.
-2. **Follow the menu, or search.** Each page in the menu answers one question, in the order most students ask them: from *What happens at my level, and what should I do this year?* down to *How can I pay for university?* Know what you're looking for? Use the search box at the top of any page.
-3. **Still stuck? Ask a person.** [Book a session](#book-a-session) or [send us a question](https://docs.google.com/forms/d/e/1FAIpQLSeOE8cXBpMHC2tbjBdEsutPvv78ClxrqpQtn8lb81KaPvbzGQ/viewform).
 
 ## Help from MOE
 {: #moe-ecg }
