@@ -20,7 +20,7 @@ US universities offer a broad, flexible education. You usually take courses acro
 
 The **RVHS US University Application Student Handbook** is the school's full guide to applying through the Common App, from deciding whether the US suits you to what happens after you submit. It also has worksheets: a college requirements tracker, an activities builder, recommendation brag sheets, an essay planner and a cost comparison sheet. This page gives you the essentials, and the handbook has the detail.
 
-[Download the RVHS US handbook (PDF, 60 pages)](assets/files/rvhs-us-handbook.pdf){: .btn .btn-primary }
+[Download the RVHS US handbook (PDF, 59 pages)](assets/files/rvhs-us-handbook.pdf){: .btn .btn-primary }
 
 *Nov 2026 edition, written for students applying in 2027. Most of it applies in any year. Where it differs from a university's own instructions, follow the university.*
 
@@ -34,8 +34,8 @@ The **RVHS US University Application Student Handbook** is the school's full gui
 |---|---|
 | In JC1 | [Chapters 1–5](assets/files/rvhs-us-handbook.pdf#page=7): is the US right for you, your timeline, a balanced college list |
 | Filling in the Common App | [Chapters 6–14](assets/files/rvhs-us-handbook.pdf#page=13): each section, activities, honours and essays |
-| Asking for recommendations | [Chapters 15–17](assets/files/rvhs-us-handbook.pdf#page=29), and the brag sheets in [appendices E and F](assets/files/rvhs-us-handbook.pdf#page=49) |
-| Working out the cost | [Chapter 18](assets/files/rvhs-us-handbook.pdf#page=35), and the cost comparison sheet in [appendix H](assets/files/rvhs-us-handbook.pdf#page=56) |
+| Asking for recommendations | [Chapters 15–17](assets/files/rvhs-us-handbook.pdf#page=29), and the brag sheets in [appendices E and F](assets/files/rvhs-us-handbook.pdf#page=50) |
+| Working out the cost | [Chapter 18](assets/files/rvhs-us-handbook.pdf#page=35), and the cost comparison sheet in [appendix H](assets/files/rvhs-us-handbook.pdf#page=57) |
 | Going into National Service, or an alumnus | [Chapter 23](assets/files/rvhs-us-handbook.pdf#page=39), then contact [the ECG team](get-help.md#us) early |
 
 ## Applying through the Common App
@@ -70,7 +70,7 @@ Each college sets its own deadlines and rules. Check them on the college's websi
 | Two JC subject teachers | Write teacher recommendations. Some colleges want one and some want two, so assign only the number each college asks for |
 | RVHS | Supplies your official records and predicted information, and sets the internal deadlines |
 
-**Ask first.** Speak to your Civics Tutor and each subject teacher in person before you send a Common App invitation. Never send a surprise invitation. Give them the brag sheet from the handbook ([appendices E and F](assets/files/rvhs-us-handbook.pdf#page=49)) so their letters can be specific.
+**Ask first.** Speak to your Civics Tutor and each subject teacher in person before you send a Common App invitation. Never send a surprise invitation. Give them the brag sheet from the handbook ([appendices E and F](assets/files/rvhs-us-handbook.pdf#page=50)) so their letters can be specific.
 
 {: .important }
 > Don't calculate a GPA, convert your grades to a 4.0 scale or give a class rank. RVHS reports neither, unless its yearly instructions say otherwise. Enter subject titles and grades exactly as they appear on your official records, and never present a predicted grade as an achieved one.
