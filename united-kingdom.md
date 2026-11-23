@@ -5,7 +5,7 @@ grand_parent: University Applications
 nav_order: 2
 owner: ECG Webmaster RH
 portfolio: UK universities
-last_reviewed: Oct 2026
+last_reviewed: Nov 2026
 description: Is the UK system for you, how do UCAS applications work, and how do you choose your five courses?
 ---
 
@@ -31,6 +31,28 @@ UK degrees are recognised worldwide. Most undergraduate degrees take **three yea
 > - **13 Jan 2027**, 6pm UK time: equal-consideration deadline for most other courses
 >
 > RVHS's own deadlines come earlier, so the school has time to check your application and add its reference. Ask for your reference at least four to six weeks before your UCAS deadline. See [Who to ask](get-help.md#uk).
+
+## The RVHS UCAS handbook
+
+The **RVHS UCAS Student Handbook** is the school's full guide to applying, from choosing a course to accepting an offer. It also has records to fill in: a course research record, a referee evidence pack, a personal statement planner and an admissions-test tracker. This page gives you the essentials, and the handbook has the detail.
+
+[Download the RVHS UCAS handbook (PDF, 46 pages)](assets/files/rvhs-ucas-handbook.pdf){: .btn .btn-primary }
+
+*Nov 2026 edition, written for students applying in 2027. Most of it applies in any year. Where it differs from UCAS or a university, follow UCAS or the university.*
+
+<!--
+  NEW EDITION: replace assets/files/rvhs-ucas-handbook.pdf with the new file,
+  keeping the same file name so links don't break. Then update the edition
+  line above and check the page numbers in the table below.
+-->
+
+| If you are… | Start with |
+|---|---|
+| In JC1 | [Chapters 3–7](assets/files/rvhs-ucas-handbook.pdf#page=8): is the UK right for you, choosing and researching courses, building your five choices |
+| In JC2 and applying | [Chapter 2](assets/files/rvhs-ucas-handbook.pdf#page=7), then [chapters 9–17](assets/files/rvhs-ucas-handbook.pdf#page=16): tests, your referee, the form, the personal statement and submitting to RVHS |
+| Going into National Service | [Chapter 8](assets/files/rvhs-ucas-handbook.pdf#page=15), before you choose an entry year or ask for deferred entry |
+| Waiting for offers | [Chapters 18–20](assets/files/rvhs-ucas-handbook.pdf#page=33): tracking your application, firm and insurance choices, visas |
+| An alumnus or reapplying | [Chapter 21](assets/files/rvhs-ucas-handbook.pdf#page=37), then contact the UK universities teacher early |
 
 ## How UCAS works
 
@@ -60,12 +82,12 @@ Full rules: [UCAS: filling in your application](https://www.ucas.com/applying/ap
 The application is yours. You:
 
 - research exact courses and their requirements
-- register for any admissions tests and complete any extra forms a university asks for
-- give your civics tutor your course list and evidence early, so the reference can support it
+- register **separately** for any admissions test (such as UCAT, LNAT, ESAT, TMUA, TARA or STEP) and complete any extra forms a university asks for. Adding a course on UCAS doesn't register you for its test
+- ask your lead referee early, and give them your course list and evidence pack so the reference can support it
 - enter every qualification exactly as it appears on your official records
 - meet the RVHS deadlines and check your UCAS messages and email
 
-Your civics tutor and subject tutors write the school reference. The RVHS UCAS team links your application to the school, checks it and sends it to UCAS.
+Your **lead referee** is one JC teacher you ask to coordinate your school reference and predicted grades. Choose the teacher best placed to speak about your readiness for the course: often a subject tutor who teaches a related subject, sometimes your civics tutor. Ask in person first. The RVHS UCAS team links your application to the school, checks it and sends it to UCAS. How to choose and ask: handbook [chapter 10](assets/files/rvhs-ucas-handbook.pdf#page=18).
 
 ## Is the UK right for you?
 
@@ -84,6 +106,9 @@ Before a course goes on your shortlist, answer these:
 
 {: .important }
 > If your plan depends on a sponsor, a course that's realistic for you academically still isn't a safe choice unless the sponsor would fund it.
+
+{: .tip }
+> **English requirements:** General Paper usually doesn't count as proof of English at UK universities, and some ask for IELTS or TOEFL. Check each course's English-language requirement for Singapore applicants.
 
 ## Choosing your five courses
 
@@ -107,15 +132,15 @@ Check facts in this order: the official course page, the university's internatio
 
 ### A balanced set of five
 
-A rough guide, not a formula:
+There's no formula such as "two ambitious, two target, one safe", and no choice is ever completely safe. Put each course through five tests:
 
-| Type of choice | How many | What it means |
-|---|---|---|
-| Highly aspirational | 1–2 | You meet the requirements, but competition, tests or interviews make the outcome hard to predict. |
-| Competitive and plausible | 2 | Your grades, subjects and evidence fit the course well. It is still selective. |
-| More attainable | 1–2 | You meet the requirements comfortably, and you would genuinely go there. |
+1. **Fit:** you would genuinely study this exact course in this place.
+2. **Eligibility:** you meet the required subjects and any other requirement.
+3. **Competitiveness:** your grades and evidence are plausible for the course. Published minimums aren't a guarantee.
+4. **Workload:** you can prepare for every test, interview and piece of written work without hurting your A-Levels.
+5. **Affordability and recognition:** the course still works for you if you get an offer.
 
-Every choice must fit the same academic direction, and you must be able to fund it (with sponsor approval, if you need it).
+Make sure at least one choice could be a realistic insurance offer that you would happily accept. Every choice must fit the same academic direction. You don't have to fill all five: four well-researched choices can be better than a rushed fifth. More in handbook [chapter 6](assets/files/rvhs-ucas-handbook.pdf#page=12).
 
 ### Common mistakes
 
@@ -147,7 +172,7 @@ Go deeper in your subject through reading, projects, competitions, research or r
 <details class="ecg-level" markdown="1">
 <summary>JC2, May to August: prepare the application</summary>
 
-Shortlist exact courses, talk to your civics tutor, draft your three personal statement answers, and check and register for admissions tests.
+Shortlist exact courses, ask your lead referee and send them your evidence pack, draft your three personal statement answers, and check and register for admissions tests.
 </details>
 
 <details class="ecg-level" markdown="1">
@@ -178,25 +203,11 @@ From 2026 entry, the personal statement is **three questions**, with up to **4,0
 
 [UCAS guide to the new personal statement](https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement-for-2026-entry-onwards)
 
-## RVHS UCAS guide
-
-The RVHS UCAS guide takes you through the whole application, screen by screen: setting up your account, linking it to RVHS, entering your qualifications, and checking and paying before you submit.
-
-<!--
-  When the guide is approved: save it as a PDF in the ECG Shared Drive and
-  share it as "Anyone with the link can view". Each year, replace the file
-  with Drive's "Manage versions" so this link never changes. Then replace
-  the TODO box below with this line, pasting in the Drive link:
-
-  [Read the RVHS UCAS guide (PDF)](PASTE-DRIVE-LINK-HERE){: .btn .btn-primary }
--->
-
-TODO: the guide is being written by the ECG team. The link goes here once it is approved.
-{: .ecg-todo }
+The statement must be your own work. When you apply, you declare that it isn't copied or written by AI, and UCAS checks statements for similarity. For how to turn your H3 work, internships, competitions and CCA into evidence, with worked examples, see handbook [chapter 16](assets/files/rvhs-ucas-handbook.pdf#page=27).
 
 ## References
 
-UCAS references: see [Who to ask](get-help.md#uk).
+RVHS sends one school reference, coordinated by your lead referee (see [What you're responsible for](#what-youre-responsible-for)). To make it specific, give your referee the evidence pack in the handbook's [appendix C](assets/files/rvhs-ucas-handbook.pdf#page=43). Questions about references: see [Who to ask](get-help.md#uk).
 
 {% include what-next.html
    explore="Search courses on [UCAS](https://www.ucas.com/)"
@@ -204,4 +215,4 @@ UCAS references: see [Who to ask](get-help.md#uk).
    talk="uk"
    talk_label="Ask about UCAS" %}
 
-<!-- A full UK hub is planned for Term 2 2027, ready by June. Source: the RVHS UCAS guide (ECG team, Oct 2026). -->
+<!-- A full UK hub is planned for Term 2 2027, ready by June. Source: the RVHS UCAS Student Handbook (ECG team, Nov 2026 edition). -->
